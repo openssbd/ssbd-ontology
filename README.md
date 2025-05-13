@@ -1,5 +1,7 @@
 # SSBD Ontology (v2025‑05)
 
+Lead developer: Yuki Yamagata (RIKEN R-IH and RIKEN BRC)
+
 SSBD Ontology: A Two Tier Approach for Interoperable Bioimaging Metadata  
 **Repository Layer** (rapid deposition) & **Added‑Value Layer** (curated rich annotations)
 
