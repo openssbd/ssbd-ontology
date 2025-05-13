@@ -1,0 +1,479 @@
+@prefix : <http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-128#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ssbd.riken.jp/ontology/repository/> .
+
+<http://ssbd.riken.jp/ontology/repository/> rdf:type owl:Ontology ;
+                                             owl:versionIRI <http://ssbd.riken.jp/ontology/repository/1.0.0> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/RO_0002234
+<http://purl.obolibrary.org/obo/RO_0002234> rdf:type owl:ObjectProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_license
+<http://ssbd.riken.jp/ontology/has_license> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://ssbd.riken.jp/ontology/has_address
+<http://ssbd.riken.jp/ontology/has_address> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_dataset_title
+<http://ssbd.riken.jp/ontology/has_dataset_title> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_department
+<http://ssbd.riken.jp/ontology/has_department> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_description
+<http://ssbd.riken.jp/ontology/has_description> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_doi
+<http://ssbd.riken.jp/ontology/has_doi> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_email
+<http://ssbd.riken.jp/ontology/has_email> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_family_name
+<http://ssbd.riken.jp/ontology/has_family_name> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_first_name
+<http://ssbd.riken.jp/ontology/has_first_name> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_middle_name
+<http://ssbd.riken.jp/ontology/has_middle_name> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_open_date
+<http://ssbd.riken.jp/ontology/has_open_date> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_orcid
+<http://ssbd.riken.jp/ontology/has_orcid> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_organization
+<http://ssbd.riken.jp/ontology/has_organization> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_paper_information
+<http://ssbd.riken.jp/ontology/has_paper_information> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_paper_url
+<http://ssbd.riken.jp/ontology/has_paper_url> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_pmc_id
+<http://ssbd.riken.jp/ontology/has_pmc_id> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_project_name
+<http://ssbd.riken.jp/ontology/has_project_name> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_project_type
+<http://ssbd.riken.jp/ontology/has_project_type> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_project_url
+<http://ssbd.riken.jp/ontology/has_project_url> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_pubmed_id
+<http://ssbd.riken.jp/ontology/has_pubmed_id> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_release_date
+<http://ssbd.riken.jp/ontology/has_release_date> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_role
+<http://ssbd.riken.jp/ontology/has_role> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_submission_date
+<http://ssbd.riken.jp/ontology/has_submission_date> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_update_date
+<http://ssbd.riken.jp/ontology/has_update_date> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_url
+<http://ssbd.riken.jp/ontology/has_url> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor
+<http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                                                     <http://purl.obolibrary.org/obo/IAO_0000115> "Topical Descriptors indicate the subject of an indexed item such as a journal article. See D063926, 'Drug Hypersensitivity Syndrome', for an example." ;
+                                                     rdfs:label "MeSH TopicalDescriptor"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000030
+<http://purl.obolibrary.org/obo/IAO_0000030> rdf:type owl:Class ;
+                                             rdfs:label "information content entity"@en .
+
+
+###  http://purl.org/dc/terms/LicenseDocument
+<http://purl.org/dc/terms/LicenseDocument> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
+                                           rdfs:label "LicenseDocument" .
+
+
+###  http://ssbd.riken.jp/ontology/SSBD_Project
+<http://ssbd.riken.jp/ontology/SSBD_Project> rdf:type owl:Class .
+
+
+###  http://ssbd.riken.jp/ontology/SSBD_paper_information
+<http://ssbd.riken.jp/ontology/SSBD_paper_information> rdf:type owl:Class .
+
+
+###  http://ssbd.riken.jp/ontology/SSBD_person
+<http://ssbd.riken.jp/ontology/SSBD_person> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://creativecommons.org/licenses/by-sa/4.0/
+<http://creativecommons.org/licenses/by-sa/4.0/> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2a_FIB-SEM_spine_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2a_FIB-SEM_spine_synapse> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3a_FIB-SEM_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3a_FIB-SEM_synapse> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig2_BrainSliceRGB
+<http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig2_BrainSliceRGB> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig3_MDCKpostconfl
+<http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig3_MDCKpostconfl> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-paper-141-30371805
+<http://ssbd.riken.jp/ontology/ssbd-paper-141-30371805> rdf:type owl:NamedIndividual ,
+                                                                 <http://ssbd.riken.jp/ontology/SSBD_paper_information> ;
+                                                        <http://ssbd.riken.jp/ontology/has_doi> "https://doi.org/10.1093/jmicro/dfy128" ;
+                                                        <http://ssbd.riken.jp/ontology/has_paper_information> "Yuka Sato, Shigeo Okabe (2019) Nano-scale analysis of synapse morphology in an autism mouse model with 15q11-13 copy number variation using focused ion beam milling and scanning electron microscopy., Microscopy (Oxford, England), Volume 68, Number 2, pp. 122-132" ;
+                                                        <http://ssbd.riken.jp/ontology/has_paper_url> "https://academic.oup.com/jmicro/article/68/2/122/5146312" ;
+                                                        <http://ssbd.riken.jp/ontology/has_pubmed_id> "30371805" ;
+                                                        rdfs:label "ssbd-paper-141-30371805"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-paper-163-31337683
+<http://ssbd.riken.jp/ontology/ssbd-paper-163-31337683> rdf:type owl:NamedIndividual ,
+                                                                 <http://ssbd.riken.jp/ontology/SSBD_paper_information> ;
+                                                        <http://ssbd.riken.jp/ontology/has_doi> "https://doi.org/10.1073/pnas.1905924116" ;
+                                                        <http://ssbd.riken.jp/ontology/has_paper_information> "Chenguang Wang, Masayasu Taki, Yoshikatsu Sato, Yasushi Tamura, Hideyuki Yaginuma, Yasushi Okada, Shigehiro Yamaguchi (2019) A photostable fluorescent marker for the superresolution live imaging of the dynamic structure of the mitochondrial cristae., Proceedings of the National Academy of Sciences of the United States of America, Volume 116, Number 32, pp. 15817-15822" ;
+                                                        <http://ssbd.riken.jp/ontology/has_paper_url> "https://www.pnas.org/doi/full/10.1073/pnas.1905924116" ;
+                                                        <http://ssbd.riken.jp/ontology/has_pubmed_id> "31337683" ;
+                                                        rdfs:label "ssbd-paper-163-31337683"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-paper-170-33972551
+<http://ssbd.riken.jp/ontology/ssbd-paper-170-33972551> rdf:type owl:NamedIndividual ,
+                                                                 <http://ssbd.riken.jp/ontology/SSBD_paper_information> ;
+                                                        <http://ssbd.riken.jp/ontology/has_doi> "https://doi.org/10.1038/s41467-021-22881-y" ;
+                                                        <http://ssbd.riken.jp/ontology/has_paper_information> "Ko Tsutsui, Hiroki Machida, Asako Nakagawa, Kyungmin Ahn, Ritsuko Morita, Kiyotoshi Sekiguchi, Jeffrey H Miner, Hironobu Fujiwara (2021) Mapping the molecular and structural specialization of the skin basement membrane for inter-tissue interactions., Nature communications, Volume 12, Number 1, pp. 2577" ;
+                                                        <http://ssbd.riken.jp/ontology/has_paper_url> "https://www.nature.com/articles/s41467-021-22881-y" ;
+                                                        <http://ssbd.riken.jp/ontology/has_pubmed_id> "33972551" ;
+                                                        rdfs:label "ssbd-paper-170-33972551"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-paper-199-34400683
+<http://ssbd.riken.jp/ontology/ssbd-paper-199-34400683> rdf:type owl:NamedIndividual ,
+                                                                 <http://ssbd.riken.jp/ontology/SSBD_paper_information> ;
+                                                        <http://ssbd.riken.jp/ontology/has_doi> "https://doi.org/10.1038/s41598-021-95930-7" ;
+                                                        <http://ssbd.riken.jp/ontology/has_paper_information> "Ichimura, T., Kakizuka, T., Horikawa, K. et al. Exploring rare cellular activity in more than one million cells by a transscale scope. Sci Rep 11, 16539 (2021)." ;
+                                                        <http://ssbd.riken.jp/ontology/has_paper_url> "https://www.nature.com/articles/s41598-021-95930-7" ;
+                                                        <http://ssbd.riken.jp/ontology/has_pubmed_id> "34400683" ;
+                                                        rdfs:label "ssbd-paper-199-34400683"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-paper-2-23172286
+<http://ssbd.riken.jp/ontology/ssbd-paper-2-23172286> rdf:type owl:NamedIndividual ,
+                                                               <http://ssbd.riken.jp/ontology/SSBD_paper_information> ;
+                                                      <http://ssbd.riken.jp/ontology/has_doi> "https://doi.org/10.1093/nar/gks1107" ;
+                                                      <http://ssbd.riken.jp/ontology/has_paper_information> """Kyoda, K. et al. “WDDD: Worm Developmental Dynamics Database.”
+Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gks1107""" ;
+                                                      <http://ssbd.riken.jp/ontology/has_pmc_id> "PMC3531189" ;
+                                                      <http://ssbd.riken.jp/ontology/has_pubmed_id> "23172286" ;
+                                                      rdfs:label "ssbd-paper-2-23172286"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-paper-48-24746791
+<http://ssbd.riken.jp/ontology/ssbd-paper-48-24746791> rdf:type owl:NamedIndividual ,
+                                                                <http://ssbd.riken.jp/ontology/SSBD_paper_information> ;
+                                                       <http://ssbd.riken.jp/ontology/has_doi> "https://doi.org/10.1016/j.cell.2014.03.042" ;
+                                                       <http://ssbd.riken.jp/ontology/has_paper_information> "Etsuo A Susaki, Kazuki Tainaka, Dimitri Perrin, Fumiaki Kishino, Takehiro Tawara, Tomonobu M Watanabe, Chihiro Yokoyama, Hirotaka Onoe, Megumi Eguchi, Shun Yamaguchi, Takaya Abe, Hiroshi Kiyonari, Yoshihiro Shimizu, Atsushi Miyawaki, Hideo Yokota, Hiroki R Ueda (2014) Whole-brain imaging with single-cell resolution using chemical cocktails and computational analysis., Cell, Volume 157, Number 3, pp. 726-39" ;
+                                                       <http://ssbd.riken.jp/ontology/has_paper_url> "https://www.sciencedirect.com/science/article/pii/S0092867414004188" ;
+                                                       <http://ssbd.riken.jp/ontology/has_pubmed_id> "24746791" ;
+                                                       rdfs:label "ssbd-paper-48-24746791"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-paper-98-27588418
+<http://ssbd.riken.jp/ontology/ssbd-paper-98-27588418> rdf:type owl:NamedIndividual ,
+                                                                <http://ssbd.riken.jp/ontology/SSBD_paper_information> ;
+                                                       <http://ssbd.riken.jp/ontology/has_doi> "https://doi.org/10.1371/journal.pone.0161336" ;
+                                                       <http://ssbd.riken.jp/ontology/has_paper_information> "Ritsuko Morita, Miho Kihira, Yousuke Nakatsu, Yohei Nomoto, Miho Ogawa, Kazumasa Ohashi, Kensaku Mizuno, Tetsuhiko Tachikawa, Yukitaka Ishimoto, Yoshihiro Morishita, Takashi Tsuji (2016) Coordination of Cellular Dynamics Contributes to Tooth Epithelium Deformations., PloS one, Volume 11, Number 9, pp. e0161336" ;
+                                                       <http://ssbd.riken.jp/ontology/has_paper_url> "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0161336" ;
+                                                       <http://ssbd.riken.jp/ontology/has_pubmed_id> "27588418" ;
+                                                       rdfs:label "ssbd-paper-98-27588418"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-person-141-3
+<http://ssbd.riken.jp/ontology/ssbd-person-141-3> rdf:type owl:NamedIndividual ,
+                                                           <http://ssbd.riken.jp/ontology/SSBD_person> ;
+                                                  <http://ssbd.riken.jp/ontology/has_department> "Department of Cellular Neurobiology" ;
+                                                  <http://ssbd.riken.jp/ontology/has_family_name> "Okabe" ;
+                                                  <http://ssbd.riken.jp/ontology/has_first_name> "Shigeo" ;
+                                                  <http://ssbd.riken.jp/ontology/has_orcid> "0000-0003-1216-8890" ;
+                                                  <http://ssbd.riken.jp/ontology/has_organization> "Universitoy of Tokyo" ;
+                                                  <http://ssbd.riken.jp/ontology/has_role> "Contact" ;
+                                                  rdfs:label "ssbd-person-141-3"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-person-163-6
+<http://ssbd.riken.jp/ontology/ssbd-person-163-6> rdf:type owl:NamedIndividual ,
+                                                           <http://ssbd.riken.jp/ontology/SSBD_person> ;
+                                                  <http://ssbd.riken.jp/ontology/has_department> "Institute of Transformative Bio-Molecules" ;
+                                                  <http://ssbd.riken.jp/ontology/has_email> "taki@itbm.nagoya-u.ac.jp" ;
+                                                  <http://ssbd.riken.jp/ontology/has_family_name> "Masayasu" ;
+                                                  <http://ssbd.riken.jp/ontology/has_first_name> "Taki" ;
+                                                  <http://ssbd.riken.jp/ontology/has_orcid> "0000-0003-2185-4593" ;
+                                                  <http://ssbd.riken.jp/ontology/has_organization> "Nagoya University" ;
+                                                  <http://ssbd.riken.jp/ontology/has_role> "Contact" ;
+                                                  rdfs:label "ssbd-person-163-6"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-person-163-7
+<http://ssbd.riken.jp/ontology/ssbd-person-163-7> rdf:type owl:NamedIndividual ,
+                                                           <http://ssbd.riken.jp/ontology/SSBD_person> ;
+                                                  <http://ssbd.riken.jp/ontology/has_department> "Laboratory for Cell Polarity Regulation" ;
+                                                  <http://ssbd.riken.jp/ontology/has_email> "y.okada@riken.jp" ;
+                                                  <http://ssbd.riken.jp/ontology/has_family_name> "Okada" ;
+                                                  <http://ssbd.riken.jp/ontology/has_first_name> "Yasushi" ;
+                                                  <http://ssbd.riken.jp/ontology/has_orcid> "0000-0003-2601-3689" ;
+                                                  <http://ssbd.riken.jp/ontology/has_organization> "RIKEN BDR" ;
+                                                  <http://ssbd.riken.jp/ontology/has_role> "Contact" ;
+                                                  rdfs:label "ssbd-person-163-7"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-person-163-8
+<http://ssbd.riken.jp/ontology/ssbd-person-163-8> rdf:type owl:NamedIndividual ,
+                                                           <http://ssbd.riken.jp/ontology/SSBD_person> ;
+                                                  <http://ssbd.riken.jp/ontology/has_department> "Institute of Transformative Bio-Molecules" ;
+                                                  <http://ssbd.riken.jp/ontology/has_email> "yamaguchi@chem.nagoya-u.ac.jp" ;
+                                                  <http://ssbd.riken.jp/ontology/has_family_name> "Yamaguchi" ;
+                                                  <http://ssbd.riken.jp/ontology/has_first_name> "Shigehiro" ;
+                                                  <http://ssbd.riken.jp/ontology/has_orcid> "0000-0003-0072-8969" ;
+                                                  <http://ssbd.riken.jp/ontology/has_organization> "Nagoya University" ;
+                                                  <http://ssbd.riken.jp/ontology/has_role> "Contact" ;
+                                                  rdfs:label "ssbd-person-163-8"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-person-170-4
+<http://ssbd.riken.jp/ontology/ssbd-person-170-4> rdf:type owl:NamedIndividual ,
+                                                           <http://ssbd.riken.jp/ontology/SSBD_person> ;
+                                                  <http://ssbd.riken.jp/ontology/has_department> "Laboratory for Tissue Microenvironment" ;
+                                                  <http://ssbd.riken.jp/ontology/has_email> "hironobu.fujiwara@riken.jp" ;
+                                                  <http://ssbd.riken.jp/ontology/has_family_name> "Fujiwara" ;
+                                                  <http://ssbd.riken.jp/ontology/has_first_name> "Hironobu" ;
+                                                  <http://ssbd.riken.jp/ontology/has_organization> "RIKEN BDR" ;
+                                                  <http://ssbd.riken.jp/ontology/has_role> "Contact" ;
+                                                  rdfs:label "ssbd-person-170-4"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-person-199-2
+<http://ssbd.riken.jp/ontology/ssbd-person-199-2> rdf:type owl:NamedIndividual ,
+                                                           <http://ssbd.riken.jp/ontology/SSBD_person> ;
+                                                  <http://ssbd.riken.jp/ontology/has_department> "SANKEN (The Institute of Scientific and Industrial Research)" ;
+                                                  <http://ssbd.riken.jp/ontology/has_email> "ng1@sanken.osaka-u.ac.jp" ;
+                                                  <http://ssbd.riken.jp/ontology/has_family_name> "Nagai" ;
+                                                  <http://ssbd.riken.jp/ontology/has_first_name> "Takeharu" ;
+                                                  <http://ssbd.riken.jp/ontology/has_organization> "Osaka University" ;
+                                                  <http://ssbd.riken.jp/ontology/has_role> "Contact" ;
+                                                  rdfs:label "ssbd-person-199-2"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-person-2-9
+<http://ssbd.riken.jp/ontology/ssbd-person-2-9> rdf:type owl:NamedIndividual ,
+                                                         <http://ssbd.riken.jp/ontology/SSBD_person> ;
+                                                <http://ssbd.riken.jp/ontology/has_address> "2-2-3 Minatojima-minamimachi, Chuo-ku, Kobe 650-0047, Japan" ;
+                                                <http://ssbd.riken.jp/ontology/has_department> "Laboratory for Developmental Dynamics" ;
+                                                <http://ssbd.riken.jp/ontology/has_email> "sonami@riken.jp" ;
+                                                <http://ssbd.riken.jp/ontology/has_family_name> "Onami" ;
+                                                <http://ssbd.riken.jp/ontology/has_first_name> "Shuichi" ;
+                                                <http://ssbd.riken.jp/ontology/has_orcid> "0000-0002-8255-1724" ;
+                                                <http://ssbd.riken.jp/ontology/has_organization> "RIKEN BDR" ;
+                                                <http://ssbd.riken.jp/ontology/has_role> "Contact" ;
+                                                <http://ssbd.riken.jp/ontology/has_url> "https://so.riken.jp" ;
+                                                rdfs:label "ssbd-person-2-9"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-person-48-1
+<http://ssbd.riken.jp/ontology/ssbd-person-48-1> rdf:type owl:NamedIndividual ,
+                                                          <http://ssbd.riken.jp/ontology/SSBD_person> ;
+                                                 <http://ssbd.riken.jp/ontology/has_department> "Laboratory for Synthetic Biology" ;
+                                                 <http://ssbd.riken.jp/ontology/has_email> "uedah-tky@umin.ac.jp" ;
+                                                 <http://ssbd.riken.jp/ontology/has_family_name> "Ueda" ;
+                                                 <http://ssbd.riken.jp/ontology/has_first_name> "Hiroki" ;
+                                                 <http://ssbd.riken.jp/ontology/has_middle_name> "R" ;
+                                                 <http://ssbd.riken.jp/ontology/has_orcid> "0000-0001-8342-9176" ;
+                                                 <http://ssbd.riken.jp/ontology/has_organization> "RIKEN QBiC" ;
+                                                 <http://ssbd.riken.jp/ontology/has_role> "Contact" ;
+                                                 rdfs:label "ssbd-person-48-1"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-person-98-5
+<http://ssbd.riken.jp/ontology/ssbd-person-98-5> rdf:type owl:NamedIndividual ,
+                                                          <http://ssbd.riken.jp/ontology/SSBD_person> ;
+                                                 <http://ssbd.riken.jp/ontology/has_department> "Laboratory for Organ Regeneration" ;
+                                                 <http://ssbd.riken.jp/ontology/has_family_name> "Tsuji" ;
+                                                 <http://ssbd.riken.jp/ontology/has_first_name> "Takashi" ;
+                                                 <http://ssbd.riken.jp/ontology/has_organization> "RIKEN BDR" ;
+                                                 <http://ssbd.riken.jp/ontology/has_role> "Contact" ;
+                                                 rdfs:label "ssbd-person-98-5"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-project-141
+<http://ssbd.riken.jp/ontology/ssbd-project-141> rdf:type owl:NamedIndividual ,
+                                                          <http://ssbd.riken.jp/ontology/SSBD_Project> ;
+                                                 <http://purl.obolibrary.org/obo/RO_0002234> <http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2a_FIB-SEM_spine_synapse> ,
+                                                                                             <http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3a_FIB-SEM_synapse> ;
+                                                 <http://ssbd.riken.jp/ontology/has_license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                 <http://ssbd.riken.jp/ontology/has_dataset_title> "FIB-SEM images of spine synapses morphology in spectrum disorder (ASD) model mice with human 15q11-13 chromosomal duplication (15q dup mice)" ;
+                                                 <http://ssbd.riken.jp/ontology/has_description> "FIB-SEM images of spine synapses morphology in spectrum disorder (ASD) model mice with human 15q11-13 chromosomal duplication (15q dup mice)" ;
+                                                 <http://ssbd.riken.jp/ontology/has_project_name> "141-Sato-CellMorphology" ;
+                                                 <http://ssbd.riken.jp/ontology/has_project_type> "Image datasets" ;
+                                                 <http://ssbd.riken.jp/ontology/has_project_url> "https://ssbd.riken.jp/database/project/141/" ;
+                                                 <http://ssbd.riken.jp/ontology/has_submission_date> "2019-11-20" ;
+                                                 rdfs:label "ssbd-project-141"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-project-163
+<http://ssbd.riken.jp/ontology/ssbd-project-163> rdf:type owl:NamedIndividual ,
+                                                          <http://ssbd.riken.jp/ontology/SSBD_Project> ;
+                                                 <http://ssbd.riken.jp/ontology/has_license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                 <http://ssbd.riken.jp/ontology/has_dataset_title> "Time-lapse STED imaging of mitochondrial dynamics in MitoPB Yellow-labeled cells" ;
+                                                 <http://ssbd.riken.jp/ontology/has_description> "Time-lapse STED imaging of mitochondrial dynamics in MitoPB Yellow-labeled cells" ;
+                                                 <http://ssbd.riken.jp/ontology/has_project_name> "163-Wang-MitochondrialDyn" ;
+                                                 <http://ssbd.riken.jp/ontology/has_project_type> "Image datasets" ;
+                                                 <http://ssbd.riken.jp/ontology/has_project_url> "https://ssbd.riken.jp/database/project/163/" ;
+                                                 <http://ssbd.riken.jp/ontology/has_submission_date> "2022-11-23" ;
+                                                 rdfs:label "ssbd-project-163"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-project-170
+<http://ssbd.riken.jp/ontology/ssbd-project-170> rdf:type owl:NamedIndividual ,
+                                                          <http://ssbd.riken.jp/ontology/SSBD_Project> ;
+                                                 <http://ssbd.riken.jp/ontology/has_license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                 <http://ssbd.riken.jp/ontology/has_dataset_title> "High-resolution three-dimensional images of the hook basement membrane in mouse dorsal skin." ;
+                                                 <http://ssbd.riken.jp/ontology/has_description> "High-resolution three-dimensional images of the hook basement membrane in mouse dorsal skin." ;
+                                                 <http://ssbd.riken.jp/ontology/has_project_name> "170-Tsutsui-HookBM" ;
+                                                 <http://ssbd.riken.jp/ontology/has_project_type> "Image datasets" ;
+                                                 <http://ssbd.riken.jp/ontology/has_project_url> "https://ssbd.riken.jp/database/project/170/" ;
+                                                 <http://ssbd.riken.jp/ontology/has_submission_date> "2022-03-31" ;
+                                                 rdfs:label "ssbd-project-170"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-project-199
+<http://ssbd.riken.jp/ontology/ssbd-project-199> rdf:type owl:NamedIndividual ,
+                                                          <http://ssbd.riken.jp/ontology/SSBD_Project> ;
+                                                 <http://purl.obolibrary.org/obo/RO_0002234> <http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig2_BrainSliceRGB> ,
+                                                                                             <http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig3_MDCKpostconfl> ;
+                                                 <http://ssbd.riken.jp/ontology/has_license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                 <http://ssbd.riken.jp/ontology/has_dataset_title> "Imaging data of centimeter-scale dynamics of multicellular systems observed with sub-cellular resolution." ;
+                                                 <http://ssbd.riken.jp/ontology/has_description> "Imaging data of centimeter-scale dynamics of multicellular systems observed with sub-cellular resolution." ;
+                                                 <http://ssbd.riken.jp/ontology/has_project_name> "199-Ichimura-MulticellularDyn" ;
+                                                 <http://ssbd.riken.jp/ontology/has_project_type> "Image datasets" ;
+                                                 <http://ssbd.riken.jp/ontology/has_project_url> "https://ssbd.riken.jp/database/project/199/" ;
+                                                 <http://ssbd.riken.jp/ontology/has_submission_date> "2021-09-23" ;
+                                                 rdfs:label "ssbd-project-199"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-project-2
+<http://ssbd.riken.jp/ontology/ssbd-project-2> rdf:type owl:NamedIndividual ,
+                                                        <http://ssbd.riken.jp/ontology/SSBD_Project> ;
+                                               <http://ssbd.riken.jp/ontology/has_license> <http://creativecommons.org/licenses/by-sa/4.0/> ;
+                                               <http://ssbd.riken.jp/ontology/has_dataset_title> "Worm developmental dynamics database project" ;
+                                               <http://ssbd.riken.jp/ontology/has_description> "This project provides a collection of quantitative nuclear division dynamics data from wild-type and RNAi-treated embryos." ;
+                                               <http://ssbd.riken.jp/ontology/has_open_date> "2013-09-02" ;
+                                               <http://ssbd.riken.jp/ontology/has_project_name> "2-Kyoda-WormEmbryoRNAi" ;
+                                               <http://ssbd.riken.jp/ontology/has_project_type> "Image datasets and Quantitative datasets" ;
+                                               <http://ssbd.riken.jp/ontology/has_project_url> "https://ssbd.riken.jp/database/project/2-Kyoda-WormEmbryoRNAi/" ;
+                                               <http://ssbd.riken.jp/ontology/has_release_date> "2013-09-02" ;
+                                               <http://ssbd.riken.jp/ontology/has_submission_date> "2013-09-02" ;
+                                               <http://ssbd.riken.jp/ontology/has_update_date> "2020-02-03" ;
+                                               rdfs:label "ssbd-project-2"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-project-48
+<http://ssbd.riken.jp/ontology/ssbd-project-48> rdf:type owl:NamedIndividual ,
+                                                         <http://ssbd.riken.jp/ontology/SSBD_Project> ;
+                                                <http://ssbd.riken.jp/ontology/has_license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                <http://ssbd.riken.jp/ontology/has_dataset_title> "Development of a whole-brain clearning and imaging method" ;
+                                                <http://ssbd.riken.jp/ontology/has_description> "Thie project performed comprehensive chemical screening to develop a whole-brain clearing and imaging method, termed CUBIC" ;
+                                                <http://ssbd.riken.jp/ontology/has_project_name> "48-Susaki-MouseBrainCUBIC" ;
+                                                <http://ssbd.riken.jp/ontology/has_project_type> "Image datasets" ;
+                                                <http://ssbd.riken.jp/ontology/has_project_url> "https://ssbd.riken.jp/database/project/48/" ;
+                                                <http://ssbd.riken.jp/ontology/has_submission_date> "2017-10-03" ;
+                                                <http://ssbd.riken.jp/ontology/has_update_date> "2018-11-15" ;
+                                                rdfs:label "ssbd-project-48"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-project-98
+<http://ssbd.riken.jp/ontology/ssbd-project-98> rdf:type owl:NamedIndividual ,
+                                                         <http://ssbd.riken.jp/ontology/SSBD_Project> ;
+                                                <http://ssbd.riken.jp/ontology/has_license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                <http://ssbd.riken.jp/ontology/has_dataset_title> "BDML quantitative informations and time-lapse confocal images of the epithelial tissue deformation in tooth development" ;
+                                                <http://ssbd.riken.jp/ontology/has_description> "BDML quantitative informations and time-lapse confocal images of the epithelial tissue deformation in tooth development" ;
+                                                <http://ssbd.riken.jp/ontology/has_project_name> "98-Morita-ToothEpiCellDyn" ;
+                                                <http://ssbd.riken.jp/ontology/has_project_type> "Image datasets and Quantitative datasets" ;
+                                                <http://ssbd.riken.jp/ontology/has_project_url> "https://ssbd.riken.jp/database/project/98/" ;
+                                                <http://ssbd.riken.jp/ontology/has_submission_date> "2019-11-20" ;
+                                                rdfs:label "ssbd-project-98"@en .
+
+
+###  https://creativecommons.org/licenses/by/4.0/
+<https://creativecommons.org/licenses/by/4.0/> rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

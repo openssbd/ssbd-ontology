@@ -1,0 +1,405 @@
+@prefix : <http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-120#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ssbd.riken.jp/ontology/genetic/> .
+
+<http://ssbd.riken.jp/ontology/genetic/> rdf:type owl:Ontology ;
+                                          owl:versionIRI <http://ssbd.riken.jp/ontology/genetic/1.0.0> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://ssbd.riken.jp/ontology/has_tag
+<http://ssbd.riken.jp/ontology/has_tag> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://ssbd.riken.jp/ontology/has_gene_name
+<http://ssbd.riken.jp/ontology/has_gene_name> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_method
+<http://ssbd.riken.jp/ontology/has_method> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_method_uri
+<http://ssbd.riken.jp/ontology/has_method_uri> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_protein_name
+<http://ssbd.riken.jp/ontology/has_protein_name> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_tag2
+<http://ssbd.riken.jp/ontology/has_tag2> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_tag_uri
+<http://ssbd.riken.jp/ontology/has_tag_uri> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ssbd.riken.jp/ontology/SSBD_genetic_information
+<http://ssbd.riken.jp/ontology/SSBD_genetic_information> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.obolibrary.org/obo/FBbi_00000082
+<http://purl.obolibrary.org/obo/FBbi_00000082> rdf:type owl:NamedIndividual .
+
+
+###  http://purl.obolibrary.org/obo/FBbi_00000439
+<http://purl.obolibrary.org/obo/FBbi_00000439> rdf:type owl:NamedIndividual .
+
+
+###  http://purl.obolibrary.org/obo/FBbi_00000483
+<http://purl.obolibrary.org/obo/FBbi_00000483> rdf:type owl:NamedIndividual .
+
+
+###  http://purl.obolibrary.org/obo/FBbi_00000495
+<http://purl.obolibrary.org/obo/FBbi_00000495> rdf:type owl:NamedIndividual .
+
+
+###  http://purl.obolibrary.org/obo/FBbi_00000525
+<http://purl.obolibrary.org/obo/FBbi_00000525> rdf:type owl:NamedIndividual .
+
+
+###  http://purl.obolibrary.org/obo/FBbi_FBbi_00000477
+<http://purl.obolibrary.org/obo/FBbi_FBbi_00000477> rdf:type owl:NamedIndividual .
+
+
+###  http://purl.obolibrary.org/obo/FBbi_FBbi_00000518
+<http://purl.obolibrary.org/obo/FBbi_FBbi_00000518> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-199-Fig2_BrainSliceRGB
+<http://ssbd.riken.jp/ontology/ssbd-genetic-199-Fig2_BrainSliceRGB> rdf:type owl:NamedIndividual ,
+                                                                             <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                    <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_00000082> ,
+                                                                                                            <http://purl.obolibrary.org/obo/FBbi_FBbi_00000477> ,
+                                                                                                            <http://purl.obolibrary.org/obo/FBbi_FBbi_00000518> ;
+                                                                    rdfs:label "ssbd-genetic-199-Fig2_BrainSliceRGB"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-199-Fig4_HeLaYC360_10fps
+<http://ssbd.riken.jp/ontology/ssbd-genetic-199-Fig4_HeLaYC360_10fps> rdf:type owl:NamedIndividual ,
+                                                                               <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                      <http://ssbd.riken.jp/ontology/has_tag2> "Yellow Cameleon 3.60" ;
+                                                                      rdfs:label "ssbd-genetic-199-Fig4_HeLaYC360_10fps"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-199-Fig4_HeLaYC360_5spf
+<http://ssbd.riken.jp/ontology/ssbd-genetic-199-Fig4_HeLaYC360_5spf> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag2> "Yellow Cameleon 3.60" ;
+                                                                     rdfs:label "ssbd-genetic-199-Fig4_HeLaYC360_5spf"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-199-Fig5-6_Flamindo2
+<http://ssbd.riken.jp/ontology/ssbd-genetic-199-Fig5-6_Flamindo2> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_tag2> "Flamindo2" ;
+                                                                  rdfs:label "ssbd-genetic-199-Fig5-6_Flamindo2"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-199-Fig5-6_RFP
+<http://ssbd.riken.jp/ontology/ssbd-genetic-199-Fig5-6_RFP> rdf:type owl:NamedIndividual ,
+                                                                     <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                            <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_00000483> ;
+                                                            rdfs:label "ssbd-genetic-199-Fig5-6_RFP"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-2-RNAi_B0336.10_040518_01
+<http://ssbd.riken.jp/ontology/ssbd-genetic-2-RNAi_B0336.10_040518_01> rdf:type owl:NamedIndividual ,
+                                                                                <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                       <http://ssbd.riken.jp/ontology/has_gene_name> "rpl-23" ;
+                                                                       <http://ssbd.riken.jp/ontology/has_method> "RNAi experiment" ;
+                                                                       <http://ssbd.riken.jp/ontology/has_method_uri> "http://edamontology.org/topic_3523" ;
+                                                                       rdfs:label "ssbd-genetic-2-RNAi_B0336.10_040518_01"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-2-RNAi_F58B6.3_080401_01
+<http://ssbd.riken.jp/ontology/ssbd-genetic-2-RNAi_F58B6.3_080401_01> rdf:type owl:NamedIndividual ,
+                                                                               <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                      <http://ssbd.riken.jp/ontology/has_gene_name> "par-2" ;
+                                                                      <http://ssbd.riken.jp/ontology/has_method> "RNAi experiment" ;
+                                                                      <http://ssbd.riken.jp/ontology/has_method_uri> "http://edamontology.org/topic_3523" ;
+                                                                      rdfs:label "ssbd-genetic-2-RNAi_F58B6.3_080401_01"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig3A_R26-pCAG-nuc-3xmKate2
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig3A_R26-pCAG-nuc-3xmKate2> rdf:type owl:NamedIndividual ,
+                                                                                     <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                            <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_00000495> ;
+                                                                            <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000495" ;
+                                                                            rdfs:label "ssbd-genetic-48-Fig3A_R26-pCAG-nuc-3xmKate2"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig3C_H2B-mCherry
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig3C_H2B-mCherry> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_00000525> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_protein_name> "H2B" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000525" ;
+                                                                  rdfs:label "ssbd-genetic-48-Fig3C_H2B-mCherry"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig3D_H2B-EGFP
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig3D_H2B-EGFP> rdf:type owl:NamedIndividual ,
+                                                                        <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                               <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_00000082> ;
+                                                               <http://ssbd.riken.jp/ontology/has_protein_name> "H2B" ;
+                                                               <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000082" ;
+                                                               rdfs:label "ssbd-genetic-48-Fig3D_H2B-EGFP"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig3E_Thy1-YFP-H
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig3E_Thy1-YFP-H> rdf:type owl:NamedIndividual ,
+                                                                          <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                 <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_00000439> ;
+                                                                 <http://ssbd.riken.jp/ontology/has_gene_name> "Thy1" ;
+                                                                 <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000439" ;
+                                                                 rdfs:label "ssbd-genetic-48-Fig3E_Thy1-YFP-H"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4B_Series055
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4B_Series055> rdf:type owl:NamedIndividual ,
+                                                                         <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_00000082> ;
+                                                                <http://ssbd.riken.jp/ontology/has_protein_name> "H2B" ;
+                                                                <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000082" ;
+                                                                rdfs:label "ssbd-genetic-48-Fig4B_Series055"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4B_Series072
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4B_Series072> rdf:type owl:NamedIndividual ,
+                                                                         <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_00000082> ;
+                                                                <http://ssbd.riken.jp/ontology/has_protein_name> "H2B" ;
+                                                                <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000082" ;
+                                                                rdfs:label "ssbd-genetic-48-Fig4B_Series072"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4C_CryDKO-CT12
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4C_CryDKO-CT12> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_00000082> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_gene_name> "Cry1" ,
+                                                                                                                "Cry2" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_method> "gene knock out" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_method_uri> "http://purl.obolibrary.org/obo/OBI_0001148" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_protein_name> "H2B" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000082" ;
+                                                                  rdfs:label "ssbd-genetic-48-Fig4C_CryDKO-CT12"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4C_CryDKO-CT18
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4C_CryDKO-CT18> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_00000082> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_gene_name> "Cry1" ,
+                                                                                                                "Cry2" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_method> "gene knock out" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_method_uri> "http://purl.obolibrary.org/obo/OBI_0001148" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_protein_name> "H2B" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000082" ;
+                                                                  rdfs:label "ssbd-genetic-48-Fig4C_CryDKO-CT18"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4C_CryDKO-CT24
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4C_CryDKO-CT24> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_00000082> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_gene_name> "Cry1" ,
+                                                                                                                "Cry2" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_method> "gene knock out" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_method_uri> "http://purl.obolibrary.org/obo/OBI_0001148" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_protein_name> "H2B" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000082" ;
+                                                                  rdfs:label "ssbd-genetic-48-Fig4C_CryDKO-CT24"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4C_CryDKO-CT30
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4C_CryDKO-CT30> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_00000082> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_gene_name> "Cry1" ,
+                                                                                                                "Cry2" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_method> "gene knock out" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_method_uri> "http://purl.obolibrary.org/obo/OBI_0001148" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_protein_name> "H2B" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000082" ;
+                                                                  rdfs:label "ssbd-genetic-48-Fig4C_CryDKO-CT30"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4C_WT-CT12
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4C_WT-CT12> rdf:type owl:NamedIndividual ,
+                                                                       <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                              <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_00000082> ;
+                                                              <http://ssbd.riken.jp/ontology/has_protein_name> "H2B" ;
+                                                              <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000082" ;
+                                                              rdfs:label "ssbd-genetic-48-Fig4C_WT-CT12"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4C_WT-CT18
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4C_WT-CT18> rdf:type owl:NamedIndividual ,
+                                                                       <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                              <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_00000082> ;
+                                                              <http://ssbd.riken.jp/ontology/has_protein_name> "H2B" ;
+                                                              <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000082" ;
+                                                              rdfs:label "ssbd-genetic-48-Fig4C_WT-CT18"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4C_WT-CT24
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4C_WT-CT24> rdf:type owl:NamedIndividual ,
+                                                                       <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                              <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_00000082> ;
+                                                              <http://ssbd.riken.jp/ontology/has_protein_name> "H2B" ;
+                                                              <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000082" ;
+                                                              rdfs:label "ssbd-genetic-48-Fig4C_WT-CT24"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4C_WT-CT30
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig4C_WT-CT30> rdf:type owl:NamedIndividual ,
+                                                                       <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                              <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_00000082> ;
+                                                              <http://ssbd.riken.jp/ontology/has_protein_name> "H2B" ;
+                                                              <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000082" ;
+                                                              rdfs:label "ssbd-genetic-48-Fig4C_WT-CT30"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig5_1310045_21-46-25
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig5_1310045_21-46-25> rdf:type owl:NamedIndividual ,
+                                                                               <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                      rdfs:label "ssbd-genetic-48-Fig5_1310045_21-46-25"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131118_10-09-33
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131118_10-09-33> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_FBbi_00000477> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_gene_name> "Arc" ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000477" ;
+                                                                     rdfs:label "ssbd-genetic-48-Fig6_131118_10-09-33"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131118_10-50-37
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131118_10-50-37> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_FBbi_00000477> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_gene_name> "Arc" ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000477" ;
+                                                                     rdfs:label "ssbd-genetic-48-Fig6_131118_10-50-37"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131118_12-51-39
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131118_12-51-39> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_FBbi_00000477> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_gene_name> "Arc" ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000477" ;
+                                                                     rdfs:label "ssbd-genetic-48-Fig6_131118_12-51-39"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131118_13-39-52
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131118_13-39-52> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_FBbi_00000477> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_gene_name> "Arc" ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000477" ;
+                                                                     rdfs:label "ssbd-genetic-48-Fig6_131118_13-39-52"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131118_20-29-52
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131118_20-29-52> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_FBbi_00000477> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_gene_name> "Arc" ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000477" ;
+                                                                     rdfs:label "ssbd-genetic-48-Fig6_131118_20-29-52"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131118_20-58-17
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131118_20-58-17> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_FBbi_00000477> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_gene_name> "Arc" ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000477" ;
+                                                                     rdfs:label "ssbd-genetic-48-Fig6_131118_20-58-17"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131118_22-31-24
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131118_22-31-24> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_FBbi_00000477> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_gene_name> "Arc" ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000477" ;
+                                                                     rdfs:label "ssbd-genetic-48-Fig6_131118_22-31-24"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131119_08-22-10
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131119_08-22-10> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_FBbi_00000477> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_gene_name> "Arc" ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000477" ;
+                                                                     rdfs:label "ssbd-genetic-48-Fig6_131119_08-22-10"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131119_09-13-05
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131119_09-13-05> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_FBbi_00000477> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_gene_name> "Arc" ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000477" ;
+                                                                     rdfs:label "ssbd-genetic-48-Fig6_131119_09-13-05"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131119_09-46-00
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131119_09-46-00> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_FBbi_00000477> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_gene_name> "Arc" ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000477" ;
+                                                                     rdfs:label "ssbd-genetic-48-Fig6_131119_09-46-00"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131119_11-38-20
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131119_11-38-20> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_FBbi_00000477> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_gene_name> "Arc" ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000477" ;
+                                                                     rdfs:label "ssbd-genetic-48-Fig6_131119_11-38-20"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131119_12-13-00
+<http://ssbd.riken.jp/ontology/ssbd-genetic-48-Fig6_131119_12-13-00> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag> <http://purl.obolibrary.org/obo/FBbi_FBbi_00000477> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_gene_name> "Arc" ;
+                                                                     <http://ssbd.riken.jp/ontology/has_tag_uri> "http://purl.obolibrary.org/obo/FBbi_00000477" ;
+                                                                     rdfs:label "ssbd-genetic-48-Fig6_131119_12-13-00"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-genetic-98-fig2ab_trajectory_epithelialcell
+<http://ssbd.riken.jp/ontology/ssbd-genetic-98-fig2ab_trajectory_epithelialcell> rdf:type owl:NamedIndividual ,
+                                                                                          <http://ssbd.riken.jp/ontology/SSBD_genetic_information> ;
+                                                                                 <http://ssbd.riken.jp/ontology/has_tag2> "Fucci" ;
+                                                                                 rdfs:label "ssbd-genetic-98-fig2ab_trajectory_epithelialcell"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

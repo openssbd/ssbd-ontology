@@ -1,0 +1,320 @@
+@prefix : <http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-127#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ssbd.riken.jp/ontology/reagent/> .
+
+<http://ssbd.riken.jp/ontology/reagent/> rdf:type owl:Ontology ;
+                                          owl:versionIRI <http://ssbd.riken.jp/ontology/reagent/1.0.0> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://ssbd.riken.jp/ontology/has_concentration_unit
+<http://ssbd.riken.jp/ontology/has_concentration_unit> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://ssbd.riken.jp/ontology/has_concentration_value
+<http://ssbd.riken.jp/ontology/has_concentration_value> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_fold_dilution
+<http://ssbd.riken.jp/ontology/has_fold_dilution> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_reagent_name
+<http://ssbd.riken.jp/ontology/has_reagent_name> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_reagent_term
+<http://ssbd.riken.jp/ontology/has_reagent_term> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ssbd.riken.jp/ontology/SSBD_reagent_information
+<http://ssbd.riken.jp/ontology/SSBD_reagent_information> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.obolibrary.org/obo/UO_0000064
+<http://purl.obolibrary.org/obo/UO_0000064> rdf:type owl:NamedIndividual .
+
+
+###  http://purl.obolibrary.org/obo/UO_0000065
+<http://purl.obolibrary.org/obo/UO_0000065> rdf:type owl:NamedIndividual .
+
+
+###  http://purl.obolibrary.org/obo/UO_0000274
+<http://purl.obolibrary.org/obo/UO_0000274> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig2A_STED_mitochondria
+<http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig2A_STED_mitochondria> rdf:type owl:NamedIndividual ,
+                                                                                  <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                         <http://ssbd.riken.jp/ontology/has_concentration_unit> <http://purl.obolibrary.org/obo/UO_0000065> ;
+                                                                         <http://ssbd.riken.jp/ontology/has_concentration_value> "500" ;
+                                                                         <http://ssbd.riken.jp/ontology/has_reagent_name> "MitoPB Yellow" ;
+                                                                         rdfs:label "ssbd-reagent-163-Fig2A_STED_mitochondria"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig2B_STED_mitochondria_after
+<http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig2B_STED_mitochondria_after> rdf:type owl:NamedIndividual ,
+                                                                                        <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                               <http://ssbd.riken.jp/ontology/has_concentration_unit> <http://purl.obolibrary.org/obo/UO_0000065> ;
+                                                                               <http://ssbd.riken.jp/ontology/has_concentration_value> "500" ;
+                                                                               <http://ssbd.riken.jp/ontology/has_reagent_name> "MitoPB Yellow" ;
+                                                                               rdfs:label "ssbd-reagent-163-Fig2B_STED_mitochondria_after"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig2B_STED_mitochondria_before
+<http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig2B_STED_mitochondria_before> rdf:type owl:NamedIndividual ,
+                                                                                         <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                                <http://ssbd.riken.jp/ontology/has_concentration_unit> <http://purl.obolibrary.org/obo/UO_0000065> ;
+                                                                                <http://ssbd.riken.jp/ontology/has_concentration_value> "500" ;
+                                                                                <http://ssbd.riken.jp/ontology/has_reagent_name> "MitoPB Yellow" ;
+                                                                                rdfs:label "ssbd-reagent-163-Fig2B_STED_mitochondria_before"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig3A_STED_mitochondial_DMEM
+<http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig3A_STED_mitochondial_DMEM> rdf:type owl:NamedIndividual ,
+                                                                                       <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                              <http://ssbd.riken.jp/ontology/has_concentration_unit> <http://purl.obolibrary.org/obo/UO_0000065> ;
+                                                                              <http://ssbd.riken.jp/ontology/has_concentration_value> "500" ;
+                                                                              <http://ssbd.riken.jp/ontology/has_reagent_name> "MitoPB Yellow" ;
+                                                                              rdfs:label "ssbd-reagent-163-Fig3A_STED_mitochondial_DMEM"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig3_STED_mitochondria_inner_outer
+<http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig3_STED_mitochondria_inner_outer> rdf:type owl:NamedIndividual ,
+                                                                                             <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                                    <http://ssbd.riken.jp/ontology/has_concentration_unit> <http://purl.obolibrary.org/obo/UO_0000065> ;
+                                                                                    <http://ssbd.riken.jp/ontology/has_concentration_value> "100" ,
+                                                                                                                                            "500" ;
+                                                                                    <http://ssbd.riken.jp/ontology/has_reagent_name> "MitoPB Yellow" ,
+                                                                                                                                     "TOMM20-TMR" ;
+                                                                                    rdfs:label "ssbd-reagent-163-Fig3_STED_mitochondria_inner_outer"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig4A_STED_mitochondial_DMEM
+<http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig4A_STED_mitochondial_DMEM> rdf:type owl:NamedIndividual ,
+                                                                                       <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                              <http://ssbd.riken.jp/ontology/has_reagent_name> "Dulbecco's modified Eagle medium" ;
+                                                                              <http://ssbd.riken.jp/ontology/has_reagent_term> "http://purl.obolibrary.org/obo/OBI_0000918" ;
+                                                                              rdfs:label "ssbd-reagent-163-Fig4A_STED_mitochondial_DMEM"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig4A_STED_mitochondial_HBSS12h
+<http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig4A_STED_mitochondial_HBSS12h> rdf:type owl:NamedIndividual ,
+                                                                                          <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                                 <http://ssbd.riken.jp/ontology/has_concentration_unit> <http://purl.obolibrary.org/obo/UO_0000064> ,
+                                                                                                                                        <http://purl.obolibrary.org/obo/UO_0000065> ;
+                                                                                 <http://ssbd.riken.jp/ontology/has_concentration_value> "10" ,
+                                                                                                                                         "500" ;
+                                                                                 <http://ssbd.riken.jp/ontology/has_reagent_name> "Hanks’ balanced salt solution" ,
+                                                                                                                                  "MitoPB Yellow" ;
+                                                                                 rdfs:label "ssbd-reagent-163-Fig4A_STED_mitochondial_HBSS12h"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig4A_STED_mitochondial_HBSS3h
+<http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig4A_STED_mitochondial_HBSS3h> rdf:type owl:NamedIndividual ,
+                                                                                         <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                                <http://ssbd.riken.jp/ontology/has_concentration_unit> <http://purl.obolibrary.org/obo/UO_0000064> ,
+                                                                                                                                       <http://purl.obolibrary.org/obo/UO_0000065> ;
+                                                                                <http://ssbd.riken.jp/ontology/has_concentration_value> "10" ,
+                                                                                                                                        "500" ;
+                                                                                <http://ssbd.riken.jp/ontology/has_reagent_name> "Hanks’ balanced salt solution" ,
+                                                                                                                                 "MitoPB Yellow" ;
+                                                                                <http://ssbd.riken.jp/ontology/has_reagent_term> "http://purl.obolibrary.org/obo/CHMO_0002438" ;
+                                                                                rdfs:label "ssbd-reagent-163-Fig4A_STED_mitochondial_HBSS3h"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig4C_STED_cristae_HeLa
+<http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig4C_STED_cristae_HeLa> rdf:type owl:NamedIndividual ,
+                                                                                  <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                         <http://ssbd.riken.jp/ontology/has_concentration_unit> <http://purl.obolibrary.org/obo/UO_0000064> ,
+                                                                                                                                <http://purl.obolibrary.org/obo/UO_0000065> ;
+                                                                         <http://ssbd.riken.jp/ontology/has_concentration_value> "10" ,
+                                                                                                                                 "500" ;
+                                                                         <http://ssbd.riken.jp/ontology/has_reagent_name> "MitoPB Yellow" ,
+                                                                                                                          "zalcitabine" ;
+                                                                         <http://ssbd.riken.jp/ontology/has_reagent_term> "http://purl.obolibrary.org/obo/CHEBI_10101" ;
+                                                                         rdfs:label "ssbd-reagent-163-Fig4C_STED_cristae_HeLa"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig5AC_Mitochondrial_MitoPB
+<http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig5AC_Mitochondrial_MitoPB> rdf:type owl:NamedIndividual ,
+                                                                                      <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                             <http://ssbd.riken.jp/ontology/has_concentration_unit> <http://purl.obolibrary.org/obo/UO_0000065> ;
+                                                                             <http://ssbd.riken.jp/ontology/has_concentration_value> "500" ;
+                                                                             <http://ssbd.riken.jp/ontology/has_reagent_name> "MitoPB Yellow" ;
+                                                                             rdfs:label "ssbd-reagent-163-Fig5AC_Mitochondrial_MitoPB"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig5B_Mitochondrial_MitoPB
+<http://ssbd.riken.jp/ontology/ssbd-reagent-163-Fig5B_Mitochondrial_MitoPB> rdf:type owl:NamedIndividual ,
+                                                                                     <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                            <http://ssbd.riken.jp/ontology/has_concentration_unit> <http://purl.obolibrary.org/obo/UO_0000065> ;
+                                                                            <http://ssbd.riken.jp/ontology/has_concentration_value> "500" ;
+                                                                            <http://ssbd.riken.jp/ontology/has_reagent_name> "MitoPB Yellow" ;
+                                                                            rdfs:label "ssbd-reagent-163-Fig5B_Mitochondrial_MitoPB"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-170-Airyscan_hook_BM
+<http://ssbd.riken.jp/ontology/ssbd-reagent-170-Airyscan_hook_BM> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_reagent_name> "4',6-diamidino-2-phenylindole (DAPI)" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_reagent_term> "http://purl.obolibrary.org/obo/FBbi_00000056" ;
+                                                                  rdfs:label "ssbd-reagent-170-Airyscan_hook_BM"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-199-Fig2_BrainSliceRGB
+<http://ssbd.riken.jp/ontology/ssbd-reagent-199-Fig2_BrainSliceRGB> rdf:type owl:NamedIndividual ,
+                                                                             <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                    <http://ssbd.riken.jp/ontology/has_concentration_unit> <http://purl.obolibrary.org/obo/UO_0000274> ;
+                                                                    <http://ssbd.riken.jp/ontology/has_concentration_value> "1" ;
+                                                                    <http://ssbd.riken.jp/ontology/has_reagent_name> "Hoechst 33342" ;
+                                                                    <http://ssbd.riken.jp/ontology/has_reagent_term> "http://purl.obolibrary.org/obo/FBbi_00000052" ;
+                                                                    rdfs:label "ssbd-reagent-199-Fig2_BrainSliceRGB"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-199-Fig3_MDCKpostconfl
+<http://ssbd.riken.jp/ontology/ssbd-reagent-199-Fig3_MDCKpostconfl> rdf:type owl:NamedIndividual ,
+                                                                             <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                    <http://ssbd.riken.jp/ontology/has_concentration_unit> <http://purl.obolibrary.org/obo/UO_0000064> ;
+                                                                    <http://ssbd.riken.jp/ontology/has_concentration_value> "5" ;
+                                                                    <http://ssbd.riken.jp/ontology/has_reagent_name> "NucleoSeeing" ;
+                                                                    rdfs:label "ssbd-reagent-199-Fig3_MDCKpostconfl"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-199-Fig3_MDCKpreconfl
+<http://ssbd.riken.jp/ontology/ssbd-reagent-199-Fig3_MDCKpreconfl> rdf:type owl:NamedIndividual ,
+                                                                            <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                   <http://ssbd.riken.jp/ontology/has_concentration_unit> <http://purl.obolibrary.org/obo/UO_0000064> ;
+                                                                   <http://ssbd.riken.jp/ontology/has_concentration_value> "5" ;
+                                                                   <http://ssbd.riken.jp/ontology/has_reagent_name> "NucleoSeeing" ;
+                                                                   rdfs:label "ssbd-reagent-199-Fig3_MDCKpreconfl"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4B_Series055
+<http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4B_Series055> rdf:type owl:NamedIndividual ,
+                                                                         <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                <http://ssbd.riken.jp/ontology/has_fold_dilution> "100.0" ,
+                                                                                                                  "300.0" ;
+                                                                <http://ssbd.riken.jp/ontology/has_reagent_name> "goat anti-Copeptin" ,
+                                                                                                                 "rabbit anti-VIP" ;
+                                                                rdfs:label "ssbd-reagent-48-Fig4B_Series055"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4B_Series072
+<http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4B_Series072> rdf:type owl:NamedIndividual ,
+                                                                         <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                <http://ssbd.riken.jp/ontology/has_fold_dilution> "100.0" ,
+                                                                                                                  "300.0" ;
+                                                                <http://ssbd.riken.jp/ontology/has_reagent_name> "goat anti-Copeptin" ,
+                                                                                                                 "rabbit anti-VIP" ;
+                                                                rdfs:label "ssbd-reagent-48-Fig4B_Series072"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4C_CryDKO-CT12
+<http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4C_CryDKO-CT12> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_fold_dilution> "100.0" ,
+                                                                                                                    "300.0" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_reagent_name> "goat anti-Copeptin" ,
+                                                                                                                   "rabbit anti-VIP" ;
+                                                                  rdfs:label "ssbd-reagent-48-Fig4C_CryDKO-CT12"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4C_CryDKO-CT18
+<http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4C_CryDKO-CT18> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_fold_dilution> "100.0" ,
+                                                                                                                    "300.0" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_reagent_name> "goat anti-Copeptin" ,
+                                                                                                                   "rabbit anti-VIP" ;
+                                                                  rdfs:label "ssbd-reagent-48-Fig4C_CryDKO-CT18"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4C_CryDKO-CT24
+<http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4C_CryDKO-CT24> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_fold_dilution> "100.0" ,
+                                                                                                                    "300.0" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_reagent_name> "goat anti-Copeptin" ,
+                                                                                                                   "rabbit anti-VIP" ;
+                                                                  rdfs:label "ssbd-reagent-48-Fig4C_CryDKO-CT24"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4C_CryDKO-CT30
+<http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4C_CryDKO-CT30> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_fold_dilution> "100.0" ,
+                                                                                                                    "300.0" ;
+                                                                  <http://ssbd.riken.jp/ontology/has_reagent_name> "goat anti-Copeptin" ,
+                                                                                                                   "rabbit anti-VIP" ;
+                                                                  rdfs:label "ssbd-reagent-48-Fig4C_CryDKO-CT30"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4C_WT-CT12
+<http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4C_WT-CT12> rdf:type owl:NamedIndividual ,
+                                                                       <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                              <http://ssbd.riken.jp/ontology/has_fold_dilution> "100.0" ,
+                                                                                                                "300.0" ;
+                                                              <http://ssbd.riken.jp/ontology/has_reagent_name> "goat anti-Copeptin" ,
+                                                                                                               "rabbit anti-VIP" ;
+                                                              rdfs:label "ssbd-reagent-48-Fig4C_WT-CT12"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4C_WT-CT18
+<http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4C_WT-CT18> rdf:type owl:NamedIndividual ,
+                                                                       <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                              <http://ssbd.riken.jp/ontology/has_fold_dilution> "100.0" ,
+                                                                                                                "300.0" ;
+                                                              <http://ssbd.riken.jp/ontology/has_reagent_name> "goat anti-Copeptin" ,
+                                                                                                               "rabbit anti-VIP" ;
+                                                              rdfs:label "ssbd-reagent-48-Fig4C_WT-CT18"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4C_WT-CT24
+<http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4C_WT-CT24> rdf:type owl:NamedIndividual ,
+                                                                       <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                              <http://ssbd.riken.jp/ontology/has_fold_dilution> "100.0" ,
+                                                                                                                "300.0" ;
+                                                              <http://ssbd.riken.jp/ontology/has_reagent_name> "goat anti-Copeptin" ,
+                                                                                                               "rabbit anti-VIP" ;
+                                                              rdfs:label "ssbd-reagent-48-Fig4C_WT-CT24"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4C_WT-CT30
+<http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig4C_WT-CT30> rdf:type owl:NamedIndividual ,
+                                                                       <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                              <http://ssbd.riken.jp/ontology/has_fold_dilution> "100.0" ,
+                                                                                                                "300.0" ;
+                                                              <http://ssbd.riken.jp/ontology/has_reagent_name> "goat anti-Copeptin" ,
+                                                                                                               "rabbit anti-VIP" ;
+                                                              rdfs:label "ssbd-reagent-48-Fig4C_WT-CT30"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig5_1310045_21-46-25
+<http://ssbd.riken.jp/ontology/ssbd-reagent-48-Fig5_1310045_21-46-25> rdf:type owl:NamedIndividual ,
+                                                                               <http://ssbd.riken.jp/ontology/SSBD_reagent_information> ;
+                                                                      <http://ssbd.riken.jp/ontology/has_concentration_unit> <http://purl.obolibrary.org/obo/UO_0000064> ;
+                                                                      <http://ssbd.riken.jp/ontology/has_concentration_value> "0.25-2.0" ;
+                                                                      <http://ssbd.riken.jp/ontology/has_reagent_name> "SYTO 16" ;
+                                                                      rdfs:label "ssbd-reagent-48-Fig5_1310045_21-46-25"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

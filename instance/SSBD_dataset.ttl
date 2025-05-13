@@ -1,0 +1,749 @@
+@prefix : <http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-118#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ssbd.riken.jp/ontology/dataset/> .
+
+<http://ssbd.riken.jp/ontology/dataset/> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/RO_0002180
+<http://purl.obolibrary.org/obo/RO_0002180> rdf:type owl:ObjectProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_biosample_information
+<http://ssbd.riken.jp/ontology/has_biosample_information> rdf:type owl:ObjectProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_dimension_information
+<http://ssbd.riken.jp/ontology/has_dimension_information> rdf:type owl:ObjectProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_imaging_method
+<http://ssbd.riken.jp/ontology/has_imaging_method> rdf:type owl:ObjectProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_instrument_information
+<http://ssbd.riken.jp/ontology/has_instrument_information> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://ssbd.riken.jp/ontology/has_dataset_title
+<http://ssbd.riken.jp/ontology/has_dataset_title> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_figure_number
+<http://ssbd.riken.jp/ontology/has_figure_number> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_file_format
+<http://ssbd.riken.jp/ontology/has_file_format> rdf:type owl:DatatypeProperty .
+
+
+###  http://ssbd.riken.jp/ontology/has_folder_name
+<http://ssbd.riken.jp/ontology/has_folder_name> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ssbd.riken.jp/ontology/SSBD_dataset
+<http://ssbd.riken.jp/ontology/SSBD_dataset> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://ssbd.riken.jp/ontology/ssbd-biosample-141-Fig2a_FIB-SEM_spine_synapse
+<http://ssbd.riken.jp/ontology/ssbd-biosample-141-Fig2a_FIB-SEM_spine_synapse> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-biosample-141-Fig3a_FIB-SEM_synapse
+<http://ssbd.riken.jp/ontology/ssbd-biosample-141-Fig3a_FIB-SEM_synapse> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-biosample-199-Fig2_BrainSliceRGB
+<http://ssbd.riken.jp/ontology/ssbd-biosample-199-Fig2_BrainSliceRGB> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig1a_FIB-SEM_somatosensory
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig1a_FIB-SEM_somatosensory> rdf:type owl:NamedIndividual ,
+                                                                                      <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                             <http://ssbd.riken.jp/ontology/has_biosample_information> <http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig1a_FIB-SEM_somatosensory> ;
+                                                                             <http://ssbd.riken.jp/ontology/has_dataset_title> "Single FIB-SEM image of the somatosensory cortex in wild-type (C57BL/6J) mice"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 1a"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_file_format> "tif"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_folder_name> "Fig1a_FIB-SEM_somatosensory"^^xsd:string ;
+                                                                             rdfs:label "ssbd-dataset-141-Fig1a_FIB-SEM_somatosensory"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2a_FIB-SEM_spine_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2a_FIB-SEM_spine_synapse> rdf:type owl:NamedIndividual ,
+                                                                                      <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                             <http://ssbd.riken.jp/ontology/has_biosample_information> <http://ssbd.riken.jp/ontology/ssbd-biosample-141-Fig2a_FIB-SEM_spine_synapse> ;
+                                                                             <http://ssbd.riken.jp/ontology/has_imaging_method> <http://ssbd.riken.jp/ontology/ssbd-imaging-method-141-Fig2a_FIB-SEM_spine_synapse> ;
+                                                                             <http://ssbd.riken.jp/ontology/has_instrument_information> <http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig2a_FIB-SEM_spine_synapse> ;
+                                                                             <http://ssbd.riken.jp/ontology/has_dataset_title> "FIB-SEM image of spine synapse profiles in wild-type (C57BL/6J) mice"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 2a"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_file_format> "tif"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_folder_name> "Fig2a_FIB-SEM_spine_synapse"^^xsd:string ;
+                                                                             rdfs:label "ssbd-dataset-141-Fig2a_FIB-SEM_spine_synapse"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2b_FIB-SEM_spine_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2b_FIB-SEM_spine_synapse> rdf:type owl:NamedIndividual ,
+                                                                                      <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                             <http://ssbd.riken.jp/ontology/has_dataset_title> "FIB-SEM image of spine synapse profiles in wild-type (C57BL/6J) mice"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 2b"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_file_format> "tif"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_folder_name> "Fig2b_FIB-SEM_spine_synapse"^^xsd:string ;
+                                                                             rdfs:label "ssbd-dataset-141-Fig2b_FIB-SEM_spine_synapse"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2c_FIB-SEM_spine_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2c_FIB-SEM_spine_synapse> rdf:type owl:NamedIndividual ,
+                                                                                      <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                             <http://ssbd.riken.jp/ontology/has_dataset_title> "FIB-SEM image of spine synapse profiles in wild-type (C57BL/6J) mice"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 2c"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_file_format> "tif"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_folder_name> "Fig2c_FIB-SEM_spine_synapse"^^xsd:string ;
+                                                                             rdfs:label "ssbd-dataset-141-Fig2c_FIB-SEM_spine_synapse"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2d_FIB-SEM_spine_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2d_FIB-SEM_spine_synapse> rdf:type owl:NamedIndividual ,
+                                                                                      <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                             <http://ssbd.riken.jp/ontology/has_dataset_title> "FIB-SEM image of spine synapse profiles in wild-type (C57BL/6J) mice"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 2d"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_file_format> "tif"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_folder_name> "Fig2d_FIB-SEM_spine_synapse"^^xsd:string ;
+                                                                             rdfs:label "ssbd-dataset-141-Fig2d_FIB-SEM_spine_synapse"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2e_FIB-SEM_shaft_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2e_FIB-SEM_shaft_synapse> rdf:type owl:NamedIndividual ,
+                                                                                      <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                             <http://ssbd.riken.jp/ontology/has_dataset_title> "FIB-SEM image of shaft synapse profiles in wild-type (C57BL/6J) mice"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 2e"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_file_format> "tif"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_folder_name> "Fig2e_FIB-SEM_shaft_synapse"^^xsd:string ;
+                                                                             rdfs:label "ssbd-dataset-141-Fig2e_FIB-SEM_shaft_synapse"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2f_FIB-SEM_shaft_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2f_FIB-SEM_shaft_synapse> rdf:type owl:NamedIndividual ,
+                                                                                      <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                             <http://ssbd.riken.jp/ontology/has_dataset_title> "FIB-SEM image of shaft synapse profiles in wild-type (C57BL/6J) mice"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 2f"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_file_format> "tif"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_folder_name> "Fig2f_FIB-SEM_shaft_synapse"^^xsd:string ;
+                                                                             rdfs:label "ssbd-dataset-141-Fig2f_FIB-SEM_shaft_synapse"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2g_FIB-SEM_shaft_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2g_FIB-SEM_shaft_synapse> rdf:type owl:NamedIndividual ,
+                                                                                      <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                             <http://ssbd.riken.jp/ontology/has_dataset_title> "FIB-SEM image of shaft synapse profiles in wild-type (C57BL/6J) mice"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 2g"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_file_format> "tif"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_folder_name> "Fig2g_FIB-SEM_shaft_synapse"^^xsd:string ;
+                                                                             rdfs:label "ssbd-dataset-141-Fig2g_FIB-SEM_shaft_synapse"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2h_FIB-SEM_shaft_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig2h_FIB-SEM_shaft_synapse> rdf:type owl:NamedIndividual ,
+                                                                                      <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                             <http://ssbd.riken.jp/ontology/has_dataset_title> "FIB-SEM image of shaft synapse profiles in wild-type (C57BL/6J) mice"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 2h"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_file_format> "tif"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_folder_name> "Fig2h_FIB-SEM_shaft_synapse"^^xsd:string ;
+                                                                             rdfs:label "ssbd-dataset-141-Fig2h_FIB-SEM_shaft_synapse"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3a_FIB-SEM_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3a_FIB-SEM_synapse> rdf:type owl:NamedIndividual ,
+                                                                                <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                       <http://purl.obolibrary.org/obo/RO_0002180> <http://ssbd.riken.jp/ontology/ssbd-ome-ngff-141-Fig3a_FIB-SEM_synapse> ;
+                                                                       <http://ssbd.riken.jp/ontology/has_biosample_information> <http://ssbd.riken.jp/ontology/ssbd-biosample-141-Fig3a_FIB-SEM_synapse> ;
+                                                                       <http://ssbd.riken.jp/ontology/has_dimension_information> <http://ssbd.riken.jp/ontology/ssbd-dimension-141-Fig3a_FIB-SEM_synapse> ;
+                                                                       <http://ssbd.riken.jp/ontology/has_imaging_method> <http://ssbd.riken.jp/ontology/ssbd-imaging-method-141-Fig3a_FIB-SEM_synapse> ;
+                                                                       <http://ssbd.riken.jp/ontology/has_instrument_information> <http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig3a_FIB-SEM_synapse> ;
+                                                                       <http://ssbd.riken.jp/ontology/has_dataset_title> "Single FIB-SEM images of spine synapse in wild-type (C57BL/6J) mice"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 3a"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_file_format> "tif"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_folder_name> "Fig3a_FIB-SEM_synapse"^^xsd:string ;
+                                                                       rdfs:label "ssbd-dataset-141-Fig3a_FIB-SEM_synapse"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3b_FIB-SEM_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3b_FIB-SEM_synapse> rdf:type owl:NamedIndividual ,
+                                                                                <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                       <http://ssbd.riken.jp/ontology/has_dataset_title> "Single FIB-SEM images of shaft synapses in wild-type (C57BL/6J) mice"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 3b"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_file_format> "tif"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_folder_name> "Fig3b_FIB-SEM_synapse"^^xsd:string ;
+                                                                       rdfs:label "ssbd-dataset-141-Fig3b_FIB-SEM_synapse"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3c_FIB-SEM_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3c_FIB-SEM_synapse> rdf:type owl:NamedIndividual ,
+                                                                                <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                       <http://ssbd.riken.jp/ontology/has_dataset_title> "Single FIB-SEM images of spine synapse in spectrum disorder (ASD) model mice with human 15q11-13 chromosomal duplication (15q dup mice)"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 3c"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_file_format> "tif"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_folder_name> "Fig3c_FIB-SEM_synapse"^^xsd:string ;
+                                                                       rdfs:label "ssbd-dataset-141-Fig3c_FIB-SEM_synapse"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3d_FIB-SEM_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3d_FIB-SEM_synapse> rdf:type owl:NamedIndividual ,
+                                                                                <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                       <http://ssbd.riken.jp/ontology/has_dataset_title> "Single FIB-SEM images of shaft synapses in spectrum disorder (ASD) model mice with human 15q11-13 chromosomal duplication (15q dup mice)"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 3d"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_file_format> "tif"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_folder_name> "Fig3d_FIB-SEM_synapse"^^xsd:string ;
+                                                                       rdfs:label "ssbd-dataset-141-Fig3d_FIB-SEM_synapse"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3i_FIB-SEM_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3i_FIB-SEM_synapse> rdf:type owl:NamedIndividual ,
+                                                                                <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                       <http://ssbd.riken.jp/ontology/has_dataset_title> "Single FIB-SEM images of spine synapse in wild-type (C57BL/6J) mice"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 3i"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_file_format> "tif"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_folder_name> "Fig3i_FIB-SEM_synapse"^^xsd:string ;
+                                                                       rdfs:label "ssbd-dataset-141-Fig3i_FIB-SEM_synapse"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3j_FIB-SEM_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3j_FIB-SEM_synapse> rdf:type owl:NamedIndividual ,
+                                                                                <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                       <http://ssbd.riken.jp/ontology/has_dataset_title> "Single FIB-SEM images of shaft synapses in wild-type (C57BL/6J) mice"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 3j"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_file_format> "tif"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_folder_name> "Fig3j_FIB-SEM_synapse"^^xsd:string ;
+                                                                       rdfs:label "ssbd-dataset-141-Fig3j_FIB-SEM_synapse"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3k_FIB-SEM_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3k_FIB-SEM_synapse> rdf:type owl:NamedIndividual ,
+                                                                                <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                       <http://ssbd.riken.jp/ontology/has_dataset_title> "Single FIB-SEM images of spine synapse in spectrum disorder (ASD) model mice with human 15q11-13 chromosomal duplication (15q dup mice)"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 3k"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_file_format> "tif"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_folder_name> "Fig3k_FIB-SEM_synapse"^^xsd:string ;
+                                                                       rdfs:label "ssbd-dataset-141-Fig3k_FIB-SEM_synapse"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3l_FIB-SEM_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dataset-141-Fig3l_FIB-SEM_synapse> rdf:type owl:NamedIndividual ,
+                                                                                <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                       <http://ssbd.riken.jp/ontology/has_dataset_title> "Single FIB-SEM images of shaft synapses in spectrum disorder (ASD) model mice with human 15q11-13 chromosomal duplication (15q dup mice)"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 3l"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_file_format> "tif"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_folder_name> "Fig3l_FIB-SEM_synapse"^^xsd:string ;
+                                                                       rdfs:label "ssbd-dataset-141-Fig3l_FIB-SEM_synapse"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig2A_STED_mitochondria
+<http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig2A_STED_mitochondria> rdf:type owl:NamedIndividual ,
+                                                                                  <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                         <http://ssbd.riken.jp/ontology/has_dataset_title> "STED imaging of mitochondria of living HeLa cells"^^xsd:string ;
+                                                                         <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 2A"^^xsd:string ;
+                                                                         <http://ssbd.riken.jp/ontology/has_folder_name> "Fig2A_STED_mitochondria"^^xsd:string ;
+                                                                         rdfs:label "ssbd-dataset-163-Fig2A_STED_mitochondria"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig2B_STED_mitochondria_after
+<http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig2B_STED_mitochondria_after> rdf:type owl:NamedIndividual ,
+                                                                                        <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                               <http://ssbd.riken.jp/ontology/has_dataset_title> "STED images of mitochondria after deconvolution"^^xsd:string ;
+                                                                               <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 2B"^^xsd:string ;
+                                                                               <http://ssbd.riken.jp/ontology/has_folder_name> "Fig2B_STED_mitochondria_after"^^xsd:string ;
+                                                                               rdfs:label "ssbd-dataset-163-Fig2B_STED_mitochondria_after"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig2B_STED_mitochondria_before
+<http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig2B_STED_mitochondria_before> rdf:type owl:NamedIndividual ,
+                                                                                         <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                                <http://ssbd.riken.jp/ontology/has_dataset_title> "STED images of mitochondria before deconvolution."^^xsd:string ;
+                                                                                <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 2B"^^xsd:string ;
+                                                                                <http://ssbd.riken.jp/ontology/has_folder_name> "Fig2B_STED_mitochondria_before"^^xsd:string ;
+                                                                                rdfs:label "ssbd-dataset-163-Fig2B_STED_mitochondria_before"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig3_STED_mitochondria_inner_outer
+<http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig3_STED_mitochondria_inner_outer> rdf:type owl:NamedIndividual ,
+                                                                                             <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                                    <http://ssbd.riken.jp/ontology/has_dataset_title> "STED images of mitochondria inner and outer membrane labeled with two-color."^^xsd:string ;
+                                                                                    <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 3"^^xsd:string ;
+                                                                                    <http://ssbd.riken.jp/ontology/has_folder_name> "Fig3_STED_mitochondria_inner_outer"^^xsd:string ;
+                                                                                    rdfs:label "ssbd-dataset-163-Fig3_STED_mitochondria_inner_outer"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig4A_STED_mitochondial_DMEM
+<http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig4A_STED_mitochondial_DMEM> rdf:type owl:NamedIndividual ,
+                                                                                       <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                              <http://ssbd.riken.jp/ontology/has_dataset_title> "Deconvoluted STED images of the mitochondrial inner membrane cultured in DMEM as control"^^xsd:string ;
+                                                                              <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 4A"^^xsd:string ;
+                                                                              <http://ssbd.riken.jp/ontology/has_folder_name> "Fig4A_STED_mitochondial_DMEM"^^xsd:string ;
+                                                                              rdfs:label "ssbd-dataset-163-Fig4A_STED_mitochondial_DMEM"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig4A_STED_mitochondial_HBSS12h
+<http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig4A_STED_mitochondial_HBSS12h> rdf:type owl:NamedIndividual ,
+                                                                                          <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                                 <http://ssbd.riken.jp/ontology/has_dataset_title> "Deconvoluted STED images of the mitochondrial inner membrane cultured in HBSS with nutrition starvation for 12h"^^xsd:string ;
+                                                                                 <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 4A"^^xsd:string ;
+                                                                                 <http://ssbd.riken.jp/ontology/has_folder_name> "Fig4A_STED_mitochondial_HBSS12h"^^xsd:string ;
+                                                                                 rdfs:label "ssbd-dataset-163-Fig4A_STED_mitochondial_HBSS12h"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig4A_STED_mitochondial_HBSS3h
+<http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig4A_STED_mitochondial_HBSS3h> rdf:type owl:NamedIndividual ,
+                                                                                         <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                                <http://ssbd.riken.jp/ontology/has_dataset_title> "Deconvoluted STED images of the mitochondrial inner membrane cultured in HBSS with nutrition starvation for 3h"^^xsd:string ;
+                                                                                <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 4A"^^xsd:string ;
+                                                                                <http://ssbd.riken.jp/ontology/has_folder_name> "Fig4A_STED_mitochondial_HBSS3h"^^xsd:string ;
+                                                                                rdfs:label "ssbd-dataset-163-Fig4A_STED_mitochondial_HBSS3h"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig4C_STED_cristae_HeLa
+<http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig4C_STED_cristae_HeLa> rdf:type owl:NamedIndividual ,
+                                                                                  <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                         <http://ssbd.riken.jp/ontology/has_dataset_title> "STED image of cristae in HeLa cells pretreated with 10 μM mitochondrial DNA replication inhibitor (ddC) for 5 d"^^xsd:string ;
+                                                                         <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 4C"^^xsd:string ;
+                                                                         <http://ssbd.riken.jp/ontology/has_folder_name> "Fig4C_STED_cristae_HeLa"^^xsd:string ;
+                                                                         rdfs:label "ssbd-dataset-163-Fig4C_STED_cristae_HeLa"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig5AC_Mitochondrial_MitoPB
+<http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig5AC_Mitochondrial_MitoPB> rdf:type owl:NamedIndividual ,
+                                                                                      <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                             <http://ssbd.riken.jp/ontology/has_dataset_title> "Time-lapse STED imaging of mitochondrial dynamics in MitoPB Yellow-labeled cells"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 5AC"^^xsd:string ;
+                                                                             <http://ssbd.riken.jp/ontology/has_folder_name> "Fig5AC_Mitochondrial_MitoPB"^^xsd:string ;
+                                                                             rdfs:label "ssbd-dataset-163-Fig5AC_Mitochondrial_MitoPB"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig5B_Mitochondrial_MitoPB
+<http://ssbd.riken.jp/ontology/ssbd-dataset-163-Fig5B_Mitochondrial_MitoPB> rdf:type owl:NamedIndividual ,
+                                                                                     <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                            <http://ssbd.riken.jp/ontology/has_dataset_title> "Time-lapse STED imaging of mitochondrial dynamics in MitoPB Yellow-labeled cells"^^xsd:string ;
+                                                                            <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 5B"^^xsd:string ;
+                                                                            <http://ssbd.riken.jp/ontology/has_folder_name> "Fig5B_Mitochondrial_MitoPB"^^xsd:string ;
+                                                                            rdfs:label "ssbd-dataset-163-Fig5B_Mitochondrial_MitoPB"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-170-Airyscan_hook_BM
+<http://ssbd.riken.jp/ontology/ssbd-dataset-170-Airyscan_hook_BM> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_dataset_title> "High-resolution three-dimensional images of the hook basement membrane in mouse dorsal skin."^^xsd:string ;
+                                                                  <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 7"^^xsd:string ;
+                                                                  <http://ssbd.riken.jp/ontology/has_file_format> "czi"^^xsd:string ;
+                                                                  <http://ssbd.riken.jp/ontology/has_folder_name> "Airyscan_hook_BM"^^xsd:string ;
+                                                                  rdfs:label "ssbd-dataset-170-Airyscan_hook_BM"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig2_BrainSliceRGB
+<http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig2_BrainSliceRGB> rdf:type owl:NamedIndividual ,
+                                                                             <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                    <http://purl.obolibrary.org/obo/RO_0002180> <http://ssbd.riken.jp/ontology/ssbd-ome-ngff-199-Fig2_BrainSliceRGB> ;
+                                                                    <http://ssbd.riken.jp/ontology/has_biosample_information> <http://ssbd.riken.jp/ontology/ssbd-biosample-199-Fig2_BrainSliceRGB> ;
+                                                                    <http://ssbd.riken.jp/ontology/has_dimension_information> <http://ssbd.riken.jp/ontology/ssbd-dimension-199-Fig2_BrainSliceRGB> ;
+                                                                    <http://ssbd.riken.jp/ontology/has_imaging_method> <http://ssbd.riken.jp/ontology/ssbd-imaging-method-199-Fig2_BrainSliceRGB> ;
+                                                                    <http://ssbd.riken.jp/ontology/has_instrument_information> <http://ssbd.riken.jp/ontology/ssbd-instrument-199-Fig2_BrainSliceRGB> ;
+                                                                    <http://ssbd.riken.jp/ontology/has_dataset_title> "AMATERAS imaging of mouse brain slice."^^xsd:string ;
+                                                                    <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 2"^^xsd:string ;
+                                                                    <http://ssbd.riken.jp/ontology/has_folder_name> "Fig2_BrainSliceRGB"^^xsd:string ;
+                                                                    rdfs:label "ssbd-dataset-199-Fig2_BrainSliceRGB"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig3_MDCKpostconfl
+<http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig3_MDCKpostconfl> rdf:type owl:NamedIndividual ,
+                                                                             <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                    <http://ssbd.riken.jp/ontology/has_dataset_title> "AMATERAS nucleus image of MDCK cells in the post-confluent state."^^xsd:string ;
+                                                                    <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 3"^^xsd:string ;
+                                                                    <http://ssbd.riken.jp/ontology/has_folder_name> "Fig3_MDCKpostconfl"^^xsd:string ;
+                                                                    rdfs:label "ssbd-dataset-199-Fig3_MDCKpostconfl"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig3_MDCKpreconfl
+<http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig3_MDCKpreconfl> rdf:type owl:NamedIndividual ,
+                                                                            <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                   <http://ssbd.riken.jp/ontology/has_dataset_title> "AMATERAS nucleus image of MDCK cells in the pre-confluent state."^^xsd:string ;
+                                                                   <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 3"^^xsd:string ;
+                                                                   <http://ssbd.riken.jp/ontology/has_folder_name> "Fig3_MDCKpreconfl"^^xsd:string ;
+                                                                   rdfs:label "ssbd-dataset-199-Fig3_MDCKpreconfl"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig4_HeLaYC360_10fps
+<http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig4_HeLaYC360_10fps> rdf:type owl:NamedIndividual ,
+                                                                               <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                      <http://ssbd.riken.jp/ontology/has_dataset_title> "Fluoresence imaging of FRET-based calcium ion imaging in HeLa cells."^^xsd:string ;
+                                                                      <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 4"^^xsd:string ;
+                                                                      <http://ssbd.riken.jp/ontology/has_folder_name> "Fig4_HeLaYC360_10fps"^^xsd:string ;
+                                                                      rdfs:label "ssbd-dataset-199-Fig4_HeLaYC360_10fps"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig4_HeLaYC360_5spf
+<http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig4_HeLaYC360_5spf> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_dataset_title> "Fluoresence imaging of FRET-based calcium ion imaging in HeLa cells."^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 4"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_folder_name> "Fig4_HeLaYC360_5spf"^^xsd:string ;
+                                                                     rdfs:label "ssbd-dataset-199-Fig4_HeLaYC360_5spf"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig5-6_Flamindo2
+<http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig5-6_Flamindo2> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_dataset_title> "Fluoresence imaging of D. discoideum expressing Flamindo2 on a centimeter scale."^^xsd:string ;
+                                                                  <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 5"^^xsd:string ;
+                                                                  <http://ssbd.riken.jp/ontology/has_folder_name> "Fig5-6_Flamindo2"^^xsd:string ;
+                                                                  rdfs:label "ssbd-dataset-199-Fig5-6_Flamindo2"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig5-6_RFP
+<http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig5-6_RFP> rdf:type owl:NamedIndividual ,
+                                                                     <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                            <http://ssbd.riken.jp/ontology/has_dataset_title> "Fluoresence imaging of D. discoideum expressing RFP on a centimeter scale."^^xsd:string ;
+                                                            <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 5"^^xsd:string ;
+                                                            <http://ssbd.riken.jp/ontology/has_folder_name> "Fig5-6_RFP"^^xsd:string ;
+                                                            rdfs:label "ssbd-dataset-199-Fig5-6_RFP"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-2-RNAi_B0336.10_040518_01
+<http://ssbd.riken.jp/ontology/ssbd-dataset-2-RNAi_B0336.10_040518_01> rdf:type owl:NamedIndividual ,
+                                                                                <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                       <http://ssbd.riken.jp/ontology/has_dataset_title> "3D time-lapse microscopy images about nuclear division dynamics in B0336.10(RNAi) embryo (rpl-23(RNAi)) embryo)"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 2a"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_file_format> "ipm"^^xsd:string ;
+                                                                       <http://ssbd.riken.jp/ontology/has_folder_name> "RNAi_B0336.10_040518_01"^^xsd:string ;
+                                                                       rdfs:label "ssbd-dataset-2-RNAi_B0336.10_040518_01"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-2-RNAi_F58B6.3_080401_01
+<http://ssbd.riken.jp/ontology/ssbd-dataset-2-RNAi_F58B6.3_080401_01> rdf:type owl:NamedIndividual ,
+                                                                               <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                      <http://ssbd.riken.jp/ontology/has_dataset_title> "3D time-lapse microscopy images about nuclear division dynamics in F58B6.3(RNAi) embryo (par-2(RNAi)) embryo)"^^xsd:string ;
+                                                                      <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 2a"^^xsd:string ;
+                                                                      <http://ssbd.riken.jp/ontology/has_file_format> "ipm"^^xsd:string ;
+                                                                      <http://ssbd.riken.jp/ontology/has_folder_name> "RNAi_F58B6.3_080401_01"^^xsd:string ;
+                                                                      rdfs:label "ssbd-dataset-2-RNAi_F58B6.3_080401_01"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-2-wt_N2_030303_01
+<http://ssbd.riken.jp/ontology/ssbd-dataset-2-wt_N2_030303_01> rdf:type owl:NamedIndividual ,
+                                                                        <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                               <http://ssbd.riken.jp/ontology/has_dataset_title> "3D time-lapse microscopy images about nuclear division dynamics in wild-type embryo"^^xsd:string ;
+                                                               <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 2a"^^xsd:string ;
+                                                               <http://ssbd.riken.jp/ontology/has_file_format> "ipm"^^xsd:string ;
+                                                               <http://ssbd.riken.jp/ontology/has_folder_name> "wt_N2_030303_01"^^xsd:string ;
+                                                               rdfs:label "ssbd-dataset-2-wt_N2_030303_01"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig3A_R26-pCAG-nuc-3xmKate2
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig3A_R26-pCAG-nuc-3xmKate2> rdf:type owl:NamedIndividual ,
+                                                                                     <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                            <http://ssbd.riken.jp/ontology/has_dataset_title> "Light-sheet fluorescence microscopy (LSFM) images of R26-pCAG-nuc-3 x mKate2 mouse brain"^^xsd:string ;
+                                                                            <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 3A"^^xsd:string ;
+                                                                            <http://ssbd.riken.jp/ontology/has_folder_name> "Fig3A_R26-pCAG-nuc-3xmKate2"^^xsd:string ;
+                                                                            rdfs:label "ssbd-dataset-48-Fig3A_R26-pCAG-nuc-3xmKate2"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig3C_H2B-mCherry
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig3C_H2B-mCherry> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_dataset_title> "Light-sheet fluorescence microscopy (LSFM) images of R26-H2B-mCherry mouse brain"^^xsd:string ;
+                                                                  <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 3C"^^xsd:string ;
+                                                                  <http://ssbd.riken.jp/ontology/has_folder_name> "Fig3C_H2B-mCherry"^^xsd:string ;
+                                                                  rdfs:label "ssbd-dataset-48-Fig3C_H2B-mCherry"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig3D_H2B-EGFP
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig3D_H2B-EGFP> rdf:type owl:NamedIndividual ,
+                                                                        <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                               <http://ssbd.riken.jp/ontology/has_dataset_title> "Light-sheet fluorescence microscopy (LSFM) images of R26-H2B-EGFP mouse brain"^^xsd:string ;
+                                                               <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 3D"^^xsd:string ;
+                                                               <http://ssbd.riken.jp/ontology/has_folder_name> "Fig3D_H2B-EGFP"^^xsd:string ;
+                                                               rdfs:label "ssbd-dataset-48-Fig3D_H2B-EGFP"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig3E_Thy1-YFP-H
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig3E_Thy1-YFP-H> rdf:type owl:NamedIndividual ,
+                                                                          <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                 <http://ssbd.riken.jp/ontology/has_dataset_title> "Light-sheet fluorescence microscopy (LSFM) images of Thy1-YFP-H transgenic mouse brain"^^xsd:string ;
+                                                                 <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 3E"^^xsd:string ;
+                                                                 <http://ssbd.riken.jp/ontology/has_folder_name> "Fig3E_Thy1-YFP-H"^^xsd:string ;
+                                                                 rdfs:label "ssbd-dataset-48-Fig3E_Thy1-YFP-H"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4B_Series055
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4B_Series055> rdf:type owl:NamedIndividual ,
+                                                                         <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                <http://ssbd.riken.jp/ontology/has_dataset_title> "Immunohistochemistry (3D-IHC) images of suprachiasmatic nucleus (SCN) and paraventricular nucleus (PVM) regions of R26-H2B-EGFP mouse"^^xsd:string ;
+                                                                <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 4B"^^xsd:string ;
+                                                                <http://ssbd.riken.jp/ontology/has_folder_name> "Fig4B_Series055"^^xsd:string ;
+                                                                rdfs:label "ssbd-dataset-48-Fig4B_Series055"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4B_Series072
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4B_Series072> rdf:type owl:NamedIndividual ,
+                                                                         <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                <http://ssbd.riken.jp/ontology/has_dataset_title> "Immunohistochemistry (3D-IHC) images of suprachiasmatic nucleus (SCN) and paraventricular nucleus (PVM) regions of R26-H2B-EGFP mouse"^^xsd:string ;
+                                                                <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 4B"^^xsd:string ;
+                                                                <http://ssbd.riken.jp/ontology/has_folder_name> "Fig4B_Series072"^^xsd:string ;
+                                                                rdfs:label "ssbd-dataset-48-Fig4B_Series072"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4C_CryDKO-CT12
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4C_CryDKO-CT12> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_dataset_title> "Immunohistochemistry (3D-IHC) images of suprachiasmatic nucleus (SCN) and paraventricular nucleus (PVM) regions of R26-H2B-EGFP mouse"^^xsd:string ;
+                                                                  <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 4C"^^xsd:string ;
+                                                                  <http://ssbd.riken.jp/ontology/has_folder_name> "Fig4C_CryDKO-CT12"^^xsd:string ;
+                                                                  rdfs:label "ssbd-dataset-48-Fig4C_CryDKO-CT12"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4C_CryDKO-CT18
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4C_CryDKO-CT18> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_dataset_title> "Immunohistochemistry (3D-IHC) images of suprachiasmatic nucleus (SCN) and paraventricular nucleus (PVM) regions of R26-H2B-EGFP mouse"^^xsd:string ;
+                                                                  <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 4C"^^xsd:string ;
+                                                                  <http://ssbd.riken.jp/ontology/has_folder_name> "Fig4C_CryDKO-CT18"^^xsd:string ;
+                                                                  rdfs:label "ssbd-dataset-48-Fig4C_CryDKO-CT18"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4C_CryDKO-CT24
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4C_CryDKO-CT24> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_dataset_title> "Immunohistochemistry (3D-IHC) images of suprachiasmatic nucleus (SCN) and paraventricular nucleus (PVM) regions of R26-H2B-EGFP mouse"^^xsd:string ;
+                                                                  <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 4C"^^xsd:string ;
+                                                                  <http://ssbd.riken.jp/ontology/has_folder_name> "Fig4C_CryDKO-CT24"^^xsd:string ;
+                                                                  rdfs:label "ssbd-dataset-48-Fig4C_CryDKO-CT24"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4C_CryDKO-CT30
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4C_CryDKO-CT30> rdf:type owl:NamedIndividual ,
+                                                                           <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                  <http://ssbd.riken.jp/ontology/has_dataset_title> "Immunohistochemistry (3D-IHC) images of suprachiasmatic nucleus (SCN) and paraventricular nucleus (PVM) regions of R26-H2B-EGFP mouse"^^xsd:string ;
+                                                                  <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 4C"^^xsd:string ;
+                                                                  <http://ssbd.riken.jp/ontology/has_folder_name> "Fig4C_CryDKO-CT30"^^xsd:string ;
+                                                                  rdfs:label "ssbd-dataset-48-Fig4C_CryDKO-CT30"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4C_WT-CT12
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4C_WT-CT12> rdf:type owl:NamedIndividual ,
+                                                                       <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                              <http://ssbd.riken.jp/ontology/has_dataset_title> "Immunohistochemistry (3D-IHC) images of suprachiasmatic nucleus (SCN) and paraventricular nucleus (PVM) regions of R26-H2B-EGFP mouse"^^xsd:string ;
+                                                              <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 4C"^^xsd:string ;
+                                                              <http://ssbd.riken.jp/ontology/has_folder_name> "Fig4C_WT-CT12"^^xsd:string ;
+                                                              rdfs:label "ssbd-dataset-48-Fig4C_WT-CT12"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4C_WT-CT18
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4C_WT-CT18> rdf:type owl:NamedIndividual ,
+                                                                       <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                              <http://ssbd.riken.jp/ontology/has_dataset_title> "Immunohistochemistry (3D-IHC) images of suprachiasmatic nucleus (SCN) and paraventricular nucleus (PVM) regions of R26-H2B-EGFP mouse"^^xsd:string ;
+                                                              <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 4C"^^xsd:string ;
+                                                              <http://ssbd.riken.jp/ontology/has_folder_name> "Fig4C_WT-CT18"^^xsd:string ;
+                                                              rdfs:label "ssbd-dataset-48-Fig4C_WT-CT18"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4C_WT-CT24
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4C_WT-CT24> rdf:type owl:NamedIndividual ,
+                                                                       <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                              <http://ssbd.riken.jp/ontology/has_dataset_title> "Immunohistochemistry (3D-IHC) images of suprachiasmatic nucleus (SCN) and paraventricular nucleus (PVM) regions of R26-H2B-EGFP mouse"^^xsd:string ;
+                                                              <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 4C"^^xsd:string ;
+                                                              <http://ssbd.riken.jp/ontology/has_folder_name> "Fig4C_WT-CT24"^^xsd:string ;
+                                                              rdfs:label "ssbd-dataset-48-Fig4C_WT-CT24"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4C_WT-CT30
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig4C_WT-CT30> rdf:type owl:NamedIndividual ,
+                                                                       <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                              <http://ssbd.riken.jp/ontology/has_dataset_title> "Immunohistochemistry (3D-IHC) images of suprachiasmatic nucleus (SCN) and paraventricular nucleus (PVM) regions of R26-H2B-EGFP mouse"^^xsd:string ;
+                                                              <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 4C"^^xsd:string ;
+                                                              <http://ssbd.riken.jp/ontology/has_folder_name> "Fig4C_WT-CT30"^^xsd:string ;
+                                                              rdfs:label "ssbd-dataset-48-Fig4C_WT-CT30"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig5_1310045_21-46-25
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig5_1310045_21-46-25> rdf:type owl:NamedIndividual ,
+                                                                               <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                      <http://ssbd.riken.jp/ontology/has_dataset_title> "Light-sheet fluorescence microscopy (LSFM) images of CUBIC treatment and SYTO 16 nuclear staining of the marmoset hemisphere"^^xsd:string ;
+                                                                      <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 5"^^xsd:string ;
+                                                                      <http://ssbd.riken.jp/ontology/has_folder_name> "Fig5_1310045_21-46-25"^^xsd:string ;
+                                                                      rdfs:label "ssbd-dataset-48-Fig5_1310045_21-46-25"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131118_10-09-33
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131118_10-09-33> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_dataset_title> "Light-sheet fluorescence microscopy (LSFM) images of Arc-dVenus transgenic mouse brain"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 6"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_folder_name> "Fig6_131118_10-09-33"^^xsd:string ;
+                                                                     rdfs:label "ssbd-dataset-48-Fig6_131118_10-09-33"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131118_10-50-37
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131118_10-50-37> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_dataset_title> "Light-sheet fluorescence microscopy (LSFM) images of Arc-dVenus transgenic mouse brain"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 6"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_folder_name> "Fig6_131118_10-50-37"^^xsd:string ;
+                                                                     rdfs:label "ssbd-dataset-48-Fig6_131118_10-50-37"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131118_12-51-39
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131118_12-51-39> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_dataset_title> "Light-sheet fluorescence microscopy (LSFM) images of Arc-dVenus transgenic mouse brain"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 6"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_folder_name> "Fig6_131118_12-51-39"^^xsd:string ;
+                                                                     rdfs:label "ssbd-dataset-48-Fig6_131118_12-51-39"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131118_13-39-52
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131118_13-39-52> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_dataset_title> "Light-sheet fluorescence microscopy (LSFM) images of Arc-dVenus transgenic mouse brain"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 6"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_folder_name> "Fig6_131118_13-39-52"^^xsd:string ;
+                                                                     rdfs:label "ssbd-dataset-48-Fig6_131118_13-39-52"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131118_20-29-52
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131118_20-29-52> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_dataset_title> "Light-sheet fluorescence microscopy (LSFM) images of Arc-dVenus transgenic mouse brain"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 6"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_folder_name> "Fig6_131118_20-29-52"^^xsd:string ;
+                                                                     rdfs:label "ssbd-dataset-48-Fig6_131118_20-29-52"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131118_20-58-17
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131118_20-58-17> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_dataset_title> "Light-sheet fluorescence microscopy (LSFM) images of Arc-dVenus transgenic mouse brain"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 6"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_folder_name> "Fig6_131118_20-58-17"^^xsd:string ;
+                                                                     rdfs:label "ssbd-dataset-48-Fig6_131118_20-58-17"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131118_22-31-24
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131118_22-31-24> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_dataset_title> "Light-sheet fluorescence microscopy (LSFM) images of Arc-dVenus transgenic mouse brain"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 6"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_folder_name> "Fig6_131118_22-31-24"^^xsd:string ;
+                                                                     rdfs:label "ssbd-dataset-48-Fig6_131118_22-31-24"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131119_08-22-10
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131119_08-22-10> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_dataset_title> "Light-sheet fluorescence microscopy (LSFM) images of Arc-dVenus transgenic mouse brain"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 6"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_folder_name> "Fig6_131119_08-22-10"^^xsd:string ;
+                                                                     rdfs:label "ssbd-dataset-48-Fig6_131119_08-22-10"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131119_09-13-05
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131119_09-13-05> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_dataset_title> "Light-sheet fluorescence microscopy (LSFM) images of Arc-dVenus transgenic mouse brain"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 6"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_folder_name> "Fig6_131119_09-13-05"^^xsd:string ;
+                                                                     rdfs:label "ssbd-dataset-48-Fig6_131119_09-13-05"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131119_09-46-00
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131119_09-46-00> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_dataset_title> "Light-sheet fluorescence microscopy (LSFM) images of Arc-dVenus transgenic mouse brain"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 6"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_folder_name> "Fig6_131119_09-46-00"^^xsd:string ;
+                                                                     rdfs:label "ssbd-dataset-48-Fig6_131119_09-46-00"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131119_11-38-20
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131119_11-38-20> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_dataset_title> "Light-sheet fluorescence microscopy (LSFM) images of Arc-dVenus transgenic mouse brain"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 6"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_folder_name> "Fig6_131119_11-38-20"^^xsd:string ;
+                                                                     rdfs:label "ssbd-dataset-48-Fig6_131119_11-38-20"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131119_12-13-00
+<http://ssbd.riken.jp/ontology/ssbd-dataset-48-Fig6_131119_12-13-00> rdf:type owl:NamedIndividual ,
+                                                                              <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                     <http://ssbd.riken.jp/ontology/has_dataset_title> "Light-sheet fluorescence microscopy (LSFM) images of Arc-dVenus transgenic mouse brain"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 6"^^xsd:string ;
+                                                                     <http://ssbd.riken.jp/ontology/has_folder_name> "Fig6_131119_12-13-00"^^xsd:string ;
+                                                                     rdfs:label "ssbd-dataset-48-Fig6_131119_12-13-00"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dataset-98-fig2ab_trajectory_epithelialcell
+<http://ssbd.riken.jp/ontology/ssbd-dataset-98-fig2ab_trajectory_epithelialcell> rdf:type owl:NamedIndividual ,
+                                                                                          <http://ssbd.riken.jp/ontology/SSBD_dataset> ;
+                                                                                 <http://ssbd.riken.jp/ontology/has_dataset_title> "Time-lapse images of tracking the epithelial cells during tooth morphogenesis"^^xsd:string ;
+                                                                                 <http://ssbd.riken.jp/ontology/has_figure_number> "Figure 2AB"^^xsd:string ;
+                                                                                 <http://ssbd.riken.jp/ontology/has_file_format> "ims"^^xsd:string ;
+                                                                                 <http://ssbd.riken.jp/ontology/has_folder_name> "fig2ab_trajectory_epithelialcell"^^xsd:string ;
+                                                                                 rdfs:label "ssbd-dataset-98-fig2ab_trajectory_epithelialcell"@en .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dimension-141-Fig3a_FIB-SEM_synapse
+<http://ssbd.riken.jp/ontology/ssbd-dimension-141-Fig3a_FIB-SEM_synapse> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-dimension-199-Fig2_BrainSliceRGB
+<http://ssbd.riken.jp/ontology/ssbd-dimension-199-Fig2_BrainSliceRGB> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-imaging-method-141-Fig2a_FIB-SEM_spine_synapse
+<http://ssbd.riken.jp/ontology/ssbd-imaging-method-141-Fig2a_FIB-SEM_spine_synapse> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-imaging-method-141-Fig3a_FIB-SEM_synapse
+<http://ssbd.riken.jp/ontology/ssbd-imaging-method-141-Fig3a_FIB-SEM_synapse> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-imaging-method-199-Fig2_BrainSliceRGB
+<http://ssbd.riken.jp/ontology/ssbd-imaging-method-199-Fig2_BrainSliceRGB> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig2a_FIB-SEM_spine_synapse
+<http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig2a_FIB-SEM_spine_synapse> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig3a_FIB-SEM_synapse
+<http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig3a_FIB-SEM_synapse> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-instrument-199-Fig2_BrainSliceRGB
+<http://ssbd.riken.jp/ontology/ssbd-instrument-199-Fig2_BrainSliceRGB> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-ome-ngff-141-Fig3a_FIB-SEM_synapse
+<http://ssbd.riken.jp/ontology/ssbd-ome-ngff-141-Fig3a_FIB-SEM_synapse> rdf:type owl:NamedIndividual .
+
+
+###  http://ssbd.riken.jp/ontology/ssbd-ome-ngff-199-Fig2_BrainSliceRGB
+<http://ssbd.riken.jp/ontology/ssbd-ome-ngff-199-Fig2_BrainSliceRGB> rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

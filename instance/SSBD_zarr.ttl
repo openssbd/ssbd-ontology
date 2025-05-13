@@ -1,0 +1,241 @@
+@prefix : <http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ssbd.riken.jp/ontology/zarr/> .
+
+<http://ssbd.riken.jp/ontology/zarr/> rdf:type owl:Ontology ;
+                                       owl:versionIRI <http://ssbd.riken.jp/ontology/zarr/1.0.0> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#has_license
+:has_license rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#has_axes
+:has_axes rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#has_s3_endpoint
+:has_s3_endpoint rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#has_size_c
+:has_size_c rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#has_size_t
+:has_size_t rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#has_size_x
+:has_size_x rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#has_size_y
+:has_size_y rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#has_size_z
+:has_size_z rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#has_thumbnail_url
+:has_thumbnail_url rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#has_vizarr_url
+:has_vizarr_url rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#SSBD_OME-NGFF-ZARR_information
+:SSBD_OME-NGFF-ZARR_information rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#ssbd-ome-ngff-141-Fig3a_FIB-SEM_synapse
+:ssbd-ome-ngff-141-Fig3a_FIB-SEM_synapse rdf:type owl:NamedIndividual ,
+                                                  :SSBD_OME-NGFF-ZARR_information ;
+                                         :has_license <https://creativecommons.org/licenses/by/4.0/> ;
+                                         :has_axes "XY" ;
+                                         :has_s3_endpoint "https://ssbd.riken.jp/100118-dcacbb41/zarr/v0.4/Fig3a_FIB-SEM_synapse.zarr"^^xsd:anyURI ;
+                                         :has_size_c "1" ;
+                                         :has_size_t "1" ;
+                                         :has_size_x "2048" ;
+                                         :has_size_y "1538" ;
+                                         :has_size_z "1" ;
+                                         :has_thumbnail_url "https://ssbd.riken.jp/omero/webclient/?show=image-126113"^^xsd:anyURI ;
+                                         :has_vizarr_url "https://ssbd.riken.jp/mmiranda/vizarr/?source=https://ssbd.riken.jp/100118-dcacbb41/zarr/v0.4/Fig3a_FIB-SEM_synapse.zarr"^^xsd:anyURI ;
+                                         rdfs:label "ssbd-ome-ngff-141-Fig3a_FIB-SEM_synapse"@en .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#ssbd-ome-ngff-163-Fig5AC_Mitochondrial_MitoPB
+:ssbd-ome-ngff-163-Fig5AC_Mitochondrial_MitoPB rdf:type owl:NamedIndividual ,
+                                                        :SSBD_OME-NGFF-ZARR_information ;
+                                               :has_license <https://creativecommons.org/licenses/by/4.0/> ;
+                                               :has_axes "XYT" ;
+                                               :has_size_c "1" ;
+                                               :has_size_t "361" ;
+                                               :has_size_x "1024" ;
+                                               :has_size_y "256" ;
+                                               :has_size_z "1" ;
+                                               rdfs:label "ssbd-ome-ngff-163-Fig5AC_Mitochondrial_MitoPB"@en .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#ssbd-ome-ngff-199-Fig2_BrainSliceRGB
+:ssbd-ome-ngff-199-Fig2_BrainSliceRGB rdf:type owl:NamedIndividual ,
+                                               :SSBD_OME-NGFF-ZARR_information ;
+                                      :has_license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                      :has_axes "XYC" ;
+                                      :has_s3_endpoint "https://ssbd.riken.jp/100118-dcacbb41/zarr/v0.4/Fig2_BrainSliceRGB.zarr"^^xsd:anyURI ;
+                                      :has_size_c 3 ;
+                                      :has_size_t 1 ;
+                                      :has_size_x 13264 ;
+                                      :has_size_y 9180 ;
+                                      :has_size_z 1 ;
+                                      :has_thumbnail_url "https://ssbd.riken.jp/omero/webclient/?show=image-1089960"^^xsd:anyURI ;
+                                      :has_vizarr_url "https://ssbd.riken.jp/mmiranda/vizarr/?source=https://ssbd.riken.jp/100118-dcacbb41/zarr/v0.4/Fig2_BrainSliceRGB.zarr"^^xsd:anyURI ;
+                                      rdfs:label "ssbd-ome-ngff-199-Fig2_BrainSliceRGB"@en .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#ssbd-ome-ngff-199-Fig4_HeLaYC360_5spf
+:ssbd-ome-ngff-199-Fig4_HeLaYC360_5spf rdf:type owl:NamedIndividual ,
+                                                :SSBD_OME-NGFF-ZARR_information ;
+                                       :has_license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                       :has_axes "XYT" ;
+                                       :has_size_c "1" ;
+                                       :has_size_t "200" ;
+                                       :has_size_x "13264" ;
+                                       :has_size_y "9180" ;
+                                       :has_size_z "1" ;
+                                       rdfs:label "ssbd-ome-ngff-199-Fig4_HeLaYC360_5spf"@en .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#ssbd-ome-ngff-199-Fig5-6_Flamindo2
+:ssbd-ome-ngff-199-Fig5-6_Flamindo2 rdf:type owl:NamedIndividual ,
+                                             :SSBD_OME-NGFF-ZARR_information ;
+                                    :has_license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                                    :has_axes "XYT" ;
+                                    :has_size_c "1" ;
+                                    :has_size_t "1922" ;
+                                    :has_size_x "13264" ;
+                                    :has_size_y "9180" ;
+                                    :has_size_z "1" ;
+                                    rdfs:label "ssbd-ome-ngff-199-Fig5-6_Flamindo2"@en .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#ssbd-ome-ngff-2-wt_N2_030303_01
+:ssbd-ome-ngff-2-wt_N2_030303_01 rdf:type owl:NamedIndividual ,
+                                          :SSBD_OME-NGFF-ZARR_information ;
+                                 :has_license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+                                 :has_axes "XYZT" ;
+                                 :has_size_c "1" ;
+                                 :has_size_t "180" ;
+                                 :has_size_x "600" ;
+                                 :has_size_y "600" ;
+                                 :has_size_z "66" ;
+                                 rdfs:label "ssbd-ome-ngff-2-wt_N2_030303_01"@en .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#ssbd-ome-ngff-48-Fig3A_R26-pCAG-nuc-3xmKate2
+:ssbd-ome-ngff-48-Fig3A_R26-pCAG-nuc-3xmKate2 rdf:type owl:NamedIndividual ,
+                                                       :SSBD_OME-NGFF-ZARR_information ;
+                                              :has_license <https://creativecommons.org/licenses/by/4.0/> ;
+                                              :has_axes "XYZ" ;
+                                              :has_size_c "1" ;
+                                              :has_size_t "1" ;
+                                              :has_size_x "2560" ;
+                                              :has_size_y "2160" ;
+                                              :has_size_z "520" ;
+                                              rdfs:label "ssbd-ome-ngff-48-Fig3A_R26-pCAG-nuc-3xmKate2"@en .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#ssbd-ome-ngff-48-Fig3C_H2B-mCherry
+:ssbd-ome-ngff-48-Fig3C_H2B-mCherry rdf:type owl:NamedIndividual ,
+                                             :SSBD_OME-NGFF-ZARR_information ;
+                                    :has_license <https://creativecommons.org/licenses/by/4.0/> ;
+                                    :has_axes "XYZ" ;
+                                    :has_size_c "1" ;
+                                    :has_size_t "1" ;
+                                    :has_size_x "2560" ;
+                                    :has_size_y "2160" ;
+                                    :has_size_z "709" ;
+                                    rdfs:label "ssbd-ome-ngff-48-Fig3C_H2B-mCherry"@en .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#ssbd-ome-ngff-48-Fig3D_H2B-EGFP
+:ssbd-ome-ngff-48-Fig3D_H2B-EGFP rdf:type owl:NamedIndividual ,
+                                          :SSBD_OME-NGFF-ZARR_information ;
+                                 :has_license <https://creativecommons.org/licenses/by/4.0/> ;
+                                 :has_axes "XYZ" ;
+                                 :has_size_c "1" ;
+                                 :has_size_t "1" ;
+                                 :has_size_x "2560" ;
+                                 :has_size_y "2160" ;
+                                 :has_size_z "665" ;
+                                 rdfs:label "ssbd-ome-ngff-48-Fig3D_H2B-EGFP"@en .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#ssbd-ome-ngff-48-Fig3E_Thy1-YFP-H
+:ssbd-ome-ngff-48-Fig3E_Thy1-YFP-H rdf:type owl:NamedIndividual ,
+                                            :SSBD_OME-NGFF-ZARR_information ;
+                                   :has_license <https://creativecommons.org/licenses/by/4.0/> ;
+                                   :has_axes "XYZ" ;
+                                   :has_size_c "1" ;
+                                   :has_size_t "1" ;
+                                   :has_size_x "2560" ;
+                                   :has_size_y "2160" ;
+                                   :has_size_z "696" ;
+                                   rdfs:label "ssbd-ome-ngff-48-Fig3E_Thy1-YFP-H"@en .
+
+
+###  http://www.semanticweb.org/yamagatayuki/ontologies/2025/4/untitled-ontology-126#ssbd-ome-ngff-98-fig2ab_trajectory_epithelialcell
+:ssbd-ome-ngff-98-fig2ab_trajectory_epithelialcell rdf:type owl:NamedIndividual ,
+                                                            :SSBD_OME-NGFF-ZARR_information ;
+                                                   :has_license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                   :has_axes "XYZCT" ;
+                                                   :has_size_c "2" ;
+                                                   :has_size_t "271" ;
+                                                   :has_size_x "862" ;
+                                                   :has_size_y "855" ;
+                                                   :has_size_z "43" ;
+                                                   rdfs:label "ssbd-ome-ngff-98-fig2ab_trajectory_epithelialcell"@en .
+
+
+###  https://creativecommons.org/licenses/by-nc/4.0/
+<https://creativecommons.org/licenses/by-nc/4.0/> rdf:type owl:NamedIndividual .
+
+
+###  https://creativecommons.org/licenses/by-sa/4.0/
+<https://creativecommons.org/licenses/by-sa/4.0/> rdf:type owl:NamedIndividual .
+
+
+###  https://creativecommons.org/licenses/by/4.0/
+<https://creativecommons.org/licenses/by/4.0/> rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
