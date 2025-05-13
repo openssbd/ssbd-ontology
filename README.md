@@ -29,8 +29,8 @@ SSBD Ontology (OWL DL), exemplar instances and conversion scripts are released u
 
 | Layer | Entity class | Typical properties | Linked external vocab |
 |-------|--------------|--------------------|-----------------------|
-| **Core** | `SSBD_Project` | `has_project_name`, `RO:0002234` (→ Dataset) | — |
-| **Core** | `SSBD_dataset` | `has_biosample_information`, `RO:0002180` (→ NGFF) | — |
+| **Repository** | `SSBD_Project` | `has_project_name`, `RO:0002234` (→ Dataset) | — |
+| **Repository** | `SSBD_dataset` | `has_biosample_information`, `RO:0002180` (→ NGFF) | — |
 | **Added** | `SSBD_OME_NGFF_info` | `has_s3_endpoint`, `has_vizarr_url`, sizes | — |
 | **Added** | `SSBD_biosample_information` | `is_about_organism/strain/cell/anatomy/GO*` | NCBITaxon, CL, UBERON, GO |
 | **Added** | `SSBD_imaging_method_information` | `is_about_imaging_method` | FBbi | 
