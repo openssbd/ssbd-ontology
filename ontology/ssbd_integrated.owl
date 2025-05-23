@@ -6857,6 +6857,14 @@ Given their important role in digestion, malfunction or damage to PP cells can l
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0000732 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000732">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000219"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0000988 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000988">
@@ -21413,29 +21421,6 @@ When there is no such string, it is almost always because the entities take the 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_117571 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_117571">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33213"/>
-        <obo:IAO_0000111>Euteleostomi</obo:IAO_0000111>
-        <obo:IAO_0000118>bony vertebrates</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Euteleostomi</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1206794 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1206794">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33317"/>
-        <obo:IAO_0000111>Ecdysozoa</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Ecdysozoa</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1236 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1236">
@@ -21528,17 +21513,6 @@ When there is no such string, it is almost always because the entities take the 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1437010 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1437010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_32523"/>
-        <obo:IAO_0000111>Boreoeutheria</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Boreoeutheria</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1437183 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1437183">
@@ -21550,18 +21524,6 @@ When there is no such string, it is almost always because the entities take the 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_147537 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_147537">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_451864"/>
-        <obo:IAO_0000111>Saccharomycotina</obo:IAO_0000111>
-        <obo:IAO_0000118>true yeasts</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Saccharomycotina</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1491 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1491">
@@ -21569,18 +21531,6 @@ When there is no such string, it is almost always because the entities take the 
         <obo:IAO_0000111>Clostridium botulinum</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <rdfs:label>Clostridium botulinum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1710587 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1710587">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7049"/>
-        <obo:IAO_0000111>Photuris pensylvanica</obo:IAO_0000111>
-        <obo:IAO_0000118>Pennsylania firefly</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Photuris pensylvanica</rdfs:label>
     </owl:Class>
     
 
@@ -21665,17 +21615,6 @@ When there is no such string, it is almost always because the entities take the 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2301119 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2301119">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1206794"/>
-        <obo:IAO_0000111>Rhabditomorpha</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Rhabditomorpha</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2497569 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2497569">
@@ -21733,84 +21672,6 @@ When there is no such string, it is almost always because the entities take the 
         <obo:IAO_0000118>eukaryotes</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <rdfs:label>Eukaryota</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_314145 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_314145">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1437010"/>
-        <obo:IAO_0000111>Laurasiatheria</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Laurasiatheria</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_314146 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_314146">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1437010"/>
-        <obo:IAO_0000111>Euarchontoglires</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Euarchontoglires</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_32523 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_32523">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_117571"/>
-        <obo:IAO_0000111>Tetrapoda</obo:IAO_0000111>
-        <obo:IAO_0000118>tetrapods</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Tetrapoda</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33154 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_33154">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
-        <obo:IAO_0000111>Opisthokonta</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Opisthokonta</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33213 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_33213">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6072"/>
-        <obo:IAO_0000111>Bilateria</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Bilateria</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33317 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_33317">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33213"/>
-        <obo:IAO_0000111>Protostomia</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Protostomia</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33392 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_33392">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1206794"/>
-        <obo:IAO_0000111>Endopterygota</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Endopterygota</rdfs:label>
     </owl:Class>
     
 
@@ -21889,21 +21750,20 @@ When there is no such string, it is almost always because the entities take the 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_44689 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_40674 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_44689">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_40674">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7742"/>
+        <obo:IAO_0000118>mammals</obo:IAO_0000118>
+        <rdfs:label>Mammalia</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_451864 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_44689 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_451864">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33154"/>
-        <obo:IAO_0000111>Dikarya</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Dikarya</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_44689">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
     </owl:Class>
     
 
@@ -21919,27 +21779,25 @@ When there is no such string, it is almost always because the entities take the 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_4751 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_4751">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <rdfs:label>Fungi</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_4932 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_4932">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_147537"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
         <obo:IAO_0000111>Saccharomyces cerevisiae</obo:IAO_0000111>
         <obo:IAO_0000118>Saccharomyces cerevisiae &apos;var. diastaticus&apos;</obo:IAO_0000118>
         <obo:IAO_0000118>baker&apos;s yeast</obo:IAO_0000118>
         <obo:IAO_0000118>brewer&apos;s yeast</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <rdfs:label>Saccharomyces cerevisiae</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_5207 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5207">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_451864"/>
-        <obo:IAO_0000111>Cryptococcus neoformans</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Cryptococcus neoformans</rdfs:label>
     </owl:Class>
     
 
@@ -21951,17 +21809,6 @@ When there is no such string, it is almost always because the entities take the 
         <obo:IAO_0000111>Enterobacteriaceae</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <rdfs:label>Enterobacteriaceae</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_5476 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5476">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_147537"/>
-        <obo:IAO_0000111>Candida albicans</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Candida albicans</rdfs:label>
     </owl:Class>
     
 
@@ -22079,81 +21926,10 @@ When there is no such string, it is almost always because the entities take the 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_6072 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6072">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33154"/>
-        <obo:IAO_0000111>Eumetazoa</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Eumetazoa</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_6100 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6100">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6072"/>
-        <obo:IAO_0000111>Aequorea victoria</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Aequorea victoria</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_6179 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6179">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33317"/>
-        <obo:IAO_0000111>Digenea &lt;flatworms&gt;</obo:IAO_0000111>
-        <obo:IAO_0000118>Digenea</obo:IAO_0000118>
-        <obo:IAO_0000118>flukes</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Digenea &lt;flatworms&gt;</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_6183 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6183">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6179"/>
-        <obo:IAO_0000111>Schistosoma mansoni</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Schistosoma mansoni</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_6192 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6192">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6179"/>
-        <obo:IAO_0000111>Fasciola hepatica</obo:IAO_0000111>
-        <obo:IAO_0000118>liver fluke</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Fasciola hepatica</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_6239 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6239">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2301119"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_6289 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6289">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2301119"/>
-        <obo:IAO_0000111>Haemonchus contortus</obo:IAO_0000111>
-        <obo:IAO_0000118>barber pole worm</obo:IAO_0000118>
-        <obo:IAO_0000118>red stomach worm</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Haemonchus contortus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
     </owl:Class>
     
 
@@ -22203,40 +21979,12 @@ When there is no such string, it is almost always because the entities take the 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7049 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7742 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7049">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33392"/>
-        <obo:IAO_0000111>Lampyridae</obo:IAO_0000111>
-        <obo:IAO_0000118>fireflies</obo:IAO_0000118>
-        <obo:IAO_0000118>firefly beetles</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Lampyridae</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7054 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7054">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7049"/>
-        <obo:IAO_0000111>Photinus pyralis</obo:IAO_0000111>
-        <obo:IAO_0000118>North American firefly</obo:IAO_0000118>
-        <obo:IAO_0000118>common eastern firefly</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Photinus pyralis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_7227 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7227">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33392"/>
-        <obo:IAO_0000111>Drosophila melanogaster</obo:IAO_0000111>
-        <obo:IAO_0000118>fruit fly</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Drosophila melanogaster</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7742">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <obo:IAO_0000118>vertebrates</obo:IAO_0000118>
+        <rdfs:label>Vertebrata &lt;vertebrates&gt;</rdfs:label>
     </owl:Class>
     
 
@@ -22244,7 +21992,7 @@ When there is no such string, it is almost always because the entities take the 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_7955 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7955">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_117571"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7742"/>
         <obo:IAO_0000111>Danio rerio</obo:IAO_0000111>
         <obo:IAO_0000118>leopard danio</obo:IAO_0000118>
         <obo:IAO_0000118>zebra danio</obo:IAO_0000118>
@@ -22256,10 +22004,19 @@ When there is no such string, it is almost always because the entities take the 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_8292 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_8292">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7742"/>
+        <rdfs:label>Amphibia</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_8355 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_8355">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_32523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_8292"/>
         <obo:IAO_0000111>Xenopus laevis</obo:IAO_0000111>
         <obo:IAO_0000118>African clawed frog</obo:IAO_0000118>
         <obo:IAO_0000118>clawed frog</obo:IAO_0000118>
@@ -22315,25 +22072,10 @@ When there is no such string, it is almost always because the entities take the 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_91561 -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9483 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_91561">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_314145"/>
-        <obo:IAO_0000111>Artiodactyla</obo:IAO_0000111>
-        <obo:IAO_0000118>even-toed ungulates &amp; whales</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Artiodactyla</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9526 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9526">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_314146"/>
-        <obo:IAO_0000111>Catarrhini</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Catarrhini</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9483">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_40674"/>
     </owl:Class>
     
 
@@ -22341,7 +22083,7 @@ When there is no such string, it is almost always because the entities take the 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9541 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9541">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9526"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_40674"/>
         <obo:IAO_0000111>Macaca fascicularis</obo:IAO_0000111>
         <obo:IAO_0000118>crab eating macaque</obo:IAO_0000118>
         <obo:IAO_0000118>crab-eating macaque</obo:IAO_0000118>
@@ -22358,7 +22100,7 @@ When there is no such string, it is almost always because the entities take the 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9526"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_40674"/>
     </owl:Class>
     
 
@@ -22366,36 +22108,7 @@ When there is no such string, it is almost always because the entities take the 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9615 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9615">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_314145"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9796 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9796">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_314145"/>
-        <obo:IAO_0000111>Equus caballus</obo:IAO_0000111>
-        <obo:IAO_0000118>domestic horse</obo:IAO_0000118>
-        <obo:IAO_0000118>equine</obo:IAO_0000118>
-        <obo:IAO_0000118>horse</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Equus caballus</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9823 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9823">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_91561"/>
-        <obo:IAO_0000111>Sus scrofa</obo:IAO_0000111>
-        <obo:IAO_0000118>pig</obo:IAO_0000118>
-        <obo:IAO_0000118>pigs</obo:IAO_0000118>
-        <obo:IAO_0000118>swine</obo:IAO_0000118>
-        <obo:IAO_0000118>wild boar</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
-        <rdfs:label>Sus scrofa</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_40674"/>
     </owl:Class>
     
 
@@ -22403,7 +22116,7 @@ When there is no such string, it is almost always because the entities take the 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9913 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9913">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_91561"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_40674"/>
         <obo:IAO_0000111>Bos taurus</obo:IAO_0000111>
         <obo:IAO_0000118>bovine</obo:IAO_0000118>
         <obo:IAO_0000118>cow</obo:IAO_0000118>
@@ -22420,7 +22133,7 @@ When there is no such string, it is almost always because the entities take the 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9989 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9989">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_314146"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_40674"/>
         <obo:IAO_0000111>Rodentia</obo:IAO_0000111>
         <obo:IAO_0000118>rodent</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
@@ -28424,12 +28137,6 @@ DS: Is this synthetic an oxymoron to the biomaterial?</obo:IAO_0000232>
     
 
 
-    <!-- http://purl.bioontology.org/ontology/NCBITAXON/44689 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.bioontology.org/ontology/NCBITAXON/44689"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CLO_0003684 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CLO_0003684"/>
@@ -28696,6 +28403,12 @@ DS: Is this synthetic an oxymoron to the biomaterial?</obo:IAO_0000232>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_44689 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_44689"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_6239 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6239"/>
@@ -28704,9 +28417,7 @@ DS: Is this synthetic an oxymoron to the biomaterial?</obo:IAO_0000232>
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9483 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9483">
-        <rdfs:label>Callithrix jacchus</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9483"/>
     
 
 
@@ -29374,7 +29085,7 @@ DS: Is this synthetic an oxymoron to the biomaterial?</obo:IAO_0000232>
 
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-biosample-199-Fig5-6_Flamindo2">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_biosample_information"/>
-        <obo:IAO_0000136 rdf:resource="http://purl.bioontology.org/ontology/NCBITAXON/44689"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_44689"/>
         <has_genetic_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-genetic-199-Fig5-6_Flamindo2"/>
         <is_about_cell rdf:resource="http://purl.obolibrary.org/obo/CL_0000732"/>
         <has_description>D. discoideum expressing Flamindo2</has_description>
@@ -29387,7 +29098,7 @@ DS: Is this synthetic an oxymoron to the biomaterial?</obo:IAO_0000232>
 
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-biosample-199-Fig5-6_RFP">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_biosample_information"/>
-        <obo:IAO_0000136 rdf:resource="http://purl.bioontology.org/ontology/NCBITAXON/44689"/>
+        <obo:IAO_0000136 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_44689"/>
         <has_genetic_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-genetic-199-Fig5-6_RFP"/>
         <is_about_cell rdf:resource="http://purl.obolibrary.org/obo/CL_0000732"/>
         <has_description>D. discoideum expressing RFP</has_description>
@@ -35015,20 +34726,20 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
      -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CLO_0003684">
-        <obo:CLO_0000178>LCL-1512</obo:CLO_0000178>
         <rdfs:seeAlso>MeSH: D006367</rdfs:seeAlso>
+        <obo:CLO_0000178>LCL-1512</obo:CLO_0000178>
         <obo:IAO_0000119>WEB: https://www.ncbi.nlm.nih.gov/pubmed/12001993</obo:IAO_0000119>
-        <rdfs:seeAlso>HyperCLDB: cl1601</rdfs:seeAlso>
         <rdfs:label>HeLa cell</rdfs:label>
         <rdfs:seeAlso>EFO: EFO_0001185</rdfs:seeAlso>
+        <rdfs:seeAlso>HyperCLDB: cl1601</rdfs:seeAlso>
         <rdfs:seeAlso>CHEMBL: CHEMBL3308376</rdfs:seeAlso>
         <obo:IAO_0000119>WEB: http://www.atcc.org/products/all/CCL-2.aspx</obo:IAO_0000119>
-        <obo:IAO_0000118>HeLa</obo:IAO_0000118>
         <obo:IAO_0000115>an immortal human uterine cervix-derived epithelial cell line that was derived from cervical adenocarcinoma cancer cells taken on February 8, 1951 from Henrietta Lacks, a patient who died of her cancer on October 4, 1951.</obo:IAO_0000115>
+        <obo:IAO_0000118>HeLa</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/HeLa</obo:IAO_0000119>
         <rdfs:seeAlso>ATCC: CCL-2</rdfs:seeAlso>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
         <rdfs:seeAlso>RRID:CVCL_0030</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CLO_0007646">
         <obo:IAO_0000115>A model mammalian cell line cell that was genereated from the initial isolation in 1958 of epithelial cells from the kidney tubule of an adult Cocker Spaniel dog by Stewart H. Madin and Norman B. Darby, Jr..</obo:IAO_0000115>
@@ -35036,26 +34747,26 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Madin-Darby_canine_kidney_cells</obo:IAO_0000119>
         <obo:IAO_0000118>MDCK</obo:IAO_0000118>
         <rdfs:seeAlso>HyperCLDB: cl5078</rdfs:seeAlso>
-        <obo:IAO_0000118>Madin-Darby canine kidney cell</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+        <obo:IAO_0000118>Madin-Darby canine kidney cell</obo:IAO_0000118>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000000">
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/cl#human_subset"/>
         <rdfs:comment>The definition of cell is intended to represent all cells, and thus a cell is defined as a material entity and not an anatomical structure, which implies that it is part of an organism (or the entirety of one).</rdfs:comment>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/cl#human_subset"/>
         <rdfs:seeAlso>EFO_URI: http://www.ebi.ac.uk/efo/EFO_0000324</rdfs:seeAlso>
         <rdfs:label>cell</rdfs:label>
         <oboInOwl:hasDbXref>FBbt:00007002</oboInOwl:hasDbXref>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwlInOwllibrary.org/oboInOwlInOwl/ubprop#_upper_level"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/cl#mouse_subset"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/cl#mouse_subset"/>
         <oboInOwl:hasDbXref>GO:0005623</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>KUPO:0000002</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/ubprop#_upper_level"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/cl#cellxgene_subset"/>
-        <oboInOwl:hasDbXref>MESH:D002477</oboInOwl:hasDbXref>
         <obo:IAO_0000112 xml:lang="en">PMID:18089833.Cancer Res. 2007 Dec 15;67(24):12018-25. &quot;...Epithelial cells were harvested from histologically confirmed adenocarcinomas ..&quot;</obo:IAO_0000112>
+        <oboInOwl:hasDbXref>MESH:D002477</oboInOwl:hasDbXref>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <oboInOwl:hasDbXref>XAO:0003012</oboInOwl:hasDbXref>
         <rdfs:label>cell type</rdfs:label>
@@ -35067,15 +34778,18 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <oboInOwl:hasDbXref>WBbt:0004017</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:68646</oboInOwl:hasDbXref>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000732">
+        <rdfs:label>amoeboid cell</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0001034">
         <obo:IAO_0000115>A cell that is maintained or propagated in a controlled artificial environment for use in an investigation.</obo:IAO_0000115>
         <rdfs:label>cell in vitro</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <rdfs:comment>&apos;In vitro&apos;, translating literally to &apos;in glass&apos;, typically refers to a controlled, often sterile, laboratory setting where cells or other specimens are placed by some agent for the purpose of studying or manipulating them as part of some research investigation. &apos;In vitro&apos; is intended to contrast with &apos;native&apos;,which refers to cells or other biological entities that are found in a natural setting. It describes unicellular organisms removed from a natural environement and multicellular organism cells removed from an organism, or cells derived in culture from such displaced cells.</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
         <oboInOwl:creation_date>2012-01-12T09:58:38Z</oboInOwl:creation_date>
         <oboInOwl:created_by>haendel</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbi_00000001">
         <rdfs:label>sample preparation method</rdfs:label>
@@ -35169,8 +34883,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <rdfs:label>complementary metal oxide semiconductor (CMOS)</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbi_00000321">
-        <oboInOwl:id>FBbi:00000321</oboInOwl:id>
         <obo:IAO_0000115>methods for increasing the resolution beyond the classical Abbe diffraction limit</obo:IAO_0000115>
+        <oboInOwl:id>FBbi:00000321</oboInOwl:id>
         <oboInOwl:created_by>jm</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-03-09T03:12:34Z</oboInOwl:creation_date>
         <rdfs:label>resolution-enhancing method</rdfs:label>
@@ -35181,8 +34895,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <oboInOwl:created_by>jm</oboInOwl:created_by>
         <obo:IAO_0000115>a birefringent optical element typically used to split polarized illumination into two sets of parallel but displaced rays</obo:IAO_0000115>
         <oboInOwl:creation_date>2010-03-09T03:20:14Z</oboInOwl:creation_date>
-        <rdfs:label>Wollaston prism</rdfs:label>
         <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <rdfs:label>Wollaston prism</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbi_00000334">
         <oboInOwl:created_by>jm</oboInOwl:created_by>
@@ -35239,8 +34953,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
         <oboInOwl:creation_date>2010-03-17T02:22:53Z</oboInOwl:creation_date>
         <oboInOwl:id>FBbi:00000518</oboInOwl:id>
-        <oboInOwl:created_by>jm</oboInOwl:created_by>
         <rdfs:label>tdTomatoFP</rdfs:label>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbi_00000525">
         <oboInOwl:created_by>jm</oboInOwl:created_by>
@@ -35283,8 +34997,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <rdfs:comment>Note that, in addition to forming the root of the molecular function ontology, this term is recommended for the annotation of gene products whose molecular function is unknown. When this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this. Despite its name, this is not a type of &apos;function&apos; in the sense typically defined by upper ontologies such as Basic Formal Ontology (BFO). It is instead a BFO:process carried out by a single gene product or complex.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
         <oboInOwl:hasAlternativeId>GO:0005554</oboInOwl:hasAlternativeId>
-        <oboInOwl:id>GO:0003674</oboInOwl:id>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:id>GO:0003674</oboInOwl:id>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0005575">
         <obo:IAO_0000115>A location, relative to cellular compartments and structures, occupied by a macromolecular machine. There are three types of cellular components described in the gene ontology: (1) the cellular anatomical entity where a gene product carries out a molecular function (e.g., plasma membrane, cytoskeleton) or membrane-enclosed compartments (e.g., mitochondrion); (2) virion components, where viral proteins act, and (3) the stable macromolecular complexes of which gene product are parts (e.g., the clathrin complex).</obo:IAO_0000115>
@@ -35293,16 +35007,16 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida"/>
         <oboInOwl:hasDbXref>NIF_Subcellular:sao1337158144</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_yeast"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <oboInOwl:hasRelatedSynonym>subcellular entity</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_metagenomics"/>
         <oboInOwl:hasExactSynonym>cellular component</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-        <rdfs:comment>Note that, in addition to forming the root of the cellular component ontology, this term is recommended for the annotation of gene products whose cellular component is unknown. When this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
         <oboInOwl:hasAlternativeId>GO:0008372</oboInOwl:hasAlternativeId>
+        <rdfs:comment>Note that, in addition to forming the root of the cellular component ontology, this term is recommended for the annotation of gene products whose cellular component is unknown. When this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
         <oboInOwl:id>GO:0005575</oboInOwl:id>
         <rdfs:label>cellular_component</rdfs:label>
     </rdf:Description>
@@ -35322,8 +35036,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <obo:IAO_0000115>A collagen-containing extracellular matrix consisting of a thin layer of dense material found in various animal tissues interposed between the cells and the adjacent connective tissue. It consists of the basal lamina plus an associated layer of reticulin fibers.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0005739">
-        <rdfs:comment>Some anaerobic or microaerophilic organisms (e.g. Entamoeba histolytica, Giardia intestinalis and several Microsporidia species) do not have mitochondria, and contain mitochondrion-related organelles (MROs) instead, called mitosomes or hydrogenosomes, very likely derived from mitochondria. To annotate gene products located in these mitochondrial relics in species such as Entamoeba histolytica, Giardia intestinalis or others, please use GO:0032047 &apos;mitosome&apos; or GO:0042566 &apos;hydrogenosome&apos;. (See PMID:24316280 for a list of species currently known to contain mitochondrion-related organelles.)</rdfs:comment>
         <rdfs:label>mitochondrion</rdfs:label>
+        <rdfs:comment>Some anaerobic or microaerophilic organisms (e.g. Entamoeba histolytica, Giardia intestinalis and several Microsporidia species) do not have mitochondria, and contain mitochondrion-related organelles (MROs) instead, called mitosomes or hydrogenosomes, very likely derived from mitochondria. To annotate gene products located in these mitochondrial relics in species such as Entamoeba histolytica, Giardia intestinalis or others, please use GO:0032047 &apos;mitosome&apos; or GO:0042566 &apos;hydrogenosome&apos;. (See PMID:24316280 for a list of species currently known to contain mitochondrion-related organelles.)</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_yeast"/>
@@ -35331,13 +35045,13 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_agr"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_drosophila"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_euk_cellular_processes_ribbon"/>
+        <obo:IAO_0000115>A semiautonomous, self replicating organelle that occurs in varying numbers, shapes, and sizes in the cytoplasm of virtually all eukaryotic cells. It is notably the site of tissue respiration.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
         <oboInOwl:hasExactSynonym>mitochondria</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>A semiautonomous, self replicating organelle that occurs in varying numbers, shapes, and sizes in the cytoplasm of virtually all eukaryotic cells. It is notably the site of tissue respiration.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_euk_cellular_processes_ribbon"/>
         <oboInOwl:hasDbXref>Wikipedia:Mitochondrion</oboInOwl:hasDbXref>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida"/>
         <oboInOwl:id>GO:0005739</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
         <oboInOwl:hasDbXref>NIF_Subcellular:sao1860313010</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_mouse"/>
@@ -35346,21 +35060,21 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0005741">
         <obo:IAO_0000115>The outer, i.e. cytoplasm-facing, lipid bilayer of the mitochondrial envelope.</obo:IAO_0000115>
-        <oboInOwl:id>GO:0005741</oboInOwl:id>
         <rdfs:label>mitochondrial outer membrane</rdfs:label>
+        <oboInOwl:id>GO:0005741</oboInOwl:id>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <oboInOwl:hasDbXref>NIF_Subcellular:sao1289741256</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Outer_mitochondrial_membrane</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>outer mitochondrion membrane</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mitochondrion outer membrane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>outer mitochondrion membrane</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>outer mitochondrial membrane</oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0005743">
         <obo:IAO_0000115>The inner, i.e. lumen-facing, lipid bilayer of the mitochondrial envelope. It is highly folded to form cristae.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>inner mitochondrial membrane</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
         <oboInOwl:hasDbXref>NIF_Subcellular:sao1371347282</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym>inner mitochondrion membrane</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mitochondrion inner membrane</oboInOwl:hasExactSynonym>
         <oboInOwl:id>GO:0005743</oboInOwl:id>
@@ -35372,8 +35086,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <oboInOwl:created_by>vw</oboInOwl:created_by>
         <oboInOwl:hasRelatedSynonym>mitochondrial membrane fusion</oboInOwl:hasRelatedSynonym>
         <rdfs:label>mitochondrial fusion</rdfs:label>
-        <oboInOwl:id>GO:0008053</oboInOwl:id>
         <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/23133</obo:IAO_0000233>
+        <oboInOwl:id>GO:0008053</oboInOwl:id>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115>Merging of two or more mitochondria within a cell to form a single compartment.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>GO:1990613</oboInOwl:hasAlternativeId>
@@ -35388,17 +35102,17 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <oboInOwl:hasExactSynonym>biological process</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>single organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <rdfs:comment>Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
         <oboInOwl:hasRelatedSynonym>single-organism process</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pombe"/>
         <oboInOwl:creation_date>2012-09-19T15:05:24Z</oboInOwl:creation_date>
         <oboInOwl:id>GO:0008150</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida"/>
+        <oboInOwl:hasExactSynonym>physiological process</oboInOwl:hasExactSynonym>
         <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/24968</obo:IAO_0000233>
         <oboInOwl:hasAlternativeId>GO:0007582</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasExactSynonym>physiological process</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_metagenomics"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_yeast"/>
         <rdfs:label>biological_process</rdfs:label>
@@ -35413,8 +35127,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <rdfs:label>mitochondrial crista</rdfs:label>
         <oboInOwl:id>GO:0030061</oboInOwl:id>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym>mitochondrial cristae</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>Any of the inward folds of the mitochondrial inner membrane. Their number, extent, and shape differ in mitochondria from different tissues and organisms. They appear to be devices for increasing the surface area of the mitochondrial inner membrane, where the enzymes of electron transport and oxidative phosphorylation are found. Their shape can vary with the respiratory state of the mitochondria.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>mitochondrial cristae</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDbXref>NIF_Subcellular:sao333328131</oboInOwl:hasDbXref>
         <rdfs:comment>See also the cellular component term &apos;mitochondrial inner membrane ; GO:0005743&apos;.</rdfs:comment>
     </rdf:Description>
@@ -35426,15 +35140,18 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <obo:IAO_0000118>mouse</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_44689">
+        <rdfs:label>Dictyostelium discoideum</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6239">
         <rdfs:label>Caenorhabditis elegans</rdfs:label>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-        <obo:IAO_0000111>Caenorhabditis elegans</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_7712">
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9483">
+        <rdfs:label>Callithrix jacchus</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
         <obo:IAO_0000111>Homo sapiens</obo:IAO_0000111>
@@ -35461,18 +35178,18 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <obo:IAO_0000118>sample population</obo:IAO_0000118>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001879">
-        <obo:IAO_0000119>PERSON:Matthew Brush</obo:IAO_0000119>
         <rdfs:comment>(copied from ReO)
 Reagents are distinguished from devices/instruments that also serve as facilitators in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in or have parts that participate in some chemical interaction or reaction during their intended participation in some technique.  By contrast, devices do not participate in a chemical reaction/interaction during the technique.
 
 Reagents are distinguished from study subjects/evaluants in that study subjects and evaluants are that about which conclusions are drawn and knowledge is sought in an investigation - while reagents, by definition, are not.  It should be noted, however, that reagent and study subject/evaluant roles can be borne by instances of the same type of material entity - but a given instance can only realize one of these roles in the execution of a given  assay. For example, taq polymerase can bear a reagent role or an evaluant role.  In a DNA sequencing assay aimed at generating sequence data about some plasmid, the reagent role of the taq polymerase is realized. In an assay to evaluate the quality of the taq polymerase itself, the evaluant/study subject role of the taq is realized, but not the reagent role since the taq is the subject about which data is generated.
 
 In regard to the statement that reagents are &apos;distinct&apos; from the specified outputs of a technique:  note that a reagent may be incorporated into a material output of a technique, as long as the IDENTITY of this output is distinct from that of the bearer of the reagent role.  For example, dNTPs input into a PCR are reagents that become part of the material output of this technique, but this output has a new identity (ie that of a &apos;nucleic acid molecule&apos;) that is distinct from the identity of the dNTPs that comprise it.  Similarly, a biotin molecule input into a cell labeling technique are reagents that become part of the specified output, but the identity of the output is that of some modified cell specimen which shares identity with the input unmodified cell specimen, and not with the biotin label. Thus, we see that an important criteria of &apos;reagent-ness&apos; is that it is a facilitator, and not the primary focus of an investigation or material processing technique (ie not the specified subject/evaluant about which knowledge is sought, or the specified output material of the technique).</rdfs:comment>
+        <obo:IAO_0000119>PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117>PERSON:Matthew Brush</obo:IAO_0000117>
         <rdfs:label xml:lang="en">reagent</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">A biological or chemical entity that bears a reagent role in virtue of it being intended for application in a scientific technique  to participate in (or have molecular parts that participate in) a chemical reaction that facilitates the generation of data about some distinct entity, or the generation of some distinct material specified output.</obo:IAO_0000115>
-        <obo:IAO_0000116>2013-6-5 MHB: Clarifications regarding the distinction between reagetns and devices were made at the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions.  Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear.  For examples, see editor note on OBI:device.</obo:IAO_0000116>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000116>2013-6-5 MHB: Clarifications regarding the distinction between reagetns and devices were made at the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions.  Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear.  For examples, see editor note on OBI:device.</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">reagent</obo:IAO_0000111>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003030">
@@ -35487,8 +35204,8 @@ In regard to the statement that reagents are &apos;distinct&apos; from the speci
         <rdfs:label>organism</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
         <obo:IAO_0000112 xml:lang="en">virus</obo:IAO_0000112>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
         <obo:IAO_0000116>13-02-2009:
 OBI doesn&apos;t take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.
 This issue is outside the scope of OBI.</obo:IAO_0000116>
@@ -35530,15 +35247,15 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
         <oboInOwl:hasDbXref>PdumDv:0000090</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BILS:0000105</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>oboInOwl:SsalDv_0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>oboInOwl:GgalDv_0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>oboInOwl:SsalDv_0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HsapDv:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFS:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>oboInOwl:PtroDv_0000000</oboInOwl:hasDbXref>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#upper_level"/>
         <oboInOwl:hasDbXref>oboInOwl:MmulDv_0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ncithesaurus:Developmental_Stage</oboInOwl:hasDbXref>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#upper_level"/>
         <oboInOwl:hasNarrowSynonym>stage</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDbXref>FMA:24120</oboInOwl:hasDbXref>
         <obo:IAO_0000116>this class represents a proper part of the life cycle of an organism. The class &apos;life cycle&apos; should not be placed here</obo:IAO_0000116>
@@ -35561,8 +35278,8 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <oboInOwl:hasDbXref>EFO:0000399</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MmusDv:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>oboInOwl:OariDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>oboInOwl:OanaDv_0000000</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#efo_slim"/>
+        <oboInOwl:hasDbXref>oboInOwl:OanaDv_0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>oboInOwl:GgorDv_0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFS:0100000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>oboInOwl:EcabDv_0000000</oboInOwl:hasDbXref>
@@ -35571,12 +35288,12 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <oboInOwl:hasDbXref>oboInOwl:DsimDv_0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>oboInOwl:PpanDv_0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FBdv:00007012</oboInOwl:hasDbXref>
-        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
         <obo:IAO_0000115>A spatiotemporal region encompassing some part of the life cycle of an organism.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
         <oboInOwl:hasDbXref>oboInOwl:BtauDv_0000000</oboInOwl:hasDbXref>
         <obo:UBPROP_0000012>we map the ZFS unknown stage here as it is logically equivalent to saying *some* life cycle stage</obo:UBPROP_0000012>
-        <oboInOwl:hasDbXref>MESH:D008018</oboInOwl:hasDbXref>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <oboInOwl:hasDbXref>MESH:D008018</oboInOwl:hasDbXref>
         <oboInOwl:hasNarrowSynonym>developmental stage</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#mouse_subset"/>
     </rdf:Description>
@@ -35591,16 +35308,16 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#upper_level"/>
         <oboInOwl:hasDbXref>AEO:0000000</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#common_anatomy"/>
-        <rdfs:label>anatomical entity</rdfs:label>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
+        <rdfs:label>anatomical entity</rdfs:label>
         <oboInOwl:hasDbXref>FBbt:10000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MA:0000001</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0100000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C1515976</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EHDAA2:0002229</oboInOwl:hasDbXref>
-        <oboInOwl:id>UBERON:0001062</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#human_subset"/>
+        <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
+        <oboInOwl:id>UBERON:0001062</oboInOwl:id>
         <oboInOwl:hasDbXref>HAO:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BILA:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CARO:0000000</oboInOwl:hasDbXref>
