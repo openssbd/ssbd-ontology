@@ -4464,12 +4464,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
-    <!-- http://ssbd.riken.jp/ontology/has_pubmed_id -->
-
-    <owl:DatatypeProperty rdf:about="http://ssbd.riken.jp/ontology/has_pubmed_id"/>
-    
-
-
     <!-- http://ssbd.riken.jp/ontology/has_reagent_name -->
 
     <owl:DatatypeProperty rdf:about="http://ssbd.riken.jp/ontology/has_reagent_name">
@@ -26440,16 +26434,23 @@ DS: Is this synthetic an oxymoron to the biomaterial?</obo:IAO_0000232>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ssbd.riken.jp/ontology/has_pmcid"/>
+                <owl:onProperty rdf:resource="http://ssbd.riken.jp/ontology/has_paper_information"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ssbd.riken.jp/ontology/has_url"/>
+                <owl:onProperty rdf:resource="http://ssbd.riken.jp/ontology/has_paper_url"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ssbd.riken.jp/ontology/has_pmcid"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dcterms:description xml:lang="en">A description about the SSBD project.</dcterms:description>
@@ -33838,10 +33839,10 @@ DS: Is this synthetic an oxymoron to the biomaterial?</obo:IAO_0000232>
 
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-paper-141-30371805">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_paper_information"/>
+        <has_PMID>30371805</has_PMID>
         <has_doi>https://doi.org/10.1093/jmicro/dfy128</has_doi>
         <has_paper_information>Yuka Sato, Shigeo Okabe (2019) Nano-scale analysis of synapse morphology in an autism mouse model with 15q11-13 copy number variation using focused ion beam milling and scanning electron microscopy., Microscopy (Oxford, England), Volume 68, Number 2, pp. 122-132</has_paper_information>
         <has_paper_url>https://academic.oup.com/jmicro/article/68/2/122/5146312</has_paper_url>
-        <has_pubmed_id>30371805</has_pubmed_id>
         <rdfs:label xml:lang="en">ssbd-paper-141-30371805</rdfs:label>
     </owl:NamedIndividual>
     
@@ -33851,10 +33852,10 @@ DS: Is this synthetic an oxymoron to the biomaterial?</obo:IAO_0000232>
 
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-paper-163-31337683">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_paper_information"/>
+        <has_PMID>31337683</has_PMID>
         <has_doi>https://doi.org/10.1073/pnas.1905924116</has_doi>
         <has_paper_information>Chenguang Wang, Masayasu Taki, Yoshikatsu Sato, Yasushi Tamura, Hideyuki Yaginuma, Yasushi Okada, Shigehiro Yamaguchi (2019) A photostable fluorescent marker for the superresolution live imaging of the dynamic structure of the mitochondrial cristae., Proceedings of the National Academy of Sciences of the United States of America, Volume 116, Number 32, pp. 15817-15822</has_paper_information>
         <has_paper_url>https://www.pnas.org/doi/full/10.1073/pnas.1905924116</has_paper_url>
-        <has_pubmed_id>31337683</has_pubmed_id>
         <rdfs:label xml:lang="en">ssbd-paper-163-31337683</rdfs:label>
     </owl:NamedIndividual>
     
@@ -33864,10 +33865,10 @@ DS: Is this synthetic an oxymoron to the biomaterial?</obo:IAO_0000232>
 
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-paper-170-33972551">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_paper_information"/>
+        <has_PMID>33972551</has_PMID>
         <has_doi>https://doi.org/10.1038/s41467-021-22881-y</has_doi>
         <has_paper_information>Ko Tsutsui, Hiroki Machida, Asako Nakagawa, Kyungmin Ahn, Ritsuko Morita, Kiyotoshi Sekiguchi, Jeffrey H Miner, Hironobu Fujiwara (2021) Mapping the molecular and structural specialization of the skin basement membrane for inter-tissue interactions., Nature communications, Volume 12, Number 1, pp. 2577</has_paper_information>
         <has_paper_url>https://www.nature.com/articles/s41467-021-22881-y</has_paper_url>
-        <has_pubmed_id>33972551</has_pubmed_id>
         <rdfs:label xml:lang="en">ssbd-paper-170-33972551</rdfs:label>
     </owl:NamedIndividual>
     
@@ -33877,10 +33878,10 @@ DS: Is this synthetic an oxymoron to the biomaterial?</obo:IAO_0000232>
 
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-paper-199-34400683">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_paper_information"/>
+        <has_PMID>34400683</has_PMID>
         <has_doi>https://doi.org/10.1038/s41598-021-95930-7</has_doi>
         <has_paper_information>Ichimura, T., Kakizuka, T., Horikawa, K. et al. Exploring rare cellular activity in more than one million cells by a transscale scope. Sci Rep 11, 16539 (2021).</has_paper_information>
         <has_paper_url>https://www.nature.com/articles/s41598-021-95930-7</has_paper_url>
-        <has_pubmed_id>34400683</has_pubmed_id>
         <rdfs:label xml:lang="en">ssbd-paper-199-34400683</rdfs:label>
     </owl:NamedIndividual>
     
@@ -33890,11 +33891,11 @@ DS: Is this synthetic an oxymoron to the biomaterial?</obo:IAO_0000232>
 
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-paper-2-23172286">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_paper_information"/>
+        <has_PMID>23172286</has_PMID>
         <has_doi>https://doi.org/10.1093/nar/gks1107</has_doi>
         <has_paper_information>Kyoda, K. et al. “WDDD: Worm Developmental Dynamics Database.”
 Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gks1107</has_paper_information>
         <has_pmc_id>PMC3531189</has_pmc_id>
-        <has_pubmed_id>23172286</has_pubmed_id>
         <rdfs:label xml:lang="en">ssbd-paper-2-23172286</rdfs:label>
     </owl:NamedIndividual>
     
@@ -33904,10 +33905,10 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
 
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-paper-48-24746791">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_paper_information"/>
+        <has_PMID>24746791</has_PMID>
         <has_doi>https://doi.org/10.1016/j.cell.2014.03.042</has_doi>
         <has_paper_information>Etsuo A Susaki, Kazuki Tainaka, Dimitri Perrin, Fumiaki Kishino, Takehiro Tawara, Tomonobu M Watanabe, Chihiro Yokoyama, Hirotaka Onoe, Megumi Eguchi, Shun Yamaguchi, Takaya Abe, Hiroshi Kiyonari, Yoshihiro Shimizu, Atsushi Miyawaki, Hideo Yokota, Hiroki R Ueda (2014) Whole-brain imaging with single-cell resolution using chemical cocktails and computational analysis., Cell, Volume 157, Number 3, pp. 726-39</has_paper_information>
         <has_paper_url>https://www.sciencedirect.com/science/article/pii/S0092867414004188</has_paper_url>
-        <has_pubmed_id>24746791</has_pubmed_id>
         <rdfs:label xml:lang="en">ssbd-paper-48-24746791</rdfs:label>
     </owl:NamedIndividual>
     
@@ -33917,10 +33918,10 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
 
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-paper-98-27588418">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_paper_information"/>
+        <has_PMID>27588418</has_PMID>
         <has_doi>https://doi.org/10.1371/journal.pone.0161336</has_doi>
         <has_paper_information>Ritsuko Morita, Miho Kihira, Yousuke Nakatsu, Yohei Nomoto, Miho Ogawa, Kazumasa Ohashi, Kensaku Mizuno, Tetsuhiko Tachikawa, Yukitaka Ishimoto, Yoshihiro Morishita, Takashi Tsuji (2016) Coordination of Cellular Dynamics Contributes to Tooth Epithelium Deformations., PloS one, Volume 11, Number 9, pp. e0161336</has_paper_information>
         <has_paper_url>https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0161336</has_paper_url>
-        <has_pubmed_id>27588418</has_pubmed_id>
         <rdfs:label xml:lang="en">ssbd-paper-98-27588418</rdfs:label>
     </owl:NamedIndividual>
     
@@ -34734,8 +34735,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <rdfs:seeAlso>HyperCLDB: cl1601</rdfs:seeAlso>
         <rdfs:seeAlso>CHEMBL: CHEMBL3308376</rdfs:seeAlso>
         <obo:IAO_0000119>WEB: http://www.atcc.org/products/all/CCL-2.aspx</obo:IAO_0000119>
-        <obo:IAO_0000115>an immortal human uterine cervix-derived epithelial cell line that was derived from cervical adenocarcinoma cancer cells taken on February 8, 1951 from Henrietta Lacks, a patient who died of her cancer on October 4, 1951.</obo:IAO_0000115>
         <obo:IAO_0000118>HeLa</obo:IAO_0000118>
+        <obo:IAO_0000115>an immortal human uterine cervix-derived epithelial cell line that was derived from cervical adenocarcinoma cancer cells taken on February 8, 1951 from Henrietta Lacks, a patient who died of her cancer on October 4, 1951.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/HeLa</obo:IAO_0000119>
         <rdfs:seeAlso>ATCC: CCL-2</rdfs:seeAlso>
         <rdfs:seeAlso>RRID:CVCL_0030</rdfs:seeAlso>
@@ -34767,8 +34768,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/cl#cellxgene_subset"/>
         <obo:IAO_0000112 xml:lang="en">PMID:18089833.Cancer Res. 2007 Dec 15;67(24):12018-25. &quot;...Epithelial cells were harvested from histologically confirmed adenocarcinomas ..&quot;</obo:IAO_0000112>
         <oboInOwl:hasDbXref>MESH:D002477</oboInOwl:hasDbXref>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <oboInOwl:hasDbXref>XAO:0003012</oboInOwl:hasDbXref>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label>cell type</rdfs:label>
         <oboInOwl:hasDbXref>CALOHA:TS-2035</oboInOwl:hasDbXref>
         <obo:IAO_0000111>cell</obo:IAO_0000111>
@@ -34787,9 +34788,9 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <rdfs:comment>&apos;In vitro&apos;, translating literally to &apos;in glass&apos;, typically refers to a controlled, often sterile, laboratory setting where cells or other specimens are placed by some agent for the purpose of studying or manipulating them as part of some research investigation. &apos;In vitro&apos; is intended to contrast with &apos;native&apos;,which refers to cells or other biological entities that are found in a natural setting. It describes unicellular organisms removed from a natural environement and multicellular organism cells removed from an organism, or cells derived in culture from such displaced cells.</rdfs:comment>
-        <oboInOwl:creation_date>2012-01-12T09:58:38Z</oboInOwl:creation_date>
         <oboInOwl:created_by>haendel</oboInOwl:created_by>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+        <oboInOwl:creation_date>2012-01-12T09:58:38Z</oboInOwl:creation_date>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbi_00000001">
         <rdfs:label>sample preparation method</rdfs:label>
@@ -34814,8 +34815,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbi_00000222">
         <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
-        <rdfs:label>imaging method</rdfs:label>
         <oboInOwl:id>FBbi:00000222</oboInOwl:id>
+        <rdfs:label>imaging method</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbi_00000245">
         <rdfs:label xml:lang="en">differential interference contrast microscopy</rdfs:label>
@@ -34840,8 +34841,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbi_00000269">
         <obo:IAO_0000115>media and devices employed for recording the alterations in the illumination that result from its interaction with the sample</obo:IAO_0000115>
-        <oboInOwl:id>FBbi:00000269</oboInOwl:id>
         <rdfs:label>detection method</rdfs:label>
+        <oboInOwl:id>FBbi:00000269</oboInOwl:id>
         <oboInOwl:creation_date>2010-03-09T10:38:14Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by>jm</oboInOwl:created_by>
@@ -34865,15 +34866,15 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <rdfs:label>charge coupled device (CCD)</rdfs:label>
         <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbi:00000294</oboInOwl:id>
-        <oboInOwl:creation_date>2010-03-09T11:33:49Z</oboInOwl:creation_date>
         <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-09T11:33:49Z</oboInOwl:creation_date>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbi_00000295">
         <oboInOwl:id>FBbi:00000295</oboInOwl:id>
         <rdfs:label>photomultiplier tube (PMT)</rdfs:label>
         <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
-        <oboInOwl:creation_date>2010-03-09T11:33:49Z</oboInOwl:creation_date>
         <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-09T11:33:49Z</oboInOwl:creation_date>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbi_00000304">
         <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
@@ -34883,8 +34884,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <rdfs:label>complementary metal oxide semiconductor (CMOS)</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbi_00000321">
-        <obo:IAO_0000115>methods for increasing the resolution beyond the classical Abbe diffraction limit</obo:IAO_0000115>
         <oboInOwl:id>FBbi:00000321</oboInOwl:id>
+        <obo:IAO_0000115>methods for increasing the resolution beyond the classical Abbe diffraction limit</obo:IAO_0000115>
         <oboInOwl:created_by>jm</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-03-09T03:12:34Z</oboInOwl:creation_date>
         <rdfs:label>resolution-enhancing method</rdfs:label>
@@ -34907,8 +34908,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbi_00000364">
         <obo:IAO_0000115>illumination in the form of a thin sheet of light directed perpendicular to the optic axis</obo:IAO_0000115>
-        <oboInOwl:created_by>jm</oboInOwl:created_by>
         <oboInOwl:id>FBbi:00000364</oboInOwl:id>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
         <rdfs:label>light-sheet illumination</rdfs:label>
         <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
         <oboInOwl:creation_date>2010-03-11T10:06:20Z</oboInOwl:creation_date>
@@ -34917,8 +34918,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <oboInOwl:created_by>jm</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115>Fluorescence (or Forster) resonance energy transfer; a method of estimating the distance between two fluorophores by measuring the extent of non-radiative energy transfer between the two. Experimentally, this involves selective excitation of one while observing emission from the other.</obo:IAO_0000115>
-        <rdfs:label>FRET</rdfs:label>
         <oboInOwl:id>FBbi:00000367</oboInOwl:id>
+        <rdfs:label>FRET</rdfs:label>
         <oboInOwl:creation_date>2010-03-11T10:09:33Z</oboInOwl:creation_date>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbi_00000439">
@@ -34990,8 +34991,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <rdfs:label>molecular_function</rdfs:label>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida"/>
         <oboInOwl:hasExactSynonym>molecular function</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>molecular_function</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_yeast"/>
+        <oboInOwl:hasOBONamespace>molecular_function</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_metagenomics"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <rdfs:comment>Note that, in addition to forming the root of the molecular function ontology, this term is recommended for the annotation of gene products whose molecular function is unknown. When this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this. Despite its name, this is not a type of &apos;function&apos; in the sense typically defined by upper ontologies such as Basic Formal Ontology (BFO). It is instead a BFO:process carried out by a single gene product or complex.</rdfs:comment>
@@ -35013,10 +35014,10 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <oboInOwl:hasRelatedSynonym>subcellular entity</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_metagenomics"/>
         <oboInOwl:hasExactSynonym>cellular component</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-        <oboInOwl:hasAlternativeId>GO:0008372</oboInOwl:hasAlternativeId>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
         <rdfs:comment>Note that, in addition to forming the root of the cellular component ontology, this term is recommended for the annotation of gene products whose cellular component is unknown. When this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
+        <oboInOwl:hasAlternativeId>GO:0008372</oboInOwl:hasAlternativeId>
         <oboInOwl:id>GO:0005575</oboInOwl:id>
         <rdfs:label>cellular_component</rdfs:label>
     </rdf:Description>
@@ -35036,8 +35037,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <obo:IAO_0000115>A collagen-containing extracellular matrix consisting of a thin layer of dense material found in various animal tissues interposed between the cells and the adjacent connective tissue. It consists of the basal lamina plus an associated layer of reticulin fibers.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0005739">
-        <rdfs:label>mitochondrion</rdfs:label>
         <rdfs:comment>Some anaerobic or microaerophilic organisms (e.g. Entamoeba histolytica, Giardia intestinalis and several Microsporidia species) do not have mitochondria, and contain mitochondrion-related organelles (MROs) instead, called mitosomes or hydrogenosomes, very likely derived from mitochondria. To annotate gene products located in these mitochondrial relics in species such as Entamoeba histolytica, Giardia intestinalis or others, please use GO:0032047 &apos;mitosome&apos; or GO:0042566 &apos;hydrogenosome&apos;. (See PMID:24316280 for a list of species currently known to contain mitochondrion-related organelles.)</rdfs:comment>
+        <rdfs:label>mitochondrion</rdfs:label>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_yeast"/>
@@ -35045,10 +35046,10 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_agr"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_drosophila"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_euk_cellular_processes_ribbon"/>
+        <oboInOwl:hasExactSynonym>mitochondria</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>A semiautonomous, self replicating organelle that occurs in varying numbers, shapes, and sizes in the cytoplasm of virtually all eukaryotic cells. It is notably the site of tissue respiration.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
-        <oboInOwl:hasExactSynonym>mitochondria</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_euk_cellular_processes_ribbon"/>
         <oboInOwl:hasDbXref>Wikipedia:Mitochondrion</oboInOwl:hasDbXref>
         <oboInOwl:id>GO:0005739</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida"/>
@@ -35063,9 +35064,9 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <rdfs:label>mitochondrial outer membrane</rdfs:label>
         <oboInOwl:id>GO:0005741</oboInOwl:id>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-        <oboInOwl:hasDbXref>NIF_Subcellular:sao1289741256</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Outer_mitochondrial_membrane</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NIF_Subcellular:sao1289741256</oboInOwl:hasDbXref>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <oboInOwl:hasExactSynonym>mitochondrion outer membrane</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>outer mitochondrion membrane</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>outer mitochondrial membrane</oboInOwl:hasExactSynonym>
@@ -35073,13 +35074,13 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0005743">
         <obo:IAO_0000115>The inner, i.e. lumen-facing, lipid bilayer of the mitochondrial envelope. It is highly folded to form cristae.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>inner mitochondrial membrane</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDbXref>NIF_Subcellular:sao1371347282</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref>NIF_Subcellular:sao1371347282</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>inner mitochondrion membrane</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mitochondrion inner membrane</oboInOwl:hasExactSynonym>
         <oboInOwl:id>GO:0005743</oboInOwl:id>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <oboInOwl:hasDbXref>Wikipedia:Inner_mitochondrial_membrane</oboInOwl:hasDbXref>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>mitochondrial inner membrane</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008053">
@@ -35110,10 +35111,10 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <oboInOwl:id>GO:0008150</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida"/>
-        <oboInOwl:hasExactSynonym>physiological process</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/24968</obo:IAO_0000233>
         <oboInOwl:hasAlternativeId>GO:0007582</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>physiological process</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_metagenomics"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/24968</obo:IAO_0000233>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_yeast"/>
         <rdfs:label>biological_process</rdfs:label>
         <oboInOwl:hasDbXref>Wikipedia:Biological_process</oboInOwl:hasDbXref>
@@ -35123,8 +35124,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0030061">
         <oboInOwl:hasBroadSynonym>cristae</oboInOwl:hasBroadSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>mitochondrial crista</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <oboInOwl:id>GO:0030061</oboInOwl:id>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115>Any of the inward folds of the mitochondrial inner membrane. Their number, extent, and shape differ in mitochondria from different tissues and organisms. They appear to be devices for increasing the surface area of the mitochondrial inner membrane, where the enzymes of electron transport and oxidative phosphorylation are found. Their shape can vary with the respiratory state of the mitochondria.</obo:IAO_0000115>
@@ -35136,8 +35137,8 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <obo:IAO_0000111>Mus musculus</obo:IAO_0000111>
         <rdfs:label xml:lang="en">Mus musculus</rdfs:label>
         <rdfs:label>Mus musculus</rdfs:label>
-        <obo:IAO_0000118>house mouse</obo:IAO_0000118>
         <obo:IAO_0000118>mouse</obo:IAO_0000118>
+        <obo:IAO_0000118>house mouse</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_44689">
@@ -35178,18 +35179,18 @@ Nucleic acids research vol. 41,Database issue (2013): D732-7. doi:10.1093/nar/gk
         <obo:IAO_0000118>sample population</obo:IAO_0000118>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001879">
+        <obo:IAO_0000119>PERSON:Matthew Brush</obo:IAO_0000119>
         <rdfs:comment>(copied from ReO)
 Reagents are distinguished from devices/instruments that also serve as facilitators in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in or have parts that participate in some chemical interaction or reaction during their intended participation in some technique.  By contrast, devices do not participate in a chemical reaction/interaction during the technique.
 
 Reagents are distinguished from study subjects/evaluants in that study subjects and evaluants are that about which conclusions are drawn and knowledge is sought in an investigation - while reagents, by definition, are not.  It should be noted, however, that reagent and study subject/evaluant roles can be borne by instances of the same type of material entity - but a given instance can only realize one of these roles in the execution of a given  assay. For example, taq polymerase can bear a reagent role or an evaluant role.  In a DNA sequencing assay aimed at generating sequence data about some plasmid, the reagent role of the taq polymerase is realized. In an assay to evaluate the quality of the taq polymerase itself, the evaluant/study subject role of the taq is realized, but not the reagent role since the taq is the subject about which data is generated.
 
 In regard to the statement that reagents are &apos;distinct&apos; from the specified outputs of a technique:  note that a reagent may be incorporated into a material output of a technique, as long as the IDENTITY of this output is distinct from that of the bearer of the reagent role.  For example, dNTPs input into a PCR are reagents that become part of the material output of this technique, but this output has a new identity (ie that of a &apos;nucleic acid molecule&apos;) that is distinct from the identity of the dNTPs that comprise it.  Similarly, a biotin molecule input into a cell labeling technique are reagents that become part of the specified output, but the identity of the output is that of some modified cell specimen which shares identity with the input unmodified cell specimen, and not with the biotin label. Thus, we see that an important criteria of &apos;reagent-ness&apos; is that it is a facilitator, and not the primary focus of an investigation or material processing technique (ie not the specified subject/evaluant about which knowledge is sought, or the specified output material of the technique).</rdfs:comment>
-        <obo:IAO_0000119>PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117>PERSON:Matthew Brush</obo:IAO_0000117>
         <rdfs:label xml:lang="en">reagent</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">A biological or chemical entity that bears a reagent role in virtue of it being intended for application in a scientific technique  to participate in (or have molecular parts that participate in) a chemical reaction that facilitates the generation of data about some distinct entity, or the generation of some distinct material specified output.</obo:IAO_0000115>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000116>2013-6-5 MHB: Clarifications regarding the distinction between reagetns and devices were made at the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions.  Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear.  For examples, see editor note on OBI:device.</obo:IAO_0000116>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000111 xml:lang="en">reagent</obo:IAO_0000111>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0003030">
@@ -35204,8 +35205,8 @@ In regard to the statement that reagents are &apos;distinct&apos; from the speci
         <rdfs:label>organism</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000112 xml:lang="en">virus</obo:IAO_0000112>
         <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
+        <obo:IAO_0000112 xml:lang="en">virus</obo:IAO_0000112>
         <obo:IAO_0000116>13-02-2009:
 OBI doesn&apos;t take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.
 This issue is outside the scope of OBI.</obo:IAO_0000116>
@@ -35215,8 +35216,8 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_0000000002">
         <obo:IAO_0000115>A gene is a material entity that represents the entire DNA sequence required for synthesis of a functional protein or RNA molecule.</obo:IAO_0000115>
         <dcterms:description xml:lang="en">Physical and functional unit of heredity, which carries information from one generation to the next. In molecular terms, it is the entire DNA sequence including exons, introns, and noncoding transcription-control regions necessary for production of a functional protein or RNA.</dcterms:description>
-        <obo:IAO_0000115 xml:lang="en">A gene is a material entity that represents the entire DNA sequence required for synthesis of a functional protein or RNA molecule.</obo:IAO_0000115>
         <dcterms:description>Physical and functional unit of heredity, which carries information from one generation to the next. In molecular terms, it is the entire DNA sequence including exons, introns, and noncoding transcription-control regions necessary for production of a functional protein or RNA.</dcterms:description>
+        <obo:IAO_0000115 xml:lang="en">A gene is a material entity that represents the entire DNA sequence required for synthesis of a functional protein or RNA molecule.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">gene</rdfs:label>
     </rdf:Description>
     <owl:Axiom>
@@ -35234,8 +35235,8 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PR_000000001">
         <obo:IAO_0000111>protein</obo:IAO_0000111>
         <obo:IAO_0000112>antithrombin III is a protein</obo:IAO_0000112>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pr.owl"/>
         <obo:IAO_0000115>An amino acid chain that is produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pr.owl"/>
         <rdfs:label>protein</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_0001027">
@@ -35247,8 +35248,8 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
         <oboInOwl:hasDbXref>PdumDv:0000090</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BILS:0000105</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>oboInOwl:GgalDv_0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>oboInOwl:SsalDv_0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>oboInOwl:GgalDv_0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HsapDv:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFS:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>oboInOwl:PtroDv_0000000</oboInOwl:hasDbXref>
@@ -35270,16 +35271,16 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <obo:UBPROP_0000012>the WBls class &apos;all stages&apos; belongs here as it is the superclass of other WBls stages</obo:UBPROP_0000012>
         <oboInOwl:hasDbXref>oboInOwl:AcarDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>oboInOwl:CfamDv_0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>oboInOwl:SscrDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>WBls:0000002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>oboInOwl:CfamDv_0000000</oboInOwl:hasDbXref>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <oboInOwl:hasDbXref>oboInOwl:FcatDv_0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WBls:0000002</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EFO:0000399</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MmusDv:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>oboInOwl:OariDv_0000000</oboInOwl:hasDbXref>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#efo_slim"/>
         <oboInOwl:hasDbXref>oboInOwl:OanaDv_0000000</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#efo_slim"/>
         <oboInOwl:hasDbXref>oboInOwl:GgorDv_0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFS:0100000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>oboInOwl:EcabDv_0000000</oboInOwl:hasDbXref>
@@ -35288,12 +35289,12 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <oboInOwl:hasDbXref>oboInOwl:DsimDv_0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>oboInOwl:PpanDv_0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FBdv:00007012</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>A spatiotemporal region encompassing some part of the life cycle of an organism.</obo:IAO_0000115>
         <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
+        <obo:IAO_0000115>A spatiotemporal region encompassing some part of the life cycle of an organism.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>oboInOwl:BtauDv_0000000</oboInOwl:hasDbXref>
         <obo:UBPROP_0000012>we map the ZFS unknown stage here as it is logically equivalent to saying *some* life cycle stage</obo:UBPROP_0000012>
-        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
         <oboInOwl:hasDbXref>MESH:D008018</oboInOwl:hasDbXref>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
         <oboInOwl:hasNarrowSynonym>developmental stage</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#mouse_subset"/>
     </rdf:Description>
@@ -35308,16 +35309,16 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#upper_level"/>
         <oboInOwl:hasDbXref>AEO:0000000</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#common_anatomy"/>
-        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
         <rdfs:label>anatomical entity</rdfs:label>
-        <oboInOwl:hasDbXref>FBbt:10000000</oboInOwl:hasDbXref>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
         <oboInOwl:hasDbXref>MA:0000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBbt:10000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ZFA:0100000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C1515976</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>EHDAA2:0002229</oboInOwl:hasDbXref>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#human_subset"/>
-        <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
         <oboInOwl:id>UBERON:0001062</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#human_subset"/>
+        <oboInOwl:hasDbXref>EHDAA2:0002229</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>HAO:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BILA:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CARO:0000000</oboInOwl:hasDbXref>
