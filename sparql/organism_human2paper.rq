@@ -1,0 +1,47 @@
+###############################################################################
+# Retrieve every Dataset that contains a Homo sapiens biosample.
+# For each Dataset return:
+#   • its IRI   (?dataset)
+#   • its title (?title)
+# Optional blocks:
+#   • the parent Project that outputs the Dataset      (?project)
+#   • each Publication recorded for that Project       (?paper, ?paperInfo,?DOI,?PMID)
+###############################################################################
+PREFIX ssbd: <http://ssbd.riken.jp/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT
+  ?dataset
+  ?title
+  ?project              
+  ?paper          # optional
+  ?DOI            # optional
+  ?PMID           # optional
+  ?paperInfo      # optional
+WHERE {
+  # --- 1) Biosample must be about Homo sapiens (NCBI 9606) -------------------
+  ?bs ssbd:is_about_organism <http://purl.obolibrary.org/obo/NCBITaxon_9606> .
+
+  # --- 2) Link the Biosample to its parent Dataset ---------------------------
+  ?dataset ssbd:has_biosample_information ?bs ;
+           ssbd:has_dataset_title         ?title.
+
+  # --- 3) Optionally climb to the Project that outputs this Dataset ----------
+  OPTIONAL {
+    ?project ssbd:has_dataset_output ?dataset .
+
+    # --- 4) Optionally retrieve each publication registered for the Project --
+    OPTIONAL {
+      ?project ssbd:has_project_publications ?paper .
+      OPTIONAL { ?paper ssbd:has_doi ?DOI;
+                        ssbd:has_PMID ?PMID;
+                        ssbd:has_paper_information ?paperInfo.
+               }
+    }
+  }
+}
+ORDER BY ?dataset
+
+
+
+
