@@ -37,11 +37,11 @@ SSBD Ontology (OWL DL), exemplar instances and conversion scripts are released u
 | **Added** | `SSBD_imaging_instruments` | `has_component` (objective, detector …) |  —  |
 | **Added** | `SSBD_dimension_data` | x/y/z/t scale + unit | IAO / UO |
 
-Seven core entities—project, Dataset, Biosample, Imaging Method, Instrument, Dimension, and OME-NGFF metadata—form a two-tier model. We distinguish between the data required for rapid publication in the repository tier and the added-value database tier in SSBD. Within the repository, the essential information comprises a Project, a Dataset, and bibliographic and author (person) information, thereby ensuring the minimum metadata needed for rapid publication. The added-value tier delivers deep, ontology-aligned curation while reusing external OBO vocabularies. SSBD ontology covers entities related to imaging method(e.g., imaging method, imaging device, image dimension, the storage URI of the dataset).
+Seven core entities form a two—tier model: project, Dataset, Biosample, Imaging Method, Instrument, Dimension, and OME-NGFF metadata. We distinguish between the data required for rapid publication in the repository tier and the added-value database tier in SSBD. Within the repository, the essential information comprises a Project, a Dataset, and bibliographic and author (person) information, thereby ensuring the minimum metadata needed for rapid publication. The added-value tier delivers deep, ontology-aligned curation while reusing external OBO vocabularies. SSBD ontology covers entities related to imaging method(e.g., imaging method, imaging device, image dimension, the storage URI of the dataset).
 
 ### 1.2 Example instance relationships (Project 199 – AMATERAS brain‑slice)
 
-![](img/fig2.svf)
+![](img/fig2_v3.png)
 
 
 *Project → Dataset → Biosample → OME‑Zarr* relations 
