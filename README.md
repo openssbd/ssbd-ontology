@@ -29,15 +29,15 @@ SSBD Ontology (OWL DL), exemplar instances and conversion scripts are released u
 
 | Layer | Entity class | Typical properties | Linked external vocab |
 |-------|--------------|--------------------|-----------------------|
-| **Repository** | `SSBD_Project` | `has_project_name`, `RO:0002234` (→ Dataset) | — |
-| **Repository** | `SSBD_dataset` | `has_biosample_information`, `RO:0002180` (→ NGFF) | — |
-| **Added** | `SSBD_OME_NGFF_info` | `has_s3_endpoint`, `has_vizarr_url`, sizes | — |
+| **Repository** | `SSBD_Project` | `has_project_name`, `has_dataset_output (subClassOf RO:0002234)` (→ Dataset) | — |
+| **Repository** | `SSBD_dataset` | `has_biosample_information`, `has_ome_zarr_information` (→ OME-NGFF-ZARR) | — |
+| **Added** | `SSBD_OME_NGFF_ZARR` | `has_s3_endpoint`, `has_vizarr_url`, sizes | — |
 | **Added** | `SSBD_biosample_information` | `is_about_organism/strain/cell/anatomy/GO*` | NCBITaxon, CL, UBERON, GO |
-| **Added** | `SSBD_imaging_method_information` | `is_about_imaging_method` | FBbi | 
+| **Added** | `SSBD_imaging_method_information` | `has_detection_method`, `has_imaging_method_recorded_type` | FBbi | 
 | **Added** | `SSBD_imaging_instruments` | `has_component` (objective, detector …) |  —  |
 | **Added** | `SSBD_dimension_data` | x/y/z/t scale + unit | IAO / UO |
 
-Seven core entities—Project, Dataset, Biosample, Imaging-Method, Instrument, Dimension and OME-NGFF metadata—form a two-tier model. The repository tier (yellow) ensures instant DOI-based release; the added-value tier (pink) delivers deep, ontology-aligned curation while re-using external OBO vocabularies.
+Seven core entities—project, Dataset, Biosample, Imaging Method, Instrument, Dimension, and OME-NGFF metadata—form a two-tier model. We distinguish between the data required for rapid publication in the repository tier and the added-value database tier in SSBD. Within the repository, the essential information comprises a Project, a Dataset, and bibliographic and author (person) information, thereby ensuring the minimum metadata needed for rapid publication. The added-value tier delivers deep, ontology-aligned curation while reusing external OBO vocabularies. SSBD ontology covers entities related to imaging method(e.g., imaging method, imaging device, image dimension, the storage URI of the dataset).
 
 ### 1.2 Example instance relationships (Project 199 – AMATERAS brain‑slice)
 
