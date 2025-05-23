@@ -25,7 +25,7 @@ SSBD Ontology (OWL DL), exemplar instances and conversion scripts are released u
 
 ### 1.1 Core layer:Seven key entity types
 
-![](img/fig1.svg)
+![](img/fig1.png)
 
 | Layer | Entity class | Typical properties | Linked external vocab |
 |-------|--------------|--------------------|-----------------------|
