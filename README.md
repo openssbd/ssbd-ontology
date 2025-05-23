@@ -49,26 +49,37 @@ Project 199 (Ichimura): A single Dataset, its Biosample and the associated OME-Z
 
 ### 1.3 Sample SPARQL query  
 ```
-PREFIX ssbdont: <http://ssbd.riken.jp/ontology/>
-PREFIX obo:     <http://purl.obolibrary.org/obo/>
-PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ssbd: <http://ssbd.riken.jp/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
 
-SELECT ?dataset ?title ?methodIRI ?label ?zarr ?vizarr
+SELECT ?dataset ?bs ?title ?methodIRI ?methodLabel ?zarr ?vizarr
 WHERE {
-  ?bs ssbdont:is_about_strain <https://www.jax.org/strain/000664> .
+  # --- strain filter (C57BL/6J) ---
+  ?bs ssbd:is_about_strain <https://www.jax.org/strain/000664> .
 
-  ?dataset ssbdont:has_biosample_information ?bs ;
-           ssbdont:has_dataset_title         ?title ;
-           obo:RO_0002180                    ?ngff ;
-           ssbdont:has_imaging_method        ?mNode .
+  # --- Dataset ↔ Biosample ---
+  ?dataset ssbd:has_biosample_information ?bs ;
+           ssbd:has_dataset_title         ?title .
+  
+    # --- Imaging method  ---
+  ?dataset ssbd:has_imaging_method_total_info  ?imNode .
+  ?imNode  ssbd:has_imaging_method_recorded_type ?methodIRI .
+  OPTIONAL { ?methodIRI rdfs:label ?methodLabel }
+  
+   # --- NGFF ---
+  OPTIONAL {
+    ?dataset ssbd:has_ome_zarr_information ?ngff .
+    OPTIONAL { ?ngff ssbd:has_s3_endpoint ?zarr }
+    OPTIONAL { ?ngff ssbd:has_vizarr_url  ?vizarr }
+  }
 
-  ?mNode ssbdont:is_about_imaging_method ?methodIRI .
-  OPTIONAL { ?methodIRI rdfs:label ?label }
-
-  OPTIONAL { ?ngff ssbdont:has_s3_endpoint ?zarr }
-  OPTIONAL { ?ngff ssbdont:has_vizarr_url  ?vizarr }
 }
 ORDER BY ?methodIRI ?dataset
+
+
+
+
 ```
  ![](img/fig4.png)
 
