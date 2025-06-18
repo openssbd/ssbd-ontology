@@ -8,10 +8,10 @@ doi: "10.5281/zenodo.1234567"     # Zenodo DOI を発行後に置換
 
 authors:
 
-- family-names: Yamagata
+  - family-names: Yamagata
     given-names: Yuki
     orcid: "https://orcid.org/0000-0002-9673-1283"
-    affiliation: RIKEN Information R&D and Strategy Headquarters; RIKEN BioResource Research Center"
+    affiliation: "RIKEN Information R&D and Strategy Headquarters; RIKEN BioResource Research Center"
 
 
 
@@ -29,7 +29,7 @@ authors:
 
 
 
- - family-names: Onami
+  - family-names: Onami
     given-names: Shuichi
     orcid: "https://orcid.org/0000-0002-8255-1724"
     affiliation: "RIKEN Center for Biosystems Dynamics Research; RIKEN Information R&D and Strategy Headquarters"
