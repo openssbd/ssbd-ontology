@@ -38,8 +38,8 @@
 
 :ttlDump
     a               dcat:Distribution ;
-    dcat:accessURL   <https://zenodo.org/record/1234567> ;
-    dcat:downloadURL <https://zenodo.org/record/1234567/files/ssbd_v20250512.ttl> ;
+    dcat:accessURL   <https://doi.org/10.5281/zenodo.15693945> ;
+    dcat:downloadURL <https://doi.org/10.5281/zenodo.15693945/files/ssbd_v20250512.ttl> ;
     dcat:mediaType   "text/turtle" ;
     dct:format       "text/turtle" ;
     dct:license      <https://creativecommons.org/licenses/by/4.0/> .
