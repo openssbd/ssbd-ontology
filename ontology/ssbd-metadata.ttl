@@ -1,17 +1,17 @@
 #################################################################
 # SSBD Ontology – VoID & DCAT metadata
-# version : v0.9.0   (2025-06-19)
+# version : v20250512   
 # license : CC-BY 4.0
 # DOI     : 10.5281/zenodo.1234567   (Zenodo concept DOI)
 # contact : ontology@ssbd.riken.jp
 #
 # NOTE
-#  • This file describes the public RDF dump (ssbd_v0.9.ttl) and
+#  • This file describes the public RDF dump (ssbd_v20250512.ttl) and
 #    its access URL on Zenodo.
 #  • Update dcat:accessURL / dcat:downloadURL after each release.
 #################################################################
 
-@prefix :       <https://w3id.org/ssbd/meta/2025-06/> .
+@prefix :       <https://w3id.org/ssbd/meta/2025-05/> 
 @prefix void:   <http://rdfs.org/ns/void#> .
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 @prefix dct:    <http://purl.org/dc/terms/> .
@@ -21,12 +21,12 @@
 :ssbdDataset
         a               void:Dataset ,
                         dcat:Dataset ;
-        dct:title       "SSBD Ontology sample graph v0.9"@en ;
+        dct:title       "SSBD Ontology sample graph v20250512"@en ;
         dct:description "Two-tier OWL ontology with imaging-dataset instances."@en ;
         dct:license     <https://creativecommons.org/licenses/by/4.0/> ;
-        void:triples    "63000"^^xsd:integer ;
+        void:triples    "20214"^^xsd:integer ;
         void:uriSpace   "http://ssbd.riken.jp/" ;
-        void:exampleResource <http://ssbd.riken.jp/dataset/199-Fig2_BrainSliceRGB> ;
+        void:exampleResource <http://ssbd.riken.jp/ontology/ssbd-dataset-199-Fig2_BrainSliceRGB> ;
         dcat:keyword    "bioimaging" , "ontology" ;
         dcat:distribution :ttlDump .
 
@@ -34,7 +34,7 @@
 :ttlDump
         a               dcat:Distribution ;
         dcat:accessURL   <https://zenodo.org/record/1234567> ;
-        dcat:downloadURL <https://zenodo.org/record/1234567/files/ssbd_v0.9.ttl> ;
+        dcat:downloadURL <https://zenodo.org/record/1234567/files/ssbd_v20250512.ttl> ;
         dcat:mediaType   "text/turtle" ;
         dct:format       "text/turtle" ;
         dct:license      <https://creativecommons.org/licenses/by/4.0/> .
