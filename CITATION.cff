@@ -4,7 +4,7 @@ title: "SSBD Ontology: A Two‑Tier Schema and Instance Graph for Bio‑Imaging 
 version: "v20250512"
 repository-code: "https://github.com/openssbd/ssbd-ontology"
 license: "CC-BY-4.0"
-doi: "10.5281/zenodo.1234567"     # Zenodo DOI を発行後に置換
+doi: "10.5281/zenodo.15693945"     # Zenodo DOI を発行後に置換
 
 authors:
 
