@@ -19,7 +19,7 @@
 :ssbdGraph20250512
     a void:Dataset , dcat:Dataset ;
     dct:title       "SSBD Ontology v20250512"@en ;
-    dct:description "Two‑tier OWL ontology with pilot imaging‑dataset instances."@en ;
+    dct:description "Two‑tier ontology with imaging‑dataset instances."@en ;
     dct:license     <https://creativecommons.org/licenses/by/4.0/> ;
     owl:versionInfo "v20250512 (2025‑05‑12)" ;
     dct:issued      "2025‑05‑12"^^xsd:date ;
@@ -31,8 +31,8 @@
 
 :ttlDump
     a               dcat:Distribution ;
-    dcat:accessURL   <https://zenodo.org/record/1234567> ;
-    dcat:downloadURL <https://zenodo.org/record/1234567/files/ssbd_v20250512.ttl> ;
+    dcat:accessURL   <https://doi.org/10.5281/zenodo.15693959> ;
+    dcat:downloadURL <https://zenodo.org/records/15693959/files/openssbd/ssbd-ontology-v20250512.zip> ;
     dcat:mediaType   "text/turtle" ;
     dct:format       "text/turtle" ;
     dct:license      <https://creativecommons.org/licenses/by/4.0/> .
