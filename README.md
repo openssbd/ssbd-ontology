@@ -58,7 +58,7 @@ https://knowledge.brc.riken.jp/bioresource/sparql
 
 The endpoint supports HTML, JSON, CSV, TSV and RDF results.
 If you are new to SPARQL, start with the two ready‑made examples in
-[`sparql/tutorial/README.md`](./sparql/tutorial/README.md) – each file contains:
+[`sparql/README.md`](./sparql/README.md) – each file contains:
 
 * a short natural‑language question
 * the corresponding `.rq` query
