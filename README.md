@@ -84,3 +84,15 @@ ORDER BY ?methodIRI ?dataset
  ![](img/fig4.png)
 
 A single query retrieves all strain C57BL/6J datasets, together with the imaging-method sub-hierarchical tree, OME-Zarr URLs, and Vizarr viewer.
+
+
+### 1.4 Related resources and gap analysis of ontology usage
+
+* **foundingGIDE Deliverable D6.1** – Comparative analysis of ontology usage in
+  SSBD, IDR, BIA and other imaging repositories, plus a field‑by‑field
+  mapping from REMBI to SSBD metadata.  
+  • Zenodo DOI: [10.5281/zenodo.15553217](https://doi.org/10.5281/zenodo.15553217)  
+  • Tables 1 (REMBI → SSBD) and 2 (Ontology coverage) are the authoritative
+    reference; we therefore link them here rather than duplicating the full
+    spreadsheets in this repository.
+
