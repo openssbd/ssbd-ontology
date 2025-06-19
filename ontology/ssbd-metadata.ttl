@@ -31,8 +31,8 @@
 
 :ttlDump
     a               dcat:Distribution ;
-    dcat:accessURL   <https://doi.org/10.5281/zenodo.15693959> ;
-    dcat:downloadURL <https://zenodo.org/records/15693959/files/openssbd/ssbd-ontology-v20250512.zip> ;
+    dcat:accessURL   <https://doi.org/10.5281/zenodo.15700645> ;
+    dcat:downloadURL <https://zenodo.org/records/15700645/files/openssbd/ssbd-ontology-v20250512-1.zip> ;
     dcat:mediaType   "text/turtle" ;
     dct:format       "text/turtle" ;
     dct:license      <https://creativecommons.org/licenses/by/4.0/> .

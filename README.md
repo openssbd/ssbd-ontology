@@ -1,5 +1,5 @@
 <!-- badges: start -->
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15693944.svg)](https://doi.org/10.5281/zenodo.15693944)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15700645.svg)](https://doi.org/10.5281/zenodo.15700645)
 <!-- badges: end -->
 
 # SSBD Ontology (v2025‑05)
