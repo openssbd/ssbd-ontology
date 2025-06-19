@@ -1,6 +1,8 @@
 <!-- badges: start -->
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15693944.svg)](https://doi.org/10.5281/zenodo.15693944)
-<!-- badges: end --># SSBD Ontology (v2025‑05)
+<!-- badges: end -->
+
+# SSBD Ontology (v2025‑05)
 
 Lead developer: Yuki Yamagata (RIKEN R-IH and RIKEN BRC)
 
