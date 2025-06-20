@@ -2416,8 +2416,8 @@ ontology:has_imaged_parameter rdf:type owl:ObjectProperty ;
                               rdfs:label "has imaged parameter"@en .
 
 
-###  http://ssbd.riken.jp/ontology/has_imaging_mehod_recorded_type
-ontology:has_imaging_mehod_recorded_type rdf:type owl:ObjectProperty ;
+###  http://ssbd.riken.jp/ontology/has_imaging_method_recorded_type
+ontology:has_imaging_method_recorded_type rdf:type owl:ObjectProperty ;
                                          rdfs:subPropertyOf ontology:has_imaging_method ;
                                          rdf:type owl:TransitiveProperty ;
                                          rdfs:range obo:FBbi_00000241 ;
@@ -6720,7 +6720,7 @@ ontology:ssbd-genetic-98-fig2ab_trajectory_epithelialcell rdf:type owl:NamedIndi
 ###  http://ssbd.riken.jp/ontology/ssbd-imaging-method-141-Fig1a_FIB-SEM_somatosensory
 ontology:ssbd-imaging-method-141-Fig1a_FIB-SEM_somatosensory rdf:type owl:NamedIndividual ,
                                                                       ontology:SSBD_imaging_method_information ;
-                                                             ontology:has_imaging_mehod_recorded_type obo:FBbi_00050000 ;
+                                                             ontology:has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                              ontology:has_instrument_information ontology:ssbd-instrument-141-Fig1a_FIB-SEM_somatosensory ;
                                                              ontology:has_body "ZEISS CrossBeam 540" ;
                                                              rdfs:label "ssbd-imaging-method-141-Fig1a_FIB-SEM_somatosensory"@en .
@@ -6729,7 +6729,7 @@ ontology:ssbd-imaging-method-141-Fig1a_FIB-SEM_somatosensory rdf:type owl:NamedI
 ###  http://ssbd.riken.jp/ontology/ssbd-imaging-method-141-Fig2a_FIB-SEM_spine_synapse
 ontology:ssbd-imaging-method-141-Fig2a_FIB-SEM_spine_synapse rdf:type owl:NamedIndividual ,
                                                                       ontology:SSBD_imaging_method_information ;
-                                                             ontology:has_imaging_mehod_recorded_type obo:FBbi_00050000 ;
+                                                             ontology:has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                              ontology:has_instrument_information ontology:ssbd-instrument-141-Fig2a_FIB-SEM_spine_synapse ;
                                                              ontology:has_body "ZEISS CrossBeam 540" ;
                                                              rdfs:label "ssbd-imaging-method-141-Fig2a_FIB-SEM_spine_synapse"@en .
@@ -6738,7 +6738,7 @@ ontology:ssbd-imaging-method-141-Fig2a_FIB-SEM_spine_synapse rdf:type owl:NamedI
 ###  http://ssbd.riken.jp/ontology/ssbd-imaging-method-141-Fig2b_FIB-SEM_spine_synapse
 ontology:ssbd-imaging-method-141-Fig2b_FIB-SEM_spine_synapse rdf:type owl:NamedIndividual ,
                                                                       ontology:SSBD_imaging_method_information ;
-                                                             ontology:has_imaging_mehod_recorded_type obo:FBbi_00050000 ;
+                                                             ontology:has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                              ontology:has_instrument_information ontology:ssbd-instrument-141-Fig2b_FIB-SEM_spine_synapse ;
                                                              ontology:has_body "ZEISS CrossBeam 540" ;
                                                              rdfs:label "ssbd-imaging-method-141-Fig2b_FIB-SEM_spine_synapse"@en .
@@ -7031,7 +7031,7 @@ ontology:ssbd-imaging-method-199-Fig3_MDCKpreconfl rdf:type owl:NamedIndividual 
 ontology:ssbd-imaging-method-199-Fig4_HeLaYC360_10fps rdf:type owl:NamedIndividual ,
                                                                ontology:SSBD_imaging_method_information ;
                                                       ontology:has_detection_method obo:FBbi_00000304 ;
-                                                      ontology:has_imaging_mehod_recorded_type obo:FBbi_00000367 ;
+                                                      ontology:has_imaging_method_recorded_type obo:FBbi_00000367 ;
                                                       ontology:has_instrument_information ontology:ssbd-instrument-199-Fig4_HeLaYC360_10fps ;
                                                       rdfs:label "ssbd-imaging-method-199-Fig4_HeLaYC360_10fps"@en .
 
@@ -7040,7 +7040,7 @@ ontology:ssbd-imaging-method-199-Fig4_HeLaYC360_10fps rdf:type owl:NamedIndividu
 ontology:ssbd-imaging-method-199-Fig4_HeLaYC360_5spf rdf:type owl:NamedIndividual ,
                                                               ontology:SSBD_imaging_method_information ;
                                                      ontology:has_detection_method obo:FBbi_00000304 ;
-                                                     ontology:has_imaging_mehod_recorded_type obo:FBbi_00000367 ;
+                                                     ontology:has_imaging_method_recorded_type obo:FBbi_00000367 ;
                                                      ontology:has_instrument_information ontology:ssbd-instrument-199-Fig4_HeLaYC360_5spf ;
                                                      rdfs:label "ssbd-imaging-method-199-Fig4_HeLaYC360_5spf"@en .
 
@@ -7070,7 +7070,7 @@ ontology:ssbd-imaging-method-2-RNAi_B0336.10_040518_01 rdf:type owl:NamedIndivid
                                                                 ontology:SSBD_imaging_method_information ;
                                                        ontology:has_contrast_enhancing_method obo:FBbi_00000326 ;
                                                        ontology:has_detection_method obo:FBbi_00000294 ;
-                                                       ontology:has_imaging_mehod_recorded_type obo:FBbi_00000245 ;
+                                                       ontology:has_imaging_method_recorded_type obo:FBbi_00000245 ;
                                                        ontology:has_instrument_information ontology:ssbd-instrument-2-RNAi_B0336.10_040518_01 ;
                                                        ontology:has_body "Leica DMRE" ;
                                                        ontology:has_detector "Hamamatsu ORCA CCD" ;
@@ -7083,7 +7083,7 @@ ontology:ssbd-imaging-method-2-RNAi_F58B6.3_080401_01 rdf:type owl:NamedIndividu
                                                                ontology:SSBD_imaging_method_information ;
                                                       ontology:has_contrast_enhancing_method obo:FBbi_00000326 ;
                                                       ontology:has_detection_method obo:FBbi_00000294 ;
-                                                      ontology:has_imaging_mehod_recorded_type obo:FBbi_00000245 ;
+                                                      ontology:has_imaging_method_recorded_type obo:FBbi_00000245 ;
                                                       ontology:has_instrument_information ontology:ssbd-instrument-2-RNAi_F58B6.3_080401_01 ;
                                                       ontology:has_body "Leica DMRE" ;
                                                       ontology:has_detector "Hamamatsu ORCA CCD" ;
@@ -7096,7 +7096,7 @@ ontology:ssbd-imaging-method-2-wt_N2_030303_01 rdf:type owl:NamedIndividual ,
                                                         ontology:SSBD_imaging_method_information ;
                                                ontology:has_contrast_enhancing_method obo:FBbi_00000326 ;
                                                ontology:has_detection_method obo:FBbi_00000294 ;
-                                               ontology:has_imaging_mehod_recorded_type obo:FBbi_00000245 ;
+                                               ontology:has_imaging_method_recorded_type obo:FBbi_00000245 ;
                                                ontology:has_instrument_information ontology:ssbd-instrument-2-wt_N2_030303_01 ;
                                                ontology:has_body "Leica DMRE" ;
                                                ontology:has_detector "Hamamatsu ORCA CCD" ;
@@ -7108,7 +7108,7 @@ ontology:ssbd-imaging-method-2-wt_N2_030303_01 rdf:type owl:NamedIndividual ,
 ontology:ssbd-imaging-method-48-Fig3A_R26-pCAG-nuc-3xmKate2 rdf:type owl:NamedIndividual ,
                                                                      ontology:SSBD_imaging_method_information ;
                                                             ontology:has_detection_method obo:FBbi_00000304 ;
-                                                            ontology:has_imaging_mehod_recorded_type obo:FBbi_00000364 ;
+                                                            ontology:has_imaging_method_recorded_type obo:FBbi_00000364 ;
                                                             ontology:has_instrument_information ontology:ssbd-instrument-48-Fig3A_R26-pCAG-nuc-3xmKate2 ;
                                                             ontology:has_body "Olympus-Evident MVX-ZB10" ;
                                                             ontology:has_detector "Andor Neo 5.5 CL" ;
@@ -7124,7 +7124,7 @@ ontology:ssbd-imaging-method-48-Fig3C_H2B-mCherry rdf:type owl:NamedIndividual ,
                                                            ontology:SSBD_imaging_method_information ;
                                                   ontology:has_detection_method obo:FBbi_00000304 ;
                                                   ontology:has_illumination_method obo:FBbi_00000364 ;
-                                                  ontology:has_imaging_mehod_recorded_type obo:FBbi_00000251 ;
+                                                  ontology:has_imaging_method_recorded_type obo:FBbi_00000251 ;
                                                   ontology:has_instrument_information ontology:ssbd-instrument-48-Fig3C_H2B-mCherry ;
                                                   ontology:has_body "Olympus-Evident MVX-ZB10" ;
                                                   ontology:has_detector "Andor Neo 5.5 CL" ;
@@ -7138,7 +7138,7 @@ ontology:ssbd-imaging-method-48-Fig3C_H2B-mCherry rdf:type owl:NamedIndividual ,
 ontology:ssbd-imaging-method-48-Fig3D_H2B-EGFP rdf:type owl:NamedIndividual ,
                                                         ontology:SSBD_imaging_method_information ;
                                                ontology:has_detection_method obo:FBbi_00000304 ;
-                                               ontology:has_imaging_mehod_recorded_type obo:FBbi_00000364 ;
+                                               ontology:has_imaging_method_recorded_type obo:FBbi_00000364 ;
                                                ontology:has_instrument_information ontology:ssbd-instrument-48-Fig3D_H2B-EGFP ;
                                                ontology:has_body "Olympus-Evident MVX-ZB10" ;
                                                ontology:has_detector "Andor Neo 5.5 CL" ;
@@ -7153,7 +7153,7 @@ ontology:ssbd-imaging-method-48-Fig3D_H2B-EGFP rdf:type owl:NamedIndividual ,
 ontology:ssbd-imaging-method-48-Fig3E_Thy1-YFP-H rdf:type owl:NamedIndividual ,
                                                           ontology:SSBD_imaging_method_information ;
                                                  ontology:has_detection_method obo:FBbi_00000304 ;
-                                                 ontology:has_imaging_mehod_recorded_type obo:FBbi_00000364 ;
+                                                 ontology:has_imaging_method_recorded_type obo:FBbi_00000364 ;
                                                  ontology:has_instrument_information ontology:ssbd-instrument-48-Fig3E_Thy1-YFP-H ;
                                                  ontology:has_body "Olympus-Evident MVX-ZB10" ;
                                                  ontology:has_detector "Andor Neo 5.5 CL" ;
@@ -7168,7 +7168,7 @@ ontology:ssbd-imaging-method-48-Fig3E_Thy1-YFP-H rdf:type owl:NamedIndividual ,
 ontology:ssbd-imaging-method-48-Fig4B_Series055 rdf:type owl:NamedIndividual ,
                                                          ontology:SSBD_imaging_method_information ;
                                                 ontology:has_detection_method obo:FBbi_00000295 ;
-                                                ontology:has_imaging_mehod_recorded_type obo:FBbi_00000251 ;
+                                                ontology:has_imaging_method_recorded_type obo:FBbi_00000251 ;
                                                 ontology:has_instrument_information ontology:ssbd-instrument-48-Fig4B_Series055 ;
                                                 ontology:has_body "Leica DMI6000B" ;
                                                 ontology:has_objective "Leica HCX PL APO CS 10x/0.40 DRY" ;
@@ -7179,7 +7179,7 @@ ontology:ssbd-imaging-method-48-Fig4B_Series055 rdf:type owl:NamedIndividual ,
 ontology:ssbd-imaging-method-48-Fig4B_Series072 rdf:type owl:NamedIndividual ,
                                                          ontology:SSBD_imaging_method_information ;
                                                 ontology:has_detection_method obo:FBbi_00000295 ;
-                                                ontology:has_imaging_mehod_recorded_type obo:FBbi_00000251 ;
+                                                ontology:has_imaging_method_recorded_type obo:FBbi_00000251 ;
                                                 ontology:has_instrument_information ontology:ssbd-instrument-48-Fig4B_Series072 ;
                                                 ontology:has_body "Leica DMI6000B" ;
                                                 ontology:has_objective "Leica HCX PL APO CS 10x/0.40 DRY" ;
@@ -7190,7 +7190,7 @@ ontology:ssbd-imaging-method-48-Fig4B_Series072 rdf:type owl:NamedIndividual ,
 ontology:ssbd-imaging-method-48-Fig4C_CryDKO-CT12 rdf:type owl:NamedIndividual ,
                                                            ontology:SSBD_imaging_method_information ;
                                                   ontology:has_detection_method obo:FBbi_00000295 ;
-                                                  ontology:has_imaging_mehod_recorded_type obo:FBbi_00000251 ;
+                                                  ontology:has_imaging_method_recorded_type obo:FBbi_00000251 ;
                                                   ontology:has_instrument_information ontology:ssbd-instrument-48-Fig4C_CryDKO-CT12 ;
                                                   ontology:has_body "Leica DMI6000B" ;
                                                   ontology:has_objective "Leica HCX PL APO CS 10x/0.40 DRY" ;

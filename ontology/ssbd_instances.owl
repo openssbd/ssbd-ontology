@@ -3059,9 +3059,9 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
-    <!-- http://ssbd.riken.jp/ontology/has_imaging_mehod_recorded_type -->
+    <!-- http://ssbd.riken.jp/ontology/has_imaging_method_recorded_type -->
 
-    <owl:ObjectProperty rdf:about="http://ssbd.riken.jp/ontology/has_imaging_mehod_recorded_type">
+    <owl:ObjectProperty rdf:about="http://ssbd.riken.jp/ontology/has_imaging_method_recorded_type">
         <rdfs:subPropertyOf rdf:resource="http://ssbd.riken.jp/ontology/has_imaging_method"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000241"/>
@@ -8814,7 +8814,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-imaging-method-141-Fig1a_FIB-SEM_somatosensory">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
-        <ontology:has_imaging_mehod_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig1a_FIB-SEM_somatosensory"/>
         <ontology:has_body>ZEISS CrossBeam 540</ontology:has_body>
         <rdfs:label xml:lang="en">ssbd-imaging-method-141-Fig1a_FIB-SEM_somatosensory</rdfs:label>
@@ -8826,7 +8826,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-imaging-method-141-Fig2a_FIB-SEM_spine_synapse">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
-        <ontology:has_imaging_mehod_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig2a_FIB-SEM_spine_synapse"/>
         <ontology:has_body>ZEISS CrossBeam 540</ontology:has_body>
         <rdfs:label xml:lang="en">ssbd-imaging-method-141-Fig2a_FIB-SEM_spine_synapse</rdfs:label>
@@ -8838,7 +8838,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-imaging-method-141-Fig2b_FIB-SEM_spine_synapse">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
-        <ontology:has_imaging_mehod_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig2b_FIB-SEM_spine_synapse"/>
         <ontology:has_body>ZEISS CrossBeam 540</ontology:has_body>
         <rdfs:label xml:lang="en">ssbd-imaging-method-141-Fig2b_FIB-SEM_spine_synapse</rdfs:label>
@@ -9218,7 +9218,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-imaging-method-199-Fig4_HeLaYC360_10fps">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_detection_method rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000304"/>
-        <ontology:has_imaging_mehod_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000367"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000367"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-199-Fig4_HeLaYC360_10fps"/>
         <rdfs:label xml:lang="en">ssbd-imaging-method-199-Fig4_HeLaYC360_10fps</rdfs:label>
     </owl:NamedIndividual>
@@ -9230,7 +9230,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-imaging-method-199-Fig4_HeLaYC360_5spf">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_detection_method rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000304"/>
-        <ontology:has_imaging_mehod_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000367"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000367"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-199-Fig4_HeLaYC360_5spf"/>
         <rdfs:label xml:lang="en">ssbd-imaging-method-199-Fig4_HeLaYC360_5spf</rdfs:label>
     </owl:NamedIndividual>
@@ -9269,7 +9269,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_contrast_enhancing_method rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000326"/>
         <ontology:has_detection_method rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000294"/>
-        <ontology:has_imaging_mehod_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000245"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000245"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-2-RNAi_B0336.10_040518_01"/>
         <ontology:has_body>Leica DMRE</ontology:has_body>
         <ontology:has_detector>Hamamatsu ORCA CCD</ontology:has_detector>
@@ -9285,7 +9285,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_contrast_enhancing_method rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000326"/>
         <ontology:has_detection_method rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000294"/>
-        <ontology:has_imaging_mehod_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000245"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000245"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-2-RNAi_F58B6.3_080401_01"/>
         <ontology:has_body>Leica DMRE</ontology:has_body>
         <ontology:has_detector>Hamamatsu ORCA CCD</ontology:has_detector>
@@ -9301,7 +9301,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_contrast_enhancing_method rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000326"/>
         <ontology:has_detection_method rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000294"/>
-        <ontology:has_imaging_mehod_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000245"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000245"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-2-wt_N2_030303_01"/>
         <ontology:has_body>Leica DMRE</ontology:has_body>
         <ontology:has_detector>Hamamatsu ORCA CCD</ontology:has_detector>
@@ -9316,7 +9316,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-imaging-method-48-Fig3A_R26-pCAG-nuc-3xmKate2">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_detection_method rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000304"/>
-        <ontology:has_imaging_mehod_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000364"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000364"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-48-Fig3A_R26-pCAG-nuc-3xmKate2"/>
         <ontology:has_body>Olympus-Evident MVX-ZB10</ontology:has_body>
         <ontology:has_detector>Andor Neo 5.5 CL</ontology:has_detector>
@@ -9335,7 +9335,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_detection_method rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000304"/>
         <ontology:has_illumination_method rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000364"/>
-        <ontology:has_imaging_mehod_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000251"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000251"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-48-Fig3C_H2B-mCherry"/>
         <ontology:has_body>Olympus-Evident MVX-ZB10</ontology:has_body>
         <ontology:has_detector>Andor Neo 5.5 CL</ontology:has_detector>
@@ -9352,7 +9352,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-imaging-method-48-Fig3D_H2B-EGFP">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_detection_method rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000304"/>
-        <ontology:has_imaging_mehod_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000364"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000364"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-48-Fig3D_H2B-EGFP"/>
         <ontology:has_body>Olympus-Evident MVX-ZB10</ontology:has_body>
         <ontology:has_detector>Andor Neo 5.5 CL</ontology:has_detector>
@@ -9370,7 +9370,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-imaging-method-48-Fig3E_Thy1-YFP-H">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_detection_method rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000304"/>
-        <ontology:has_imaging_mehod_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000364"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000364"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-48-Fig3E_Thy1-YFP-H"/>
         <ontology:has_body>Olympus-Evident MVX-ZB10</ontology:has_body>
         <ontology:has_detector>Andor Neo 5.5 CL</ontology:has_detector>
@@ -9388,7 +9388,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-imaging-method-48-Fig4B_Series055">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_detection_method rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000295"/>
-        <ontology:has_imaging_mehod_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000251"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000251"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-48-Fig4B_Series055"/>
         <ontology:has_body>Leica DMI6000B</ontology:has_body>
         <ontology:has_objective>Leica HCX PL APO CS 10x/0.40 DRY</ontology:has_objective>
@@ -9402,7 +9402,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-imaging-method-48-Fig4B_Series072">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_detection_method rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000295"/>
-        <ontology:has_imaging_mehod_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000251"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000251"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-48-Fig4B_Series072"/>
         <ontology:has_body>Leica DMI6000B</ontology:has_body>
         <ontology:has_objective>Leica HCX PL APO CS 10x/0.40 DRY</ontology:has_objective>
@@ -9416,7 +9416,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:NamedIndividual rdf:about="http://ssbd.riken.jp/ontology/ssbd-imaging-method-48-Fig4C_CryDKO-CT12">
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_detection_method rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000295"/>
-        <ontology:has_imaging_mehod_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000251"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000251"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-48-Fig4C_CryDKO-CT12"/>
         <ontology:has_body>Leica DMI6000B</ontology:has_body>
         <ontology:has_objective>Leica HCX PL APO CS 10x/0.40 DRY</ontology:has_objective>
