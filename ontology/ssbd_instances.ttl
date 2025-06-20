@@ -1077,8 +1077,8 @@ terms:source rdf:type owl:AnnotationProperty .
 cito:citesAsAuthority rdf:type owl:AnnotationProperty .
 
 
-###  http://ssbd.riken.jp/ontology/has_imaging_method_rcorded_type
-ontology:has_imaging_method_rcorded_type rdf:type owl:AnnotationProperty .
+###  http://ssbd.riken.jp/ontology/has_imaging_method_recorded_type
+ontology:has_imaging_method_recorded_type rdf:type owl:AnnotationProperty .
 
 
 ###  http://ssbd.riken.jp/ontology/has_imaging_method_recorded_type
@@ -6749,7 +6749,7 @@ ontology:ssbd-imaging-method-141-Fig2c_FIB-SEM_spine_synapse rdf:type owl:NamedI
                                                                       ontology:SSBD_imaging_method_information ;
                                                              ontology:has_instrument_information ontology:ssbd-instrument-141-Fig2c_FIB-SEM_spine_synapse ;
                                                              ontology:has_body "ZEISS CrossBeam 540" ;
-                                                             ontology:has_imaging_method_rcorded_type obo:FBbi_00050000 ;
+                                                             ontology:has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                              rdfs:label "ssbd-imaging-method-141-Fig2c_FIB-SEM_spine_synapse"@en .
 
 
@@ -6758,7 +6758,7 @@ ontology:ssbd-imaging-method-141-Fig2d_FIB-SEM_spine_synapse rdf:type owl:NamedI
                                                                       ontology:SSBD_imaging_method_information ;
                                                              ontology:has_instrument_information ontology:ssbd-instrument-141-Fig2d_FIB-SEM_spine_synapse ;
                                                              ontology:has_body "ZEISS CrossBeam 540" ;
-                                                             ontology:has_imaging_method_rcorded_type obo:FBbi_00050000 ;
+                                                             ontology:has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                              rdfs:label "ssbd-imaging-method-141-Fig2d_FIB-SEM_spine_synapse"@en .
 
 
@@ -6767,7 +6767,7 @@ ontology:ssbd-imaging-method-141-Fig2e_FIB-SEM_shaft_synapse rdf:type owl:NamedI
                                                                       ontology:SSBD_imaging_method_information ;
                                                              ontology:has_instrument_information ontology:ssbd-instrument-141-Fig2e_FIB-SEM_shaft_synapse ;
                                                              ontology:has_body "ZEISS CrossBeam 540" ;
-                                                             ontology:has_imaging_method_rcorded_type obo:FBbi_00050000 ;
+                                                             ontology:has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                              rdfs:label "ssbd-imaging-method-141-Fig2e_FIB-SEM_shaft_synapse"@en .
 
 
@@ -6776,7 +6776,7 @@ ontology:ssbd-imaging-method-141-Fig2f_FIB-SEM_shaft_synapse rdf:type owl:NamedI
                                                                       ontology:SSBD_imaging_method_information ;
                                                              ontology:has_instrument_information ontology:ssbd-instrument-141-Fig2f_FIB-SEM_shaft_synapse ;
                                                              ontology:has_body "ZEISS CrossBeam 540" ;
-                                                             ontology:has_imaging_method_rcorded_type obo:FBbi_00050000 ;
+                                                             ontology:has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                              rdfs:label "ssbd-imaging-method-141-Fig2f_FIB-SEM_shaft_synapse"@en .
 
 
@@ -6785,7 +6785,7 @@ ontology:ssbd-imaging-method-141-Fig2g_FIB-SEM_shaft_synapse rdf:type owl:NamedI
                                                                       ontology:SSBD_imaging_method_information ;
                                                              ontology:has_instrument_information ontology:ssbd-instrument-141-Fig2g_FIB-SEM_shaft_synapse ;
                                                              ontology:has_body "ZEISS CrossBeam 540" ;
-                                                             ontology:has_imaging_method_rcorded_type obo:FBbi_00050000 ;
+                                                             ontology:has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                              rdfs:label "ssbd-imaging-method-141-Fig2g_FIB-SEM_shaft_synapse"@en .
 
 
@@ -6794,7 +6794,7 @@ ontology:ssbd-imaging-method-141-Fig2h_FIB-SEM_shaft_synapse rdf:type owl:NamedI
                                                                       ontology:SSBD_imaging_method_information ;
                                                              ontology:has_instrument_information ontology:ssbd-instrument-141-Fig2h_FIB-SEM_shaft_synapse ;
                                                              ontology:has_body "ZEISS CrossBeam 540" ;
-                                                             ontology:has_imaging_method_rcorded_type obo:FBbi_00050000 ;
+                                                             ontology:has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                              rdfs:label "ssbd-imaging-method-141-Fig2h_FIB-SEM_shaft_synapse"@en .
 
 
@@ -6803,7 +6803,7 @@ ontology:ssbd-imaging-method-141-Fig3a_FIB-SEM_synapse rdf:type owl:NamedIndivid
                                                                 ontology:SSBD_imaging_method_information ;
                                                        ontology:has_instrument_information ontology:ssbd-instrument-141-Fig3a_FIB-SEM_synapse ;
                                                        ontology:has_body "ZEISS CrossBeam 540" ;
-                                                       ontology:has_imaging_method_rcorded_type obo:FBbi_00050000 ;
+                                                       ontology:has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                        rdfs:label "ssbd-imaging-method-141-Fig3a_FIB-SEM_synapse"@en .
 
 
@@ -6812,7 +6812,7 @@ ontology:ssbd-imaging-method-141-Fig3b_FIB-SEM_synapse rdf:type owl:NamedIndivid
                                                                 ontology:SSBD_imaging_method_information ;
                                                        ontology:has_instrument_information ontology:ssbd-instrument-141-Fig3b_FIB-SEM_synapse ;
                                                        ontology:has_body "ZEISS CrossBeam 540" ;
-                                                       ontology:has_imaging_method_rcorded_type obo:FBbi_00050000 ;
+                                                       ontology:has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                        rdfs:label "ssbd-imaging-method-141-Fig3b_FIB-SEM_synapse"@en .
 
 
@@ -6821,7 +6821,7 @@ ontology:ssbd-imaging-method-141-Fig3c_FIB-SEM_synapse rdf:type owl:NamedIndivid
                                                                 ontology:SSBD_imaging_method_information ;
                                                        ontology:has_instrument_information ontology:ssbd-instrument-141-Fig3c_FIB-SEM_synapse ;
                                                        ontology:has_body "ZEISS CrossBeam 540" ;
-                                                       ontology:has_imaging_method_rcorded_type obo:FBbi_00050000 ;
+                                                       ontology:has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                        rdfs:label "ssbd-imaging-method-141-Fig3c_FIB-SEM_synapse"@en .
 
 
@@ -6830,7 +6830,7 @@ ontology:ssbd-imaging-method-141-Fig3d_FIB-SEM_synapse rdf:type owl:NamedIndivid
                                                                 ontology:SSBD_imaging_method_information ;
                                                        ontology:has_instrument_information ontology:ssbd-instrument-141-Fig3d_FIB-SEM_synapse ;
                                                        ontology:has_body "ZEISS CrossBeam 540" ;
-                                                       ontology:has_imaging_method_rcorded_type obo:FBbi_00050000 ;
+                                                       ontology:has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                        rdfs:label "ssbd-imaging-method-141-Fig3d_FIB-SEM_synapse"@en .
 
 
@@ -6839,7 +6839,7 @@ ontology:ssbd-imaging-method-141-Fig3i_FIB-SEM_synapse rdf:type owl:NamedIndivid
                                                                 ontology:SSBD_imaging_method_information ;
                                                        ontology:has_instrument_information ontology:ssbd-instrument-141-Fig3i_FIB-SEM_synapse ;
                                                        ontology:has_body "ZEISS CrossBeam 540" ;
-                                                       ontology:has_imaging_method_rcorded_type obo:FBbi_00050000 ;
+                                                       ontology:has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                        rdfs:label "ssbd-imaging-method-141-Fig3i_FIB-SEM_synapse"@en .
 
 
@@ -6848,7 +6848,7 @@ ontology:ssbd-imaging-method-141-Fig3j_FIB-SEM_synapse rdf:type owl:NamedIndivid
                                                                 ontology:SSBD_imaging_method_information ;
                                                        ontology:has_instrument_information ontology:ssbd-instrument-141-Fig3j_FIB-SEM_synapse ;
                                                        ontology:has_body "ZEISS CrossBeam 540" ;
-                                                       ontology:has_imaging_method_rcorded_type obo:FBbi_00050000 ;
+                                                       ontology:has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                        rdfs:label "ssbd-imaging-method-141-Fig3j_FIB-SEM_synapse"@en .
 
 
@@ -6857,7 +6857,7 @@ ontology:ssbd-imaging-method-141-Fig3k_FIB-SEM_synapse rdf:type owl:NamedIndivid
                                                                 ontology:SSBD_imaging_method_information ;
                                                        ontology:has_instrument_information ontology:ssbd-instrument-141-Fig3k_FIB-SEM_synapse ;
                                                        ontology:has_body "ZEISS CrossBeam 540" ;
-                                                       ontology:has_imaging_method_rcorded_type obo:FBbi_00050000 ;
+                                                       ontology:has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                        rdfs:label "ssbd-imaging-method-141-Fig3k_FIB-SEM_synapse"@en .
 
 
@@ -6866,7 +6866,7 @@ ontology:ssbd-imaging-method-141-Fig3l_FIB-SEM_synapse rdf:type owl:NamedIndivid
                                                                 ontology:SSBD_imaging_method_information ;
                                                        ontology:has_instrument_information ontology:ssbd-instrument-141-Fig3l_FIB-SEM_synapse ;
                                                        ontology:has_body "ZEISS CrossBeam 540" ;
-                                                       ontology:has_imaging_method_rcorded_type obo:FBbi_00050000 ;
+                                                       ontology:has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                        rdfs:label "ssbd-imaging-method-141-Fig3l_FIB-SEM_synapse"@en .
 
 

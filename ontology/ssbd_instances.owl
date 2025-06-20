@@ -1382,9 +1382,9 @@ WHERE {
     
 
 
-    <!-- http://ssbd.riken.jp/ontology/has_imaging_method_rcorded_type -->
+    <!-- http://ssbd.riken.jp/ontology/has_imaging_method_recorded_type -->
 
-    <owl:AnnotationProperty rdf:about="http://ssbd.riken.jp/ontology/has_imaging_method_rcorded_type"/>
+    <owl:AnnotationProperty rdf:about="http://ssbd.riken.jp/ontology/has_imaging_method_recorded_type"/>
     
 
 
@@ -8852,7 +8852,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig2c_FIB-SEM_spine_synapse"/>
         <ontology:has_body>ZEISS CrossBeam 540</ontology:has_body>
-        <ontology:has_imaging_method_rcorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
         <rdfs:label xml:lang="en">ssbd-imaging-method-141-Fig2c_FIB-SEM_spine_synapse</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8864,7 +8864,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig2d_FIB-SEM_spine_synapse"/>
         <ontology:has_body>ZEISS CrossBeam 540</ontology:has_body>
-        <ontology:has_imaging_method_rcorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
         <rdfs:label xml:lang="en">ssbd-imaging-method-141-Fig2d_FIB-SEM_spine_synapse</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8876,7 +8876,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig2e_FIB-SEM_shaft_synapse"/>
         <ontology:has_body>ZEISS CrossBeam 540</ontology:has_body>
-        <ontology:has_imaging_method_rcorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
         <rdfs:label xml:lang="en">ssbd-imaging-method-141-Fig2e_FIB-SEM_shaft_synapse</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8888,7 +8888,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig2f_FIB-SEM_shaft_synapse"/>
         <ontology:has_body>ZEISS CrossBeam 540</ontology:has_body>
-        <ontology:has_imaging_method_rcorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
         <rdfs:label xml:lang="en">ssbd-imaging-method-141-Fig2f_FIB-SEM_shaft_synapse</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8900,7 +8900,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig2g_FIB-SEM_shaft_synapse"/>
         <ontology:has_body>ZEISS CrossBeam 540</ontology:has_body>
-        <ontology:has_imaging_method_rcorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
         <rdfs:label xml:lang="en">ssbd-imaging-method-141-Fig2g_FIB-SEM_shaft_synapse</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8912,7 +8912,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig2h_FIB-SEM_shaft_synapse"/>
         <ontology:has_body>ZEISS CrossBeam 540</ontology:has_body>
-        <ontology:has_imaging_method_rcorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
         <rdfs:label xml:lang="en">ssbd-imaging-method-141-Fig2h_FIB-SEM_shaft_synapse</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8924,7 +8924,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig3a_FIB-SEM_synapse"/>
         <ontology:has_body>ZEISS CrossBeam 540</ontology:has_body>
-        <ontology:has_imaging_method_rcorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
         <rdfs:label xml:lang="en">ssbd-imaging-method-141-Fig3a_FIB-SEM_synapse</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8936,7 +8936,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig3b_FIB-SEM_synapse"/>
         <ontology:has_body>ZEISS CrossBeam 540</ontology:has_body>
-        <ontology:has_imaging_method_rcorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
         <rdfs:label xml:lang="en">ssbd-imaging-method-141-Fig3b_FIB-SEM_synapse</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8948,7 +8948,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig3c_FIB-SEM_synapse"/>
         <ontology:has_body>ZEISS CrossBeam 540</ontology:has_body>
-        <ontology:has_imaging_method_rcorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
         <rdfs:label xml:lang="en">ssbd-imaging-method-141-Fig3c_FIB-SEM_synapse</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8960,7 +8960,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig3d_FIB-SEM_synapse"/>
         <ontology:has_body>ZEISS CrossBeam 540</ontology:has_body>
-        <ontology:has_imaging_method_rcorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
         <rdfs:label xml:lang="en">ssbd-imaging-method-141-Fig3d_FIB-SEM_synapse</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8972,7 +8972,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig3i_FIB-SEM_synapse"/>
         <ontology:has_body>ZEISS CrossBeam 540</ontology:has_body>
-        <ontology:has_imaging_method_rcorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
         <rdfs:label xml:lang="en">ssbd-imaging-method-141-Fig3i_FIB-SEM_synapse</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8984,7 +8984,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig3j_FIB-SEM_synapse"/>
         <ontology:has_body>ZEISS CrossBeam 540</ontology:has_body>
-        <ontology:has_imaging_method_rcorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
         <rdfs:label xml:lang="en">ssbd-imaging-method-141-Fig3j_FIB-SEM_synapse</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8996,7 +8996,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig3k_FIB-SEM_synapse"/>
         <ontology:has_body>ZEISS CrossBeam 540</ontology:has_body>
-        <ontology:has_imaging_method_rcorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
         <rdfs:label xml:lang="en">ssbd-imaging-method-141-Fig3k_FIB-SEM_synapse</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9008,7 +9008,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdf:type rdf:resource="http://ssbd.riken.jp/ontology/SSBD_imaging_method_information"/>
         <ontology:has_instrument_information rdf:resource="http://ssbd.riken.jp/ontology/ssbd-instrument-141-Fig3l_FIB-SEM_synapse"/>
         <ontology:has_body>ZEISS CrossBeam 540</ontology:has_body>
-        <ontology:has_imaging_method_rcorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
+        <ontology:has_imaging_method_recorded_type rdf:resource="http://purl.obolibrary.org/obo/FBbi_00050000"/>
         <rdfs:label xml:lang="en">ssbd-imaging-method-141-Fig3l_FIB-SEM_synapse</rdfs:label>
     </owl:NamedIndividual>
     

@@ -1481,9 +1481,9 @@ Where we have an annotation assertion
     
 
 
-    <!-- http://ssbd.riken.jp/ontology/has_imaging_method_rcorded_type -->
+    <!-- http://ssbd.riken.jp/ontology/has_imaging_method_recorded_type -->
 
-    <owl:AnnotationProperty rdf:about="http://ssbd.riken.jp/ontology/has_imaging_method_rcorded_type"/>
+    <owl:AnnotationProperty rdf:about="http://ssbd.riken.jp/ontology/has_imaging_method_recorded_type"/>
     
 
 
