@@ -2791,8 +2791,8 @@ obo:has_prefix rdf:type owl:ObjectProperty .
                       rdfs:label "has imaged parameter"@en .
 
 
-###  http://ssbd.riken.jp/ontology/has_imaging_mehod_recorded_type
-:has_imaging_mehod_recorded_type rdf:type owl:ObjectProperty ;
+###  http://ssbd.riken.jp/ontology/has_imaging_method_recorded_type
+:has_imaging_method_recorded_type rdf:type owl:ObjectProperty ;
                                  rdfs:subPropertyOf :has_imaging_method ;
                                  rdf:type owl:TransitiveProperty ;
                                  rdfs:range obo:FBbi_00000241 ;
@@ -20974,7 +20974,7 @@ dcterms:LicenseDocument rdf:type owl:Class ;
 :SSBD_imaging_method_information rdf:type owl:Class ;
                                  rdfs:subClassOf obo:IAO_0000030 ,
                                                  [ rdf:type owl:Restriction ;
-                                                   owl:onProperty :has_imaging_mehod_recorded_type ;
+                                                   owl:onProperty :has_imaging_method_recorded_type ;
                                                    owl:someValuesFrom obo:FBbi_00000265
                                                  ] ,
                                                  [ rdf:type owl:Restriction ;
@@ -25130,7 +25130,7 @@ obo:UO_0000322 rdf:type owl:NamedIndividual .
 ###  http://ssbd.riken.jp/ontology/ssbd-imaging-method-141-Fig1a_FIB-SEM_somatosensory
 :ssbd-imaging-method-141-Fig1a_FIB-SEM_somatosensory rdf:type owl:NamedIndividual ,
                                                               :SSBD_imaging_method_information ;
-                                                     :has_imaging_mehod_recorded_type obo:FBbi_00050000 ;
+                                                     :has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                      :has_instrument_information :ssbd-instrument-141-Fig1a_FIB-SEM_somatosensory ;
                                                      :has_body "ZEISS CrossBeam 540" ;
                                                      rdfs:label "ssbd-imaging-method-141-Fig1a_FIB-SEM_somatosensory"@en .
@@ -25139,7 +25139,7 @@ obo:UO_0000322 rdf:type owl:NamedIndividual .
 ###  http://ssbd.riken.jp/ontology/ssbd-imaging-method-141-Fig2a_FIB-SEM_spine_synapse
 :ssbd-imaging-method-141-Fig2a_FIB-SEM_spine_synapse rdf:type owl:NamedIndividual ,
                                                               :SSBD_imaging_method_information ;
-                                                     :has_imaging_mehod_recorded_type obo:FBbi_00050000 ;
+                                                     :has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                      :has_instrument_information :ssbd-instrument-141-Fig2a_FIB-SEM_spine_synapse ;
                                                      :has_body "ZEISS CrossBeam 540" ;
                                                      rdfs:label "ssbd-imaging-method-141-Fig2a_FIB-SEM_spine_synapse"@en .
@@ -25148,7 +25148,7 @@ obo:UO_0000322 rdf:type owl:NamedIndividual .
 ###  http://ssbd.riken.jp/ontology/ssbd-imaging-method-141-Fig2b_FIB-SEM_spine_synapse
 :ssbd-imaging-method-141-Fig2b_FIB-SEM_spine_synapse rdf:type owl:NamedIndividual ,
                                                               :SSBD_imaging_method_information ;
-                                                     :has_imaging_mehod_recorded_type obo:FBbi_00050000 ;
+                                                     :has_imaging_method_recorded_type obo:FBbi_00050000 ;
                                                      :has_instrument_information :ssbd-instrument-141-Fig2b_FIB-SEM_spine_synapse ;
                                                      :has_body "ZEISS CrossBeam 540" ;
                                                      rdfs:label "ssbd-imaging-method-141-Fig2b_FIB-SEM_spine_synapse"@en .
@@ -25441,7 +25441,7 @@ obo:UO_0000322 rdf:type owl:NamedIndividual .
 :ssbd-imaging-method-199-Fig4_HeLaYC360_10fps rdf:type owl:NamedIndividual ,
                                                        :SSBD_imaging_method_information ;
                                               :has_detection_method obo:FBbi_00000304 ;
-                                              :has_imaging_mehod_recorded_type obo:FBbi_00000367 ;
+                                              :has_imaging_method_recorded_type obo:FBbi_00000367 ;
                                               :has_instrument_information :ssbd-instrument-199-Fig4_HeLaYC360_10fps ;
                                               rdfs:label "ssbd-imaging-method-199-Fig4_HeLaYC360_10fps"@en .
 
@@ -25450,7 +25450,7 @@ obo:UO_0000322 rdf:type owl:NamedIndividual .
 :ssbd-imaging-method-199-Fig4_HeLaYC360_5spf rdf:type owl:NamedIndividual ,
                                                       :SSBD_imaging_method_information ;
                                              :has_detection_method obo:FBbi_00000304 ;
-                                             :has_imaging_mehod_recorded_type obo:FBbi_00000367 ;
+                                             :has_imaging_method_recorded_type obo:FBbi_00000367 ;
                                              :has_instrument_information :ssbd-instrument-199-Fig4_HeLaYC360_5spf ;
                                              rdfs:label "ssbd-imaging-method-199-Fig4_HeLaYC360_5spf"@en .
 
@@ -25480,7 +25480,7 @@ obo:UO_0000322 rdf:type owl:NamedIndividual .
                                                         :SSBD_imaging_method_information ;
                                                :has_contrast_enhancing_method obo:FBbi_00000326 ;
                                                :has_detection_method obo:FBbi_00000294 ;
-                                               :has_imaging_mehod_recorded_type obo:FBbi_00000245 ;
+                                               :has_imaging_method_recorded_type obo:FBbi_00000245 ;
                                                :has_instrument_information :ssbd-instrument-2-RNAi_B0336.10_040518_01 ;
                                                :has_body "Leica DMRE" ;
                                                :has_detector "Hamamatsu ORCA CCD" ;
@@ -25493,7 +25493,7 @@ obo:UO_0000322 rdf:type owl:NamedIndividual .
                                                        :SSBD_imaging_method_information ;
                                               :has_contrast_enhancing_method obo:FBbi_00000326 ;
                                               :has_detection_method obo:FBbi_00000294 ;
-                                              :has_imaging_mehod_recorded_type obo:FBbi_00000245 ;
+                                              :has_imaging_method_recorded_type obo:FBbi_00000245 ;
                                               :has_instrument_information :ssbd-instrument-2-RNAi_F58B6.3_080401_01 ;
                                               :has_body "Leica DMRE" ;
                                               :has_detector "Hamamatsu ORCA CCD" ;
@@ -25506,7 +25506,7 @@ obo:UO_0000322 rdf:type owl:NamedIndividual .
                                                 :SSBD_imaging_method_information ;
                                        :has_contrast_enhancing_method obo:FBbi_00000326 ;
                                        :has_detection_method obo:FBbi_00000294 ;
-                                       :has_imaging_mehod_recorded_type obo:FBbi_00000245 ;
+                                       :has_imaging_method_recorded_type obo:FBbi_00000245 ;
                                        :has_instrument_information :ssbd-instrument-2-wt_N2_030303_01 ;
                                        :has_body "Leica DMRE" ;
                                        :has_detector "Hamamatsu ORCA CCD" ;
@@ -25518,7 +25518,7 @@ obo:UO_0000322 rdf:type owl:NamedIndividual .
 :ssbd-imaging-method-48-Fig3A_R26-pCAG-nuc-3xmKate2 rdf:type owl:NamedIndividual ,
                                                              :SSBD_imaging_method_information ;
                                                     :has_detection_method obo:FBbi_00000304 ;
-                                                    :has_imaging_mehod_recorded_type obo:FBbi_00000364 ;
+                                                    :has_imaging_method_recorded_type obo:FBbi_00000364 ;
                                                     :has_instrument_information :ssbd-instrument-48-Fig3A_R26-pCAG-nuc-3xmKate2 ;
                                                     :has_body "Olympus-Evident MVX-ZB10" ;
                                                     :has_detector "Andor Neo 5.5 CL" ;
@@ -25534,7 +25534,7 @@ obo:UO_0000322 rdf:type owl:NamedIndividual .
                                                    :SSBD_imaging_method_information ;
                                           :has_detection_method obo:FBbi_00000304 ;
                                           :has_illumination_method obo:FBbi_00000364 ;
-                                          :has_imaging_mehod_recorded_type obo:FBbi_00000251 ;
+                                          :has_imaging_method_recorded_type obo:FBbi_00000251 ;
                                           :has_instrument_information :ssbd-instrument-48-Fig3C_H2B-mCherry ;
                                           :has_body "Olympus-Evident MVX-ZB10" ;
                                           :has_detector "Andor Neo 5.5 CL" ;
@@ -25548,7 +25548,7 @@ obo:UO_0000322 rdf:type owl:NamedIndividual .
 :ssbd-imaging-method-48-Fig3D_H2B-EGFP rdf:type owl:NamedIndividual ,
                                                 :SSBD_imaging_method_information ;
                                        :has_detection_method obo:FBbi_00000304 ;
-                                       :has_imaging_mehod_recorded_type obo:FBbi_00000364 ;
+                                       :has_imaging_method_recorded_type obo:FBbi_00000364 ;
                                        :has_instrument_information :ssbd-instrument-48-Fig3D_H2B-EGFP ;
                                        :has_body "Olympus-Evident MVX-ZB10" ;
                                        :has_detector "Andor Neo 5.5 CL" ;
@@ -25563,7 +25563,7 @@ obo:UO_0000322 rdf:type owl:NamedIndividual .
 :ssbd-imaging-method-48-Fig3E_Thy1-YFP-H rdf:type owl:NamedIndividual ,
                                                   :SSBD_imaging_method_information ;
                                          :has_detection_method obo:FBbi_00000304 ;
-                                         :has_imaging_mehod_recorded_type obo:FBbi_00000364 ;
+                                         :has_imaging_method_recorded_type obo:FBbi_00000364 ;
                                          :has_instrument_information :ssbd-instrument-48-Fig3E_Thy1-YFP-H ;
                                          :has_body "Olympus-Evident MVX-ZB10" ;
                                          :has_detector "Andor Neo 5.5 CL" ;
@@ -25578,7 +25578,7 @@ obo:UO_0000322 rdf:type owl:NamedIndividual .
 :ssbd-imaging-method-48-Fig4B_Series055 rdf:type owl:NamedIndividual ,
                                                  :SSBD_imaging_method_information ;
                                         :has_detection_method obo:FBbi_00000295 ;
-                                        :has_imaging_mehod_recorded_type obo:FBbi_00000251 ;
+                                        :has_imaging_method_recorded_type obo:FBbi_00000251 ;
                                         :has_instrument_information :ssbd-instrument-48-Fig4B_Series055 ;
                                         :has_body "Leica DMI6000B" ;
                                         :has_objective "Leica HCX PL APO CS 10x/0.40 DRY" ;
@@ -25589,7 +25589,7 @@ obo:UO_0000322 rdf:type owl:NamedIndividual .
 :ssbd-imaging-method-48-Fig4B_Series072 rdf:type owl:NamedIndividual ,
                                                  :SSBD_imaging_method_information ;
                                         :has_detection_method obo:FBbi_00000295 ;
-                                        :has_imaging_mehod_recorded_type obo:FBbi_00000251 ;
+                                        :has_imaging_method_recorded_type obo:FBbi_00000251 ;
                                         :has_instrument_information :ssbd-instrument-48-Fig4B_Series072 ;
                                         :has_body "Leica DMI6000B" ;
                                         :has_objective "Leica HCX PL APO CS 10x/0.40 DRY" ;
@@ -25600,7 +25600,7 @@ obo:UO_0000322 rdf:type owl:NamedIndividual .
 :ssbd-imaging-method-48-Fig4C_CryDKO-CT12 rdf:type owl:NamedIndividual ,
                                                    :SSBD_imaging_method_information ;
                                           :has_detection_method obo:FBbi_00000295 ;
-                                          :has_imaging_mehod_recorded_type obo:FBbi_00000251 ;
+                                          :has_imaging_method_recorded_type obo:FBbi_00000251 ;
                                           :has_instrument_information :ssbd-instrument-48-Fig4C_CryDKO-CT12 ;
                                           :has_body "Leica DMI6000B" ;
                                           :has_objective "Leica HCX PL APO CS 10x/0.40 DRY" ;
