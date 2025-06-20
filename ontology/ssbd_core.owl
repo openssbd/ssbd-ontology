@@ -3546,7 +3546,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <rdfs:subPropertyOf rdf:resource="http://ssbd.riken.jp/ontology/has_imaging_method"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000241"/>
-        <rdfs:label xml:lang="en">has imaging mehod recorded type</rdfs:label>
+        <rdfs:label xml:lang="en">has imaging method recorded type</rdfs:label>
     </owl:ObjectProperty>
     
 
