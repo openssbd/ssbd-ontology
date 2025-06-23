@@ -1,45 +1,49 @@
 ###############################################################################
-# SSBD × GO/MONDO federation – search for mitochondrial diseases
+# SSBD × GO/MONDO federation – mitochondrial biosamples and related diseases
 # ---------------------------------------------------------------------------
-#  * Starting point: a specific SSBD biosample that is annotated with the
-#    cellular-component term “mitochondrion” (GO:0005739).
-#  * Traverses the RO:0004020 (‘disease has basis in dysfunction of’) link
-#    in the external MONDO ontology to list diseases whose dysfunction is
-#    rooted in the mitochondrion.
-#  * Returns for each hit:
-#       – MONDO disease IRI            (?diseaseIRI)
-#       – human-readable disease label (?diseaseLabel)
-#       – GO cellular-component IRI    (?GOccURI)
-#       – GO label                     (?GOccLabel)
-#       – any database cross-reference (?dbXref)
-#  * Label FILTER keeps **English or no-language tags only**; Japanese or other
-#    languages are deliberately excluded so reviewers see a clean EN result.
+# Output columns (left-to-right):
+#   1) biosample IRI          (?biosample)
+#   2) dataset  IRI           (?dataset)
+#   3) GO term  IRI & label   (?GOccURI,  ?GOccLabel)
+#   4) disease  IRI & label   (?diseaseURI, ?diseaseLabel)
+#   5) external x-reference   (?dbXref)
+#
+# Logic:
+#   • Find every SSBD biosample annotated with GO:0005739 (mitochondrion).
+#   • Optionally link each biosample back to its parent dataset.
+#   • Traverse RO:0004020 (‘disease has basis in dysfunction of’) in MONDO
+#     to list diseases whose dysfunction involves the mitochondrion.
+#   • Keep English-only (or untagged) labels; Japanese and other languages
+#     are excluded for a clean EN table.
 ###############################################################################
 
-PREFIX ssbd:    <http://ssbd.riken.jp/ontology/>
-PREFIX obo:     <http://purl.obolibrary.org/obo/>
-PREFIX ro:      <http://purl.obolibrary.org/obo/RO_>
-PREFIX owl:     <http://www.w3.org/2002/07/owl#>
-PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX oboInOwl:<http://www.geneontology.org/formats/oboInOwl#>
+PREFIX ssbd: <http://ssbd.riken.jp/ontology/>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX ro:   <http://purl.obolibrary.org/obo/RO_>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 
 SELECT DISTINCT
-  ?diseaseIRI
-  ?diseaseLabel
+  ?biosample
+  ?dataset
   ?GOccURI
   ?GOccLabel
+  ?diseaseURI
+  ?diseaseLabel
   ?dbXref
 WHERE {
-  # SSBD biosample of interest, annotated with GO:0005739 (mitochondrion)
-  ssbd:ssbd-biosample-163-Fig4A_STED_mitochondial_HBSS3h
-        ssbd:is_about_GO_cc ?GOccURI .
-
+  # 1) Biosamples annotated with GO:0005739 (mitochondrion)
+  ?biosample ssbd:is_about_GO_cc ?GOccURI .
   FILTER(?GOccURI = obo:GO_0005739)
 
-  # MONDO diseases having RO:0004020 some GO:0005739 (equivalentClass path)
+  # 2) Dataset that contains each biosample (if available)
+  OPTIONAL { ?dataset ssbd:has_biosample_information ?biosample }
+
+  # 3) MONDO diseases where RO:0004020 some GO:0005739
   {
-    ?diseaseIRI owl:equivalentClass ?ec .
+    ?diseaseURI owl:equivalentClass ?ec .
     ?ec owl:intersectionOf ?list .
     ?list rdf:rest*/rdf:first ?rest .
     ?rest a owl:Restriction ;
@@ -47,28 +51,29 @@ WHERE {
           owl:someValuesFrom ?GOccURI .
   }
   UNION
-  # … or via direct subclass restriction
   {
-    ?diseaseIRI rdfs:subClassOf ?rest2 .
+    ?diseaseURI rdfs:subClassOf ?rest2 .
     ?rest2 a owl:Restriction ;
            owl:onProperty ro:0004020 ;
            owl:someValuesFrom ?GOccURI .
   }
 
-  FILTER(STRSTARTS(STR(?diseaseIRI), "http://purl.obolibrary.org/obo/MONDO_"))
+  # Only MONDO IRIs
+  FILTER(STRSTARTS(STR(?diseaseURI), "http://purl.obolibrary.org/obo/MONDO_"))
 
-  # English (or untagged) labels only
-  OPTIONAL {
-    ?diseaseIRI rdfs:label ?diseaseLabelRaw .
-    FILTER(LANG(?diseaseLabelRaw)="en" || LANG(?diseaseLabelRaw)="")
-    BIND(STR(?diseaseLabelRaw) AS ?diseaseLabel)
-  }
+  # 4) English (or no-lang) labels for GO and disease
   OPTIONAL {
     ?GOccURI rdfs:label ?GOccLabelRaw .
     FILTER(LANG(?GOccLabelRaw)="en" || LANG(?GOccLabelRaw)="")
     BIND(STR(?GOccLabelRaw) AS ?GOccLabel)
   }
+  OPTIONAL {
+    ?diseaseURI rdfs:label ?diseaseLabelRaw .
+    FILTER(LANG(?diseaseLabelRaw)="en" || LANG(?diseaseLabelRaw)="")
+    BIND(STR(?diseaseLabelRaw) AS ?diseaseLabel)
+  }
 
-  OPTIONAL { ?diseaseIRI oboInOwl:hasDbXref ?dbXref }
+  # 5) External database cross-references (e.g., OMIM, Orphanet)
+  OPTIONAL { ?diseaseURI oboInOwl:hasDbXref ?dbXref }
 }
-ORDER BY ?diseaseIRI
+ORDER BY ?biosample ?dataset ?GOccURI ?diseaseURI
