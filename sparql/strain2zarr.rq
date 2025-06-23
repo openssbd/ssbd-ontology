@@ -1,27 +1,102 @@
+###############################################################################
+# SSBD – Retrieve image datasets for mouse strains
+# ---------------------------------------------------------
+#  * Returns only those datasets that have an OME-NGFF record
+#    and an associated Vizarr URL.
+#  * Strain filtering is done with a VALUES list; simply add
+#    more JAX strain IRIs as needed.
+#  * The “Vizarr section” is shipped in two variants:
+#       (A) mandatory  – datasets **must** have a Vizarr URL
+#       (B) optional   – Vizarr URL shown when present, but its absence
+#                        does NOT remove the dataset from the result.
+#    Switch between them by commenting / uncommenting the relevant block.
+###############################################################################
+
 PREFIX ssbd: <http://ssbd.riken.jp/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX obo:  <http://purl.obolibrary.org/obo/>
 
-SELECT ?dataset ?bs ?title ?methodIRI ?methodLabel ?zarr ?vizarr
+SELECT
+  ?strainLabel                    # e.g. "C57BL/6J"
+  ?datasetStr                     # dataset IRI as plain string
+  ?bsStr                          # biosample IRI as plain string
+  ?titleStr                       # human-readable dataset title
+  ?methodIRIstr                   # imaging-method IRI
+  ?methodLabel                    # imaging-method label (en)
+  ?zarrStr                        # S3 / HTTP endpoint of the Zarr store
+  ?vizarrStr                      # Vizarr viewer URL (may be empty in variant B)
 WHERE {
-  # --- strain filter (C57BL/6J) ---
-  ?bs ssbd:is_about_strain <https://www.jax.org/strain/000664> .
 
-  # --- Dataset ↔ Biosample ---
-  ?dataset ssbd:has_biosample_information ?bs ;
-           ssbd:has_dataset_title         ?title .
-  
-    # --- Imaging method  ---
-  ?dataset ssbd:has_imaging_method_total_info  ?imNode .
-  ?imNode  ssbd:has_imaging_method_recorded_type ?methodIRI .
-  OPTIONAL { ?methodIRI rdfs:label ?methodLabel }
-  
-   # --- NGFF ---
-  OPTIONAL {
-    ?dataset ssbd:has_ome_zarr_information ?ngff .
-    OPTIONAL { ?ngff ssbd:has_s3_endpoint ?zarr }
-    OPTIONAL { ?ngff ssbd:has_vizarr_url  ?vizarr }
+  ###############################################################################
+  # 1)  DEFINE THE TARGET STRAINS  (logical OR !)
+  #     List one or more strain IRIs.  A biosample matching ANY of them is kept.
+  #     Example below keeps C57BL/6J only; uncomment BALB/cJ to include it too.
+  ###############################################################################
+  VALUES ?targetStrain {
+    <https://www.jax.org/strain/000664>   # C57BL/6J
+    # <https://www.jax.org/strain/000651> # BALB/cJ   ← remove “#” to include
   }
 
+  ##########################################################################
+  # 2)  RESOLVE THE STRAIN LABEL (for human readability)                    #
+  ##########################################################################
+  ?targetStrain rdfs:label ?strainLabel_raw .
+  BIND(STR(?strainLabel_raw) AS ?strainLabel)
+
+  ##########################################################################
+  # 3)  BIOSAMPLE ↔ STRAIN                                                  #
+  ##########################################################################
+  ?bs_raw ssbd:is_about_strain ?targetStrain .
+  BIND(STR(?bs_raw) AS ?bsStr)
+
+  ##########################################################################
+  # 4)  DATASET ↔ BIOSAMPLE & TITLE                                         #
+  ##########################################################################
+  ?dataset_raw ssbd:has_biosample_information ?bs_raw ;
+               ssbd:has_dataset_title         ?title_raw .
+  BIND(STR(?dataset_raw) AS ?datasetStr)
+  BIND(STR(?title_raw)   AS ?titleStr)
+
+  ##########################################################################
+  # 5)  IMAGING METHOD (IRI + English label)                               #
+  ##########################################################################
+  ?dataset_raw ssbd:has_imaging_method_total_info ?imNode .
+  ?imNode      ssbd:has_imaging_method_recorded_type ?methodIRI_raw .
+  BIND(STR(?methodIRI_raw) AS ?methodIRIstr)
+
+  OPTIONAL {
+    ?methodIRI_raw rdfs:label ?methodLabel_raw .
+    FILTER(LANG(?methodLabel_raw) = "en" || LANG(?methodLabel_raw) = "")
+    BIND(STR(?methodLabel_raw) AS ?methodLabel)
+  }
+
+  ##########################################################################
+  # 6)  NGFF BLOCK – MANDATORY Zarr, VIZARR OPTIONAL OR MANDATORY          #
+  ##########################################################################
+  ?dataset_raw ssbd:has_ome_zarr_information ?ngff .
+
+  ## ----------------------------------------------------------- ##
+  ## (A)  *** VIZARR MANDATORY ***                               ##
+  ##       Uncomment this block if every result **must** have    ##
+  ##       a Vizarr viewer URL.                                  ##
+  ## ----------------------------------------------------------- ##
+  # ?ngff ssbd:has_vizarr_url ?vizarr_raw .
+  # FILTER(STRLEN(STR(?vizarr_raw)) > 0)        # ignore empty strings
+  # BIND(STR(?vizarr_raw) AS ?vizarrStr)
+
+  ## ----------------------------------------------------------- ##
+  ## (B)  *** VIZARR OPTIONAL ***  ← default                     ##
+  ##       Keep this block if Vizarr is nice-to-have only.       ##
+  ## ----------------------------------------------------------- ##
+  OPTIONAL {
+    ?ngff ssbd:has_vizarr_url ?vizarr_raw .
+    FILTER(STRLEN(STR(?vizarr_raw)) > 0)
+    BIND(STR(?vizarr_raw) AS ?vizarrStr)
+  }
+
+  ## Always collect the raw Zarr endpoint (may be absent) ##
+  OPTIONAL {
+    ?ngff ssbd:has_s3_endpoint ?zarr_raw .
+    BIND(STR(?zarr_raw) AS ?zarrStr)
+  }
 }
-ORDER BY ?methodIRI ?dataset
+ORDER BY ?strainLabel ?datasetStr
