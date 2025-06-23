@@ -1,47 +1,56 @@
 ###############################################################################
-# Retrieve every Dataset that contains a Homo sapiens biosample.
-# For each Dataset return:
-#   • its IRI   (?dataset)
-#   • its title (?title)
-# Optional blocks:
-#   • the parent Project that outputs the Dataset      (?project)
-#   • each Publication recorded for that Project       (?paper, ?paperInfo,?DOI,?PMID)
+# SSBD – Human-sample datasets with project & publication metadata
+# ---------------------------------------------------------------------------
+#  * Only datasets whose biosample is Homo sapiens (NCBI 9606) are listed.
+#  * DOI / PMID are emitted as **clickable IRIs**:
+#       - DOI  →  https://doi.org/<doi>
+#       - PMID →  https://pubmed.ncbi.nlm.nih.gov/<pmid>/
 ###############################################################################
+
 PREFIX ssbd: <http://ssbd.riken.jp/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT
-  ?dataset
-  ?title
-  ?project              
-  ?paper          # optional
-  ?DOI            # optional
-  ?PMID           # optional
-  ?paperInfo      # optional
+  ?dataset          # dataset IRI
+  ?title            # dataset title
+  ?project          # project IRI                (optional)
+  ?paper            # publication IRI            (optional)
+  ?DOI              # DOI as https://doi.org/... (optional, clickable)
+  ?PMID             # PMID as PubMed URL         (optional, clickable)
+  ?paperInfo        # free-text citation / notes (optional)
 WHERE {
-  # --- 1) Biosample must be about Homo sapiens (NCBI 9606) -------------------
+  # 1) biosample ↔ Homo sapiens
   ?bs ssbd:is_about_organism <http://purl.obolibrary.org/obo/NCBITaxon_9606> .
 
-  # --- 2) Link the Biosample to its parent Dataset ---------------------------
+  # 2) dataset ↔ biosample
   ?dataset ssbd:has_biosample_information ?bs ;
-           ssbd:has_dataset_title         ?title.
+           ssbd:has_dataset_title         ?title .
 
-  # --- 3) Optionally climb to the Project that outputs this Dataset ----------
+  # 3) dataset ← project (optional)
   OPTIONAL {
     ?project ssbd:has_dataset_output ?dataset .
 
-    # --- 4) Optionally retrieve each publication registered for the Project --
+    # 4) project ← publication (optional)
     OPTIONAL {
       ?project ssbd:has_project_publications ?paper .
-      OPTIONAL { ?paper ssbd:has_doi ?DOI;
-                        ssbd:has_PMID ?PMID;
-                        ssbd:has_paper_information ?paperInfo.
-               }
+
+      # 4-a) DOI  → make it a real URL
+      OPTIONAL {
+        ?paper ssbd:has_doi ?doiLit .
+        BIND( IRI( CONCAT("https://doi.org/", STR(?doiLit)) ) AS ?DOI )
+      }
+
+      # 4-b) PMID → turn number into PubMed URL
+      OPTIONAL {
+        ?paper ssbd:has_PMID ?pmidLit .
+        BIND( IRI( CONCAT("https://pubmed.ncbi.nlm.nih.gov/", STR(?pmidLit), "/") ) AS ?PMID )
+      }
+
+      # 4-c) any extra citation string
+      OPTIONAL {
+        ?paper ssbd:has_paper_information ?paperInfo .
+      }
     }
   }
 }
 ORDER BY ?dataset
-
-
-
-
