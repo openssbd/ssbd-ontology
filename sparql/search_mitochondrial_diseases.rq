@@ -1,7 +1,20 @@
-# File: search_mitochondrial_diseases.sparql
-# Description: SPARQL query to search for mitochondrial diseases related to GO:0005739 mitochondrion
-#               based on a specified biosample in the SSBD ontology.
-#  RO:0004020 “disease has basis in dysfunction of"             
+###############################################################################
+# SSBD × GO/MONDO federation – search for mitochondrial diseases
+# ---------------------------------------------------------------------------
+#  * Starting point: a specific SSBD biosample that is annotated with the
+#    cellular-component term “mitochondrion” (GO:0005739).
+#  * Traverses the RO:0004020 (‘disease has basis in dysfunction of’) link
+#    in the external MONDO ontology to list diseases whose dysfunction is
+#    rooted in the mitochondrion.
+#  * Returns for each hit:
+#       – MONDO disease IRI            (?diseaseIRI)
+#       – human-readable disease label (?diseaseLabel)
+#       – GO cellular-component IRI    (?GOccURI)
+#       – GO label                     (?GOccLabel)
+#       – any database cross-reference (?dbXref)
+#  * Label FILTER keeps **English or no-language tags only**; Japanese or other
+#    languages are deliberately excluded so reviewers see a clean EN result.
+###############################################################################
 
 PREFIX ssbd:    <http://ssbd.riken.jp/ontology/>
 PREFIX obo:     <http://purl.obolibrary.org/obo/>
@@ -11,35 +24,51 @@ PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX oboInOwl:<http://www.geneontology.org/formats/oboInOwl#>
 
-SELECT DISTINCT ?diseaseIRI ?diseaseLabel ?dbXref
+SELECT DISTINCT
+  ?diseaseIRI
+  ?diseaseLabel
+  ?GOccURI
+  ?GOccLabel
+  ?dbXref
 WHERE {
-  # 1. Specify the biosample of interest by its IRI and confirm it's about mitochondrion (GO:0005739)
+  # SSBD biosample of interest, annotated with GO:0005739 (mitochondrion)
   ssbd:ssbd-biosample-163-Fig4A_STED_mitochondial_HBSS3h
-    ssbd:is_about_GO_cc obo:GO_0005739 .
+        ssbd:is_about_GO_cc ?GOccURI .
 
-  # 2. Find MONDO classes that have a restriction (RO:0004020 someValuesFrom GO:0005739)
-  #    either via equivalentClass intersection or direct subclass restriction.
+  FILTER(?GOccURI = obo:GO_0005739)
+
+  # MONDO diseases having RO:0004020 some GO:0005739 (equivalentClass path)
   {
     ?diseaseIRI owl:equivalentClass ?ec .
     ?ec owl:intersectionOf ?list .
     ?list rdf:rest*/rdf:first ?rest .
     ?rest a owl:Restriction ;
           owl:onProperty ro:0004020 ;
-          owl:someValuesFrom obo:GO_0005739 .
+          owl:someValuesFrom ?GOccURI .
   }
   UNION
+  # … or via direct subclass restriction
   {
     ?diseaseIRI rdfs:subClassOf ?rest2 .
     ?rest2 a owl:Restriction ;
            owl:onProperty ro:0004020 ;
-           owl:someValuesFrom obo:GO_0005739 .
+           owl:someValuesFrom ?GOccURI .
   }
 
-  # 3. Filter to ensure we only retrieve MONDO disease IRIs
   FILTER(STRSTARTS(STR(?diseaseIRI), "http://purl.obolibrary.org/obo/MONDO_"))
 
-  # 4. Optionally retrieve human-readable labels and external database xrefs
-  OPTIONAL { ?diseaseIRI rdfs:label          ?diseaseLabel }
-  OPTIONAL { ?diseaseIRI oboInOwl:hasDbXref ?dbXref       }
+  # English (or untagged) labels only
+  OPTIONAL {
+    ?diseaseIRI rdfs:label ?diseaseLabelRaw .
+    FILTER(LANG(?diseaseLabelRaw)="en" || LANG(?diseaseLabelRaw)="")
+    BIND(STR(?diseaseLabelRaw) AS ?diseaseLabel)
+  }
+  OPTIONAL {
+    ?GOccURI rdfs:label ?GOccLabelRaw .
+    FILTER(LANG(?GOccLabelRaw)="en" || LANG(?GOccLabelRaw)="")
+    BIND(STR(?GOccLabelRaw) AS ?GOccLabel)
+  }
+
+  OPTIONAL { ?diseaseIRI oboInOwl:hasDbXref ?dbXref }
 }
 ORDER BY ?diseaseIRI
